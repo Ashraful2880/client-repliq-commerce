@@ -90,10 +90,10 @@ const Blogs = () => {
                       <div className=" text-stone-500">
                         <p>{blog?.description.slice(0, 100)}</p>
                         <div className="py-2 flex justify-between items-center gap-x-2">
-                          <button className="text-white hover:text-orange-600 font-bold bg-orange-500 hover:bg-white border-2 border-orange-600 duration-500 px-5 py-2 mt-3 text-sm rounded-sm">
+                          <button className="text-white hover:text-[#2563eb] font-bold bg-[#2563eb] hover:bg-white border-2 border-[#2563eb] duration-500 px-5 py-2 mt-3 text-sm rounded-sm">
                             Read More
                           </button>
-                          <FaShareAlt className="text-lg text-orange-600" />
+                          <FaShareAlt className="text-lg text-[#2563eb]" />
                         </div>
                       </div>
                     </div>

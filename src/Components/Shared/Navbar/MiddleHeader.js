@@ -28,7 +28,7 @@ const MiddleHeader = () => {
               <Link to="/">
                 <div className="flex items-center gap-x-2">
                   <img src={logo} alt="Main Logo" className="lg:w-12 w-64" />
-                  <h4 className="font-semibold text-lg text-[#15A9E3]">
+                  <h4 className="font-semibold text-lg text-[#15A9E3] uppercase">
                     Repliq Commerce
                   </h4>
                 </div>
