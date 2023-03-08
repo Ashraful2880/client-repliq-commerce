@@ -12,7 +12,7 @@ const TopHeader = () => {
   return (
     <>
       {!pathName.includes("/dashboard") && (
-        <div className="bg-orange-500 py-2 lg:block hidden">
+        <div className="bg-[#0b1144] py-2 lg:block hidden">
           <div className="container mx-auto flex justify-between items-center">
             <p className="text-white">Free Shipping For All Order Of $99</p>
             <div className="flex items-center gap-x-4">

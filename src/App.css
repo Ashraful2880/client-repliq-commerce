@@ -135,3 +135,35 @@ input::-webkit-inner-spin-button {
   height: 450px;
   background-position: center;
 }
+
+/* Applicaation Section BG  */
+
+.bg-style {
+  background-image: url("./Assets/Images/Others/shape.png");
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+
+/* Contact Us Page Design */
+
+.contact-bannar {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.644), rgba(0, 0, 0, 0.644)),
+    url("https://i.ibb.co/mDk3WKW/contact-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  min-height: 75vh;
+}
+
+/*-----------> Remove Arrow From Input Type Number <----------*/
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}

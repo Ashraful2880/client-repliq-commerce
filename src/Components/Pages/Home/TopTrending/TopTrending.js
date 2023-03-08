@@ -15,7 +15,7 @@ const TopTrending = () => {
 
   useEffect(() => {
     axios
-      .get(`${process.env.REACT_APP_API_PATH}/topTrending?trending=trending`)
+      .get(`${process.env.REACT_APP_API_PATH}/topTrending?trending=Trending`)
       .then((resp) => {
         setTopTrending(resp?.data);
       });

@@ -11,6 +11,9 @@ import NewArrival from "./NewArrival/NewArrival";
 import PromoLast from "./PromoLast/PromoLast";
 import Testimonial from "./Testimonial/Testimonial";
 import NewsLater from "./NewsLater/NewsLater";
+import Application from "./Application/Application";
+import BrandOfWeek from "./BrandOfWeek/BrandOfWeek";
+import Blogs from "../Blogs/Blogs";
 
 const Home = () => {
   return (
@@ -18,15 +21,18 @@ const Home = () => {
       <Bannar />
       <ShopByCategory />
       <CategoryFeature />
-      {/* <FeaturedProducts /> */}
+      <FeaturedProducts />
+      <BrandOfWeek />
       <TopTrending />
       <PromoOffer />
-      {/* <BestSellar /> */}
+      <BestSellar />
       <PromoBannar />
       <NewArrival />
       <PromoLast />
       <Testimonial />
       <NewsLater />
+      <Application />
+      <Blogs />
     </>
   );
 };

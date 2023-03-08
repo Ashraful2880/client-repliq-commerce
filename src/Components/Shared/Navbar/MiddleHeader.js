@@ -28,7 +28,7 @@ const MiddleHeader = () => {
               <Link to="/">
                 <div className="flex items-center gap-x-2">
                   <img src={logo} alt="Main Logo" className="lg:w-12 w-64" />
-                  <h4 className="font-semibold text-lg text-[#15A9E3] uppercase">
+                  <h4 className="font-bold text-lg text-orange-600 uppercase">
                     Repliq Commerce
                   </h4>
                 </div>
@@ -46,7 +46,7 @@ const MiddleHeader = () => {
                 <div className="border-r-2 pr-5 cursor-pointer hover:text-orange-600 duration-300">
                   <div className="flex items-center gap-x-2">
                     <FaEnvelope className="text-lg text-orange-600 animate-bounce" />
-                    <p className="font-semibold"> mail@healthos.com</p>
+                    <p className="font-semibold"> mail@repliqCommerce.com</p>
                   </div>
                 </div>
                 <div className="pr-5 cursor-pointer hover:text-orange-600 duration-300">
@@ -76,16 +76,16 @@ const MiddleHeader = () => {
                 </div>
               )}
               {loggedInUser && (
-                <div className="flex items-center gap-x-1">
+                <div className="flex items-center gap-x-3">
                   <Link
                     to="/dashboard"
-                    className="font-bold text-white hover:text-orange-600 bg-orange-500 hover:bg-white px-2 py-1 mr-4 border border-orange-600 rounded-md duration-300"
+                    className="font-bold text-white hover:text-[#0b1144] bg-[#0b1144] hover:bg-white px-2 py-1 border border-[#0b1144] rounded-md duration-300"
                   >
                     DASHBOARD
                   </Link>
                   <button
                     onClick={handleLogOut}
-                    className="font-bold text-white hover:text-red-500 bg-red-500 hover:bg-white px-2 py-1 ml-4 border border-red-500 rounded-md duration-300 flex gap-x-2 items-center"
+                    className="font-bold text-white hover:text-orange-600 bg-orange-600 hover:bg-white px-3 py-1 border border-orange-600 rounded-md duration-300 flex gap-x-2 items-center"
                   >
                     <span>Log Out</span>
                     <MdLogout className="text-lg animate-pulse" />

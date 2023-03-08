@@ -1,6 +1,11 @@
 import React from "react";
 import { FaAngleDoubleRight, FaAngleDown } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import megaMenu1 from "../../../Assets/Images/Mega-menu/mega-menu-1.jpg";
+import megaMenu2 from "../../../Assets/Images/Mega-menu/mega-menu-2.jpg";
+import megaMenu3 from "../../../Assets/Images/Mega-menu/mega-menu-3.png";
+import megaMenu4 from "../../../Assets/Images/Mega-menu/mega-menu-4.jpg";
+import megaMenu5 from "../../../Assets/Images/Mega-menu/mega-menu-5.jpg";
 
 const Navbar = () => {
   return (
@@ -18,9 +23,9 @@ const Navbar = () => {
             className="text-md font-semibold hover:text-orange-600 focus:text-orange-600 duration-300 my-0 flex items-end py-5"
           >
             <span className="font-semibold "> Browse Categories </span>
-            <FaAngleDown className="ml-1 text-md" />
+            <FaAngleDown className="ml-1 text-md text-[#2563eb]" />
           </Link>
-          <div className="w-full text-left px-6 mb-36 sm:mb-0 bg-[#0b1144]  hidden absolute top-16 left-0 shadow-xl overflow-hidden group-hover:block">
+          <div className="w-full text-left px-6 mb-10 sm:mb-0 bg-[#0b1144]  hidden absolute top-16 left-0 shadow-xl overflow-hidden group-hover:block">
             <div className="w-full flex flex-wrap justify-between megaMenuAnimation">
               <div className="lg:w-1/4 md:w-1/2 w-full lg:pt-4 px-4 lg:border-b-0 border-b sm:border-r border-gray-600">
                 <div className="flex items-center border-b border-gray-600 mb-4">
@@ -31,58 +36,44 @@ const Navbar = () => {
                 <div className="text-gray-100 text-md flex flex-col">
                   <Link
                     to="/shopCategory/All"
-                    className="mb-3 hover:text-orange-600 duration-300 flex items-center gap-x-1"
+                    className="mb-4 hover:text-orange-600 duration-300 flex items-center gap-x-1"
                   >
                     <FaAngleDoubleRight className="mr-2 text-md" />
                     <span> All Products</span>
                   </Link>
                   <Link
-                    to="/shopCategory/medicalEquip"
-                    className="mb-3 hover:text-orange-600 duration-300 flex items-center gap-x-1"
+                    to="/shopCategory/men"
+                    className="mb-4 hover:text-orange-600 duration-300 flex items-center gap-x-1"
                   >
                     <FaAngleDoubleRight className="mr-2 text-md" />
-                    <span> Medical Equipments </span>
+                    <span> Mens Products </span>
                   </Link>
                   <Link
-                    to="/shopCategory/medicine"
-                    className="mb-3 hover:text-orange-600 duration-300 flex items-center gap-x-1"
+                    to="/shopCategory/Women"
+                    className="mb-4 hover:text-orange-600 duration-300 flex items-center gap-x-1"
                   >
                     <FaAngleDoubleRight className="mr-2 text-md" />
-                    <span> All Medicine </span>
+                    <span> Womens Products </span>
                   </Link>
                   <Link
-                    to="/shopCategory/emergencyKits"
-                    className="mb-3 hover:text-orange-600 duration-300 flex items-center gap-x-1"
+                    to="/shopCategory/Kids"
+                    className="mb-4 hover:text-orange-600 duration-300 flex items-center gap-x-1"
                   >
                     <FaAngleDoubleRight className="mr-2 text-md" />
-                    Emergency Kits
+                    Kids Products
                   </Link>
                   <Link
-                    to="/shopCategory/mask"
-                    className="mb-3 hover:text-orange-600 duration-300 flex items-center gap-x-1"
+                    to="/shopCategory/BagPack"
+                    className="mb-4 hover:text-orange-600 duration-300 flex items-center gap-x-1"
                   >
                     <FaAngleDoubleRight className="mr-2 text-md" />
-                    Mask Collections
-                  </Link>
-                  <Link
-                    to="/shopCategory/medicalItems"
-                    className="mb-3 hover:text-orange-600 duration-300 flex items-center gap-x-1"
-                  >
-                    <FaAngleDoubleRight className="mr-2 text-md" />
-                    Medical Items
-                  </Link>
-                  <Link
-                    to="/shopCategory/others"
-                    className="mb-3 hover:text-orange-600 duration-300 flex items-center gap-x-1"
-                  >
-                    <FaAngleDoubleRight className="mr-2 text-md" />
-                    UnCategorized
+                    BagPack Products
                   </Link>
                   <div className="flex items-center my-4">
                     <Link to="/shopCategory/" className="w-full">
                       <img
                         className="w-full mb-2"
-                        src="https://res.cloudinary.com/ashraful-islam/image/upload/v1677010983/Health-OS/Others/1_rkbro2.png"
+                        src={megaMenu1}
                         alt="shop banner"
                       />
                     </Link>
@@ -97,59 +88,45 @@ const Navbar = () => {
                 </div>
                 <div className="text-gray-100 text-md flex flex-col">
                   <Link
-                    to="/#topTrending"
-                    className="mb-3 hover:text-orange-600 duration-300 flex items-center gap-x-1"
+                    to="/Shoes"
+                    className="mb-4 hover:text-orange-600 duration-300 flex items-center gap-x-1"
                   >
                     <FaAngleDoubleRight className="mr-2 text-md" />
-                    Top Trending
+                    All Shoes
                   </Link>
                   <Link
-                    to="/#bestSelling"
-                    className="mb-3 hover:text-orange-600 duration-300 flex items-center gap-x-1"
+                    to="/Others"
+                    className="mb-4 hover:text-orange-600 duration-300 flex items-center gap-x-1"
                   >
                     <FaAngleDoubleRight className="mr-2 text-md" />
-                    Best Selling
+                    Others Products
                   </Link>
                   <Link
-                    to="/#newArrival"
-                    className="mb-3 hover:text-orange-600 duration-300 flex items-center gap-x-1"
+                    to="/Uncategorize"
+                    className="mb-4 hover:text-orange-600 duration-300 flex items-center gap-x-1"
                   >
                     <FaAngleDoubleRight className="mr-2 text-md" />
-                    New Arraival
+                    Uncategorized Products
                   </Link>
                   <Link
                     to="shopCategory/All"
-                    className="mb-3 hover:text-orange-600 duration-300 flex items-center gap-x-1"
+                    className="mb-4 hover:text-orange-600 duration-300 flex items-center gap-x-1"
                   >
                     <FaAngleDoubleRight className="mr-2 text-md" />
                     Hot Sales
                   </Link>
                   <Link
                     to="shopCategory/All"
-                    className="mb-3 hover:text-orange-600 duration-300 flex items-center gap-x-1"
+                    className="mb-4 hover:text-orange-600 duration-300 flex items-center gap-x-1"
                   >
                     <FaAngleDoubleRight className="mr-2 text-md" />
-                    sanitizer Collections
-                  </Link>
-                  <Link
-                    to="shopCategory/All"
-                    className="mb-3 hover:text-orange-600 duration-300 flex items-center gap-x-1"
-                  >
-                    <FaAngleDoubleRight className="mr-2 text-md" />
-                    Brand Of The Week
-                  </Link>
-                  <Link
-                    to="shopCategory/All"
-                    className="mb-3 hover:text-orange-600 duration-300 flex items-center gap-x-1"
-                  >
-                    <FaAngleDoubleRight className="mr-2 text-md" />
-                    App Info
+                    Top Deals
                   </Link>
                   <div className="flex items-center my-4">
                     <Link to="shopCategory/All" className="w-full">
                       <img
                         className="w-full mb-2"
-                        src="https://res.cloudinary.com/ashraful-islam/image/upload/v1677010983/Health-OS/Others/2_za6qzo.png"
+                        src={megaMenu2}
                         alt="shop banner"
                       />
                     </Link>
@@ -180,11 +157,11 @@ const Navbar = () => {
                   stellar paradigm shift, let's touch base off-line before we
                   fire the new ux experience.
                 </p>
-                <div className="flex items-center mb-4 lg:mt-20 mt-10">
+                <div className="flex items-center mb-4 mt-6">
                   <Link to="shopCategory/All" className="mb-2 w-full">
                     <img
                       className="mb-2 w-full"
-                      src="https://res.cloudinary.com/ashraful-islam/image/upload/v1677010984/Health-OS/Others/3_qitakq.png"
+                      src={megaMenu1}
                       alt="shop banner"
                     />
                   </Link>
@@ -198,26 +175,17 @@ const Navbar = () => {
                 </div>
                 <Link to="/women">
                   <img
-                    src="https://res.cloudinary.com/ashraful-islam/image/upload/v1677009072/Health-OS/Others/Categories-Mega_Menu_Feature_at1grz.png"
+                    src={megaMenu3}
                     alt="Drop Down Bannar"
                     className="rounded-lg"
                   />
                 </Link>
-                <p className="text-gray-100 text-sm mt-4 mb-4">
-                  This is a no-brainer to wash your face
-                </p>
-                <div className="flex items-center mb-4">
+                <div className="flex items-center mt-2">
                   <Link to="shopCategory/All" className="mx-1">
-                    <img
-                      src="https://res.cloudinary.com/ashraful-islam/image/upload/v1677010983/Health-OS/Others/4_v13bxk.jpg"
-                      alt="Drop Down Bannar"
-                    />
+                    <img src={megaMenu4} alt="Drop Down Bannar" />
                   </Link>
                   <Link to="/shopCategory/Women" className="mx-1">
-                    <img
-                      src="https://res.cloudinary.com/ashraful-islam/image/upload/v1677010983/Health-OS/Others/5_stqhrv.jpg"
-                      alt="Drop Down Bannar"
-                    />
+                    <img src={megaMenu5} alt="Drop Down Bannar" />
                   </Link>
                 </div>
               </ul>
