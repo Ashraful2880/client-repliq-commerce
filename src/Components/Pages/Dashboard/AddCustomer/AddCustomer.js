@@ -37,7 +37,7 @@ const AddCustomer = () => {
       <div className="lg:pt-3 md:pt-3 pt-2 lg:px-3 md:px-3 px-0 mx-2">
         <div className="text-xl bg-white lg:w-60 w-full flex items-center gap-x-2 px-5">
           <IoMdPersonAdd className="text-orange-600" />
-          <h3 className="font-semibold text-orange-600 py-1.5">Add Customer</h3>
+          <h3 className="font-semibold text-[#0b1144] py-1.5">Add Customer</h3>
         </div>
       </div>
 
@@ -121,7 +121,7 @@ const AddCustomer = () => {
 
           <div className="flex justify-start w-full px-3">
             <button
-              className="shadow bg-orange-500 hover:bg-white text-white hover:text-orange-600 font-bold py-2 px-6 rounded border border-orange-600 duration-300"
+              className="shadow bg-[#2563eb] hover:bg-white text-white hover:text-[#2563eb] font-bold py-2 px-6 rounded border border-[#2563eb] duration-300"
               type="submit"
             >
               Add Customer

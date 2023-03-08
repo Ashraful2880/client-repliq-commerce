@@ -28,8 +28,8 @@ const Footer = () => {
               >
                 <img className="w-1/12" src={logo} alt="Main Logo" />
                 <h4 className="mx-2 font-bold text-white text-xl mt-1">
-                  <span className="text-orange-600">H</span>ealth
-                  <span className="text-orange-600"> OS </span>
+                  <span className="text-orange-600">R</span>epliq
+                  <span className="text-orange-600"> Comm </span>
                 </h4>
               </Link>
               <div className="lg:flex justify-center items-center hidden group">

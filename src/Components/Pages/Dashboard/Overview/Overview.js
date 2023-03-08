@@ -17,18 +17,18 @@ const Overview = () => {
       <div className="lg:pt-3 md:pt-3 pt-2 lg:px-3 md:px-3 px-0 mx-2">
         <div className="text-xl bg-white lg:w-60 w-full flex items-center gap-x-2 px-5">
           <FaHeartbeat className="text-orange-600" />
-          <h3 className="font-semibold text-orange-600 py-1.5">Overview</h3>
+          <h3 className="font-semibold text-[#0b1144] py-1.5">Overview</h3>
         </div>
       </div>
       <div>
         <h1 className="text-left text-2xl font-bold pl-10 pb-3 pt-1">
-          Best Customer Of <span className="text-orange-600">2022</span>
+          Best Customer Of <span className="text-[#0b1144]">2022</span>
         </h1>
         <div className="grid lg:grid-cols-3 d:grid-cols-2 grid-cols-1 lg:pb-20 pb-10 lg:px-6 px-2">
           <div className="p-2 w-full">
             <div className="h-full flex items-center border-gray-200 border p-4 rounded-lg shadow-md hover:shadow-none cursor-pointer duration-300">
               <div className="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4 flex justify-center items-center">
-                <FaIdCard className="text-3xl text-orange-600" />
+                <FaIdCard className="text-3xl text-[#2563eb]" />
               </div>
               <div className="flex-grow">
                 <h2 className="text-gray-600">Name</h2>
@@ -42,7 +42,7 @@ const Overview = () => {
           <div className="p-2 w-full">
             <div className="h-full flex items-center border-gray-200 border p-4 rounded-lg shadow-md hover:shadow-none cursor-pointer duration-300">
               <div className="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4 flex justify-center items-center">
-                <FaUser className="text-3xl text-orange-600" />
+                <FaUser className="text-3xl text-[#2563eb]" />
               </div>
 
               <div className="flex-grow">
@@ -57,7 +57,7 @@ const Overview = () => {
           <div className="p-2 w-full">
             <div className="h-full flex items-center border-gray-200 border p-4 rounded-lg shadow-md hover:shadow-none cursor-pointer duration-300">
               <div className="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4 flex justify-center items-center">
-                <FaEnvelope className="text-3xl text-orange-600" />
+                <FaEnvelope className="text-3xl text-[#2563eb]" />
               </div>
               <div className="flex-grow">
                 <h2 className="text-gray-600">Email</h2>
@@ -71,7 +71,7 @@ const Overview = () => {
           <div className="p-2 w-full">
             <div className="h-full flex items-center border-gray-200 border p-4 rounded-lg shadow-md hover:shadow-none cursor-pointer duration-300">
               <div className="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4 flex justify-center items-center">
-                <FaPhoneAlt className="text-3xl text-orange-600" />
+                <FaPhoneAlt className="text-3xl text-[#2563eb]" />
               </div>
               <div className="flex-grow">
                 <h2 className="text-gray-600">Phone</h2>
@@ -85,7 +85,7 @@ const Overview = () => {
           <div className="p-2 w-full">
             <div className="h-full flex items-center border-gray-200 border p-4 rounded-lg shadow-md hover:shadow-none cursor-pointer duration-300">
               <div className="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4 flex justify-center items-center">
-                <FaLocationArrow className="text-3xl text-orange-600" />
+                <FaLocationArrow className="text-3xl text-[#2563eb]" />
               </div>
               <div className="flex-grow">
                 <h2 className="text-gray-600">Address</h2>
@@ -99,7 +99,7 @@ const Overview = () => {
           <div className="p-2 w-full">
             <div className="h-full flex items-center border-gray-200 border p-4 rounded-lg shadow-md hover:shadow-none cursor-pointer duration-300">
               <div className="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4 flex justify-center items-center">
-                <TbWorldDownload className="text-4xl text-orange-600" />
+                <TbWorldDownload className="text-4xl text-[#2563eb]" />
               </div>
               <div className="flex-grow">
                 <h2 className="text-gray-600">Last Visited</h2>

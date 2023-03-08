@@ -47,8 +47,8 @@ const CustomerList = () => {
       {/* Heading Title */}
       <div className="lg:pt-3 md:pt-3 pt-2 lg:px-3 md:px-3 px-0 mx-2">
         <div className="text-xl bg-white lg:w-60 w-full flex items-center gap-x-2 px-5">
-          <BsCardChecklist className="text-orange-600" />
-          <h3 className="font-semibold text-orange-600 py-1.5">
+          <BsCardChecklist className="text-[#2563eb]" />
+          <h3 className="font-semibold text-[#0b1144] py-1.5">
             All Customer List
           </h3>
         </div>
@@ -61,28 +61,28 @@ const CustomerList = () => {
               <table className="min-w-full leading-normal">
                 <thead>
                   <tr>
-                    <th className="px-5 py-3 border-b-2 border-orange-600 bg-orange-500 text-left text-sm font-bold text-white uppercase tracking-wider">
+                    <th className="px-5 py-3 border-b-2 border-[#2563eb] bg-[#2563eb] text-left text-sm font-bold text-white uppercase tracking-wider">
                       SL No
                     </th>
-                    <th className="px-5 py-3 border-b-2 border-orange-600 bg-orange-500 text-left text-sm font-bold text-white uppercase tracking-wider">
+                    <th className="px-5 py-3 border-b-2 border-[#2563eb] bg-[#2563eb] text-left text-sm font-bold text-white uppercase tracking-wider">
                       Customer Name
                     </th>
-                    <th className="px-5 py-3 border-b-2 border-orange-600 bg-orange-500 text-left text-sm font-bold text-white uppercase tracking-wider">
+                    <th className="px-5 py-3 border-b-2 border-[#2563eb] bg-[#2563eb] text-left text-sm font-bold text-white uppercase tracking-wider">
                       User Name
                     </th>
-                    <th className="px-5 py-3 border-b-2 border-orange-600 bg-orange-500 text-left text-sm font-bold text-white uppercase tracking-wider">
+                    <th className="px-5 py-3 border-b-2 border-[#2563eb] bg-[#2563eb] text-left text-sm font-bold text-white uppercase tracking-wider">
                       Customer Email
                     </th>
-                    <th className="px-5 py-3 border-b-2 border-orange-600 bg-orange-500 text-left text-sm font-bold text-white uppercase tracking-wider">
+                    <th className="px-5 py-3 border-b-2 border-[#2563eb] bg-[#2563eb] text-left text-sm font-bold text-white uppercase tracking-wider">
                       Contact Number
                     </th>
-                    <th className="px-5 py-3 border-b-2 border-orange-600 bg-orange-500 text-left text-sm font-bold text-white uppercase tracking-wider">
+                    <th className="px-5 py-3 border-b-2 border-[#2563eb] bg-[#2563eb] text-left text-sm font-bold text-white uppercase tracking-wider">
                       Address
                     </th>
-                    <th className="px-5 py-3 border-b-2 border-orange-600 bg-orange-500 text-left text-sm font-bold text-white uppercase tracking-wider">
+                    <th className="px-5 py-3 border-b-2 border-[#2563eb] bg-[#2563eb] text-left text-sm font-bold text-white uppercase tracking-wider">
                       Register Date
                     </th>
-                    <th className="px-5 py-3 border-b-2 border-orange-600 bg-orange-500 text-left text-sm font-bold text-white uppercase tracking-wider">
+                    <th className="px-5 py-3 border-b-2 border-[#2563eb] bg-[#2563eb] text-left text-sm font-bold text-white uppercase tracking-wider">
                       Remarks
                     </th>
                   </tr>
@@ -127,7 +127,7 @@ const CustomerList = () => {
                         <div className="whitespace-no-wrap py-5">
                           <button
                             onClick={() => handleView(customer?._id)}
-                            className="text-white hover:text-orange-600 bg-orange-500 hover:bg-white p-1.5 text-xl h-7 w-7 whitespace-no-wrap flex justify-center items-center gap-x-2 border border-orange-600 rounded-full duration-300"
+                            className="text-white hover:text-[#2563eb] bg-[#2563eb] hover:bg-white p-1.5 text-xl h-7 w-7 whitespace-no-wrap flex justify-center items-center gap-x-2 border border-[#2563eb] rounded-full duration-300"
                           >
                             <FaEye />
                           </button>

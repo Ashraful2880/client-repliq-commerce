@@ -69,7 +69,7 @@ const AllProducts = () => {
       <div className="lg:pt-3 md:pt-3 pt-2 lg:px-3 md:px-3 px-0 mx-2">
         <div className="text-xl bg-white lg:w-60 w-full flex items-center gap-x-2 px-5">
           <AiOutlineAppstoreAdd className="text-orange-600" />
-          <h3 className="font-semibold text-orange-600 py-1.5">
+          <h3 className="font-semibold text-[#0b1144] py-1.5">
             All Product List
           </h3>
         </div>
@@ -121,7 +121,7 @@ const AllProducts = () => {
                   <div className="absolute top-2 right-3">
                     <button
                       onClick={() => handleView(product?._id)}
-                      className="p-1 my-2 h-7 w-7 bg-orange-500 hover:bg-white text-white hover:text-orange-600 border border-orange-600 rounded-full flex justify-center items-center duration-300"
+                      className="p-1 my-2 h-7 w-7 bg-[#2563eb] hover:bg-white text-white hover:text-[#2563eb] border border-[#2563eb] rounded-full flex justify-center items-center duration-300"
                     >
                       <BsFillEyeFill />
                     </button>

@@ -28,7 +28,7 @@ const MakeAdmin = () => {
       <div className="lg:pt-3 md:pt-3 pt-2 lg:px-3 md:px-3 px-0 mx-2">
         <div className="text-xl bg-white lg:w-60 w-full flex items-center gap-x-2 px-5">
           <MdAdminPanelSettings className="text-orange-600" />
-          <h3 className="font-semibold text-orange-600 py-1.5">Make Admin</h3>
+          <h3 className="font-semibold text-[#0b1144] py-1.5">Make Admin</h3>
         </div>
       </div>
       <div className="max-w-screen-lg mx-auto p-5 border myShadow rounded-md bg-white lg:pb-14 pb-6">
@@ -37,7 +37,7 @@ const MakeAdmin = () => {
             Enter an Email
           </p>
           <h3 className="text-3xl sm:text-4xl leading-normal font-extrabold tracking-tight text-gray-900">
-            To <span className="text-orange-600"> Make An Admin </span>
+            To <span className="text-[#2563eb]"> Make An Admin </span>
           </h3>
         </div>
 
@@ -58,7 +58,7 @@ const MakeAdmin = () => {
 
           <div className="flex justify-center w-full px-3">
             <button
-              className="shadow bg-orange-500 hover:bg-white text-white hover:text-orange-600 font-bold py-2 px-6 rounded border border-orange-600 duration-300"
+              className="shadow bg-[#2563eb] hover:bg-white text-white hover:text-[#2563eb] font-bold py-2 px-6 rounded border border-[#2563eb] duration-300"
               type="submit"
             >
               Make Admin

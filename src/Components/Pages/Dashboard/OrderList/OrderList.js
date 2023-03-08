@@ -19,8 +19,8 @@ const OrderList = () => {
       {/* Heading Title */}
       <div className="lg:pt-3 md:pt-3 pt-2 lg:px-3 md:px-3 px-0 mx-2">
         <div className="text-xl bg-white lg:w-60 w-full flex items-center gap-x-2 px-5">
-          <BsCardChecklist className="text-orange-600" />
-          <h3 className="font-semibold text-orange-600 py-1.5">
+          <BsCardChecklist className="text-[#2563eb]" />
+          <h3 className="font-semibold text-[#0b1144] py-1.5">
             All Order List
           </h3>
         </div>
@@ -33,25 +33,25 @@ const OrderList = () => {
               <table className="min-w-full leading-normal">
                 <thead>
                   <tr>
-                    <th className="px-5 py-3 border-b-2 border-orange-600 bg-orange-500 text-left text-sm font-bold text-white uppercase tracking-wider">
+                    <th className="px-5 py-3 border-b-2 border-[#2563eb] bg-[#2563eb] text-left text-sm font-bold text-white uppercase tracking-wider">
                       SL No
                     </th>
-                    <th className="px-5 py-3 border-b-2 border-orange-600 bg-orange-500 text-left text-sm font-bold text-white uppercase tracking-wider">
+                    <th className="px-5 py-3 border-b-2 border-[#2563eb] bg-[#2563eb] text-left text-sm font-bold text-white uppercase tracking-wider">
                       Product Name
                     </th>
-                    <th className="px-5 py-3 border-b-2 border-orange-600 bg-orange-500 text-left text-sm font-bold text-white uppercase tracking-wider">
+                    <th className="px-5 py-3 border-b-2 border-[#2563eb] bg-[#2563eb] text-left text-sm font-bold text-white uppercase tracking-wider">
                       Quantity
                     </th>
-                    <th className="px-5 py-3 border-b-2 border-orange-600 bg-orange-500 text-left text-sm font-bold text-white uppercase tracking-wider">
+                    <th className="px-5 py-3 border-b-2 border-[#2563eb] bg-[#2563eb] text-left text-sm font-bold text-white uppercase tracking-wider">
                       Shipping Address
                     </th>
-                    <th className="px-5 py-3 border-b-2 border-orange-600 bg-orange-500 text-left text-sm font-bold text-white uppercase tracking-wider">
+                    <th className="px-5 py-3 border-b-2 border-[#2563eb] bg-[#2563eb] text-left text-sm font-bold text-white uppercase tracking-wider">
                       Total Amount
                     </th>
-                    <th className="px-5 py-3 border-b-2 border-orange-600 bg-orange-500 text-left text-sm font-bold text-white uppercase tracking-wider">
+                    <th className="px-5 py-3 border-b-2 border-[#2563eb] bg-[#2563eb] text-left text-sm font-bold text-white uppercase tracking-wider">
                       Order Date
                     </th>
-                    <th className="px-5 py-3 border-b-2 border-orange-600 bg-orange-500 text-left text-sm font-bold text-white uppercase tracking-wider">
+                    <th className="px-5 py-3 border-b-2 border-[#2563eb] bg-[#2563eb] text-left text-sm font-bold text-white uppercase tracking-wider">
                       Status
                     </th>
                   </tr>

@@ -50,8 +50,8 @@ const ManageOrders = () => {
       {/* Heading Title */}
       <div className="lg:pt-3 md:pt-3 pt-2 lg:px-3 md:px-3 px-0 mx-2">
         <div className="text-xl bg-white lg:w-60 w-full flex items-center gap-x-2 px-5">
-          <BsGearFill className="text-orange-600" />
-          <h3 className="font-semibold text-orange-600 py-1.5">Manage Orders</h3>
+          <BsGearFill className="text-[#2563eb]" />
+          <h3 className="font-semibold text-[#0b1144] py-1.5">Manage Orders</h3>
         </div>
       </div>
       {orders?.length > 0 ? (
@@ -61,28 +61,28 @@ const ManageOrders = () => {
               <table className="min-w-full leading-normal">
                 <thead>
                   <tr>
-                    <th className="px-5 py-3 border-b-2 border-orange-600 bg-orange-500 text-left text-sm font-bold text-white uppercase tracking-wider">
+                    <th className="px-5 py-3 border-b-2 border-[#2563eb] bg-[#2563eb] text-left text-sm font-bold text-white uppercase tracking-wider">
                       SL No
                     </th>
-                    <th className="px-5 py-3 border-b-2 border-orange-600 bg-orange-500 text-left text-sm font-bold text-white uppercase tracking-wider">
+                    <th className="px-5 py-3 border-b-2 border-[#2563eb] bg-[#2563eb] text-left text-sm font-bold text-white uppercase tracking-wider">
                       Product Name
                     </th>
-                    <th className="px-5 py-3 border-b-2 border-orange-600 bg-orange-500 text-left text-sm font-bold text-white uppercase tracking-wider">
+                    <th className="px-5 py-3 border-b-2 border-[#2563eb] bg-[#2563eb] text-left text-sm font-bold text-white uppercase tracking-wider">
                       Quantity
                     </th>
-                    <th className="px-5 py-3 border-b-2 border-orange-600 bg-orange-500 text-left text-sm font-bold text-white uppercase tracking-wider">
+                    <th className="px-5 py-3 border-b-2 border-[#2563eb] bg-[#2563eb] text-left text-sm font-bold text-white uppercase tracking-wider">
                       Shipping Address
                     </th>
-                    <th className="px-5 py-3 border-b-2 border-orange-600 bg-orange-500 text-left text-sm font-bold text-white uppercase tracking-wider">
+                    <th className="px-5 py-3 border-b-2 border-[#2563eb] bg-[#2563eb] text-left text-sm font-bold text-white uppercase tracking-wider">
                       Total Amount
                     </th>
-                    <th className="px-5 py-3 border-b-2 border-orange-600 bg-orange-500 text-left text-sm font-bold text-white uppercase tracking-wider">
+                    <th className="px-5 py-3 border-b-2 border-[#2563eb] bg-[#2563eb] text-left text-sm font-bold text-white uppercase tracking-wider">
                       Status
                     </th>
-                    <th className="px-5 py-3 border-b-2 border-orange-600 bg-orange-500 text-left text-sm font-bold text-white uppercase tracking-wider">
+                    <th className="px-5 py-3 border-b-2 border-[#2563eb] bg-[#2563eb] text-left text-sm font-bold text-white uppercase tracking-wider">
                       Order Date
                     </th>
-                    <th className="px-5 py-3 border-b-2 border-orange-600 bg-orange-500 text-left text-sm font-bold text-white uppercase tracking-wider">
+                    <th className="px-5 py-3 border-b-2 border-[#2563eb] bg-[#2563eb] text-left text-sm font-bold text-white uppercase tracking-wider">
                       Action
                     </th>
                   </tr>
@@ -149,7 +149,7 @@ const ManageOrders = () => {
                           ) : (
                             <button
                               onClick={() => approve(order?._id)}
-                              className="h-7 w-7 bg-orange-500 hover:bg-white text-white hover:text-orange-600 border border-orange-600 rounded-full flex justify-center items-center duration-300"
+                              className="h-7 w-7 bg-[#2563eb] hover:bg-white text-white hover:text-[#2563eb] border border-[#2563eb] rounded-full flex justify-center items-center duration-300"
                             >
                               <FaCheck />
                             </button>

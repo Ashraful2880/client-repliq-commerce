@@ -31,8 +31,8 @@ const Sidebar = ({ open }) => {
                 <>
                   <img src={logo} alt="Logo" className="w-8" />
                   <h2 className="font-bold text-2xl text-[#0E2558] logo-font ml-1.5">
-                    <span className="text-[#15A9E3]">H</span>ealth{" "}
-                    <span className="text-[#15A9E3]">O</span>S
+                    <span className="text-[#15A9E3]">R</span>epliq
+                    <span className="text-[#15A9E3]"> C</span>om
                   </h2>
                 </>
               ) : (
@@ -49,12 +49,12 @@ const Sidebar = ({ open }) => {
             } bg-white`}
           >
             <div
-              className={`flex-grow flex flex-col justify-between text-orange-600 h-[91vh] border-r`}
+              className={`flex-grow flex flex-col justify-between text-[#0b1144] h-[91vh] border-r`}
             >
               <nav className="flex flex-col mx-2 my-6 space-y-3 pb-5">
                 <Link
                   to=""
-                  className={`duration-75 text-[17px] py-2 hover:text-orange-600 hover:bg-[#dbeafe] focus:text-orange-600 focus:bg-[#dbeafe] rounded-md flex items-center 
+                  className={`duration-75 text-[17px] py-2 hover:text-[#2563eb] hover:bg-[#dbeafe] focus:text-[#2563eb] focus:bg-[#dbeafe] rounded-md flex items-center 
                 ${
                   open ? "justify-start gap-x-4 pl-4" : "justify-center"
                 } duration-300`}
@@ -83,7 +83,7 @@ const Sidebar = ({ open }) => {
 
                 <Link
                   to="allProducts"
-                  className={`duration-75 text-[17px] py-2 hover:text-orange-600 hover:bg-[#dbeafe] focus:text-orange-600 focus:bg-[#dbeafe] rounded-md flex items-center 
+                  className={`duration-75 text-[17px] py-2 hover:text-[#2563eb] hover:bg-[#dbeafe] focus:text-[#2563eb] focus:bg-[#dbeafe] rounded-md flex items-center 
                 ${
                   open ? "justify-start gap-x-4 pl-4" : "justify-center"
                 } duration-300`}
@@ -112,7 +112,7 @@ const Sidebar = ({ open }) => {
 
                 <Link
                   to="addProduct"
-                  className={`duration-75 text-[17px] py-2 hover:text-orange-600 hover:bg-[#dbeafe] focus:text-orange-600 focus:bg-[#dbeafe] rounded-md flex items-center 
+                  className={`duration-75 text-[17px] py-2 hover:text-[#2563eb] hover:bg-[#dbeafe] focus:text-[#2563eb] focus:bg-[#dbeafe] rounded-md flex items-center 
                   ${
                     open ? "justify-start gap-x-4 pl-4" : "justify-center"
                   } duration-300`}
@@ -141,7 +141,7 @@ const Sidebar = ({ open }) => {
 
                 <Link
                   to="orderList"
-                  className={`duration-75 text-[17px] py-2 hover:text-orange-600 hover:bg-[#dbeafe] focus:text-orange-600 focus:bg-[#dbeafe] rounded-md flex items-center 
+                  className={`duration-75 text-[17px] py-2 hover:text-[#2563eb] hover:bg-[#dbeafe] focus:text-[#2563eb] focus:bg-[#dbeafe] rounded-md flex items-center 
                   ${
                     open ? "justify-start gap-x-4 pl-4" : "justify-center"
                   } duration-300`}
@@ -170,7 +170,7 @@ const Sidebar = ({ open }) => {
 
                 <Link
                   to="manageOrders"
-                  className={`duration-75 text-[17px] py-2 hover:text-orange-600 hover:bg-[#dbeafe] focus:text-orange-600 focus:bg-[#dbeafe] rounded-md flex items-center 
+                  className={`duration-75 text-[17px] py-2 hover:text-[#2563eb] hover:bg-[#dbeafe] focus:text-[#2563eb] focus:bg-[#dbeafe] rounded-md flex items-center 
                   ${
                     open ? "justify-start gap-x-4 pl-4" : "justify-center"
                   } duration-300`}
@@ -199,7 +199,7 @@ const Sidebar = ({ open }) => {
 
                 <Link
                   to="customerList"
-                  className={`duration-75 text-[17px] py-2 hover:text-orange-600 hover:bg-[#dbeafe] focus:text-orange-600 focus:bg-[#dbeafe] rounded-md flex items-center 
+                  className={`duration-75 text-[17px] py-2 hover:text-[#2563eb] hover:bg-[#dbeafe] focus:text-[#2563eb] focus:bg-[#dbeafe] rounded-md flex items-center 
                   ${
                     open ? "justify-start gap-x-4 pl-4" : "justify-center"
                   } duration-300`}
@@ -228,7 +228,7 @@ const Sidebar = ({ open }) => {
 
                 <Link
                   to="addCustomer"
-                  className={`duration-75 text-[17px] py-2 hover:text-orange-600 hover:bg-[#dbeafe] focus:text-orange-600 focus:bg-[#dbeafe] rounded-md flex items-center 
+                  className={`duration-75 text-[17px] py-2 hover:text-[#2563eb] hover:bg-[#dbeafe] focus:text-[#2563eb] focus:bg-[#dbeafe] rounded-md flex items-center 
                   ${
                     open ? "justify-start gap-x-4 pl-4" : "justify-center"
                   } duration-300`}
@@ -257,7 +257,7 @@ const Sidebar = ({ open }) => {
 
                 <Link
                   to="users"
-                  className={`duration-75 text-[17px] py-2 hover:text-orange-600 hover:bg-[#dbeafe] focus:text-orange-600 focus:bg-[#dbeafe] rounded-md flex items-center 
+                  className={`duration-75 text-[17px] py-2 hover:text-[#2563eb] hover:bg-[#dbeafe] focus:text-[#2563eb] focus:bg-[#dbeafe] rounded-md flex items-center 
                   ${
                     open ? "justify-start gap-x-4 pl-4" : "justify-center"
                   } duration-300`}
@@ -286,7 +286,7 @@ const Sidebar = ({ open }) => {
 
                 <Link
                   to="overview"
-                  className={`duration-75 text-[17px] py-2 hover:text-orange-600 hover:bg-[#dbeafe] focus:text-orange-600 focus:bg-[#dbeafe] rounded-md flex items-center 
+                  className={`duration-75 text-[17px] py-2 hover:text-[#2563eb] hover:bg-[#dbeafe] focus:text-[#2563eb] focus:bg-[#dbeafe] rounded-md flex items-center 
                   ${
                     open ? "justify-start gap-x-4 pl-4" : "justify-center"
                   } duration-300`}
@@ -315,7 +315,7 @@ const Sidebar = ({ open }) => {
 
                 <Link
                   to="summary"
-                  className={`duration-75 text-[17px] py-2 hover:text-orange-600 hover:bg-[#dbeafe] focus:text-orange-600 focus:bg-[#dbeafe] rounded-md flex items-center 
+                  className={`duration-75 text-[17px] py-2 hover:text-[#2563eb] hover:bg-[#dbeafe] focus:text-[#2563eb] focus:bg-[#dbeafe] rounded-md flex items-center 
                   ${
                     open ? "justify-start gap-x-4 pl-4" : "justify-center"
                   } duration-300`}
@@ -344,7 +344,7 @@ const Sidebar = ({ open }) => {
 
                 <Link
                   to="makeadmin"
-                  className={`duration-75 text-[17px] py-2 hover:text-orange-600 hover:bg-[#dbeafe] focus:text-orange-600 focus:bg-[#dbeafe] rounded-md flex items-center 
+                  className={`duration-75 text-[17px] py-2 hover:text-[#2563eb] hover:bg-[#dbeafe] focus:text-[#2563eb] focus:bg-[#dbeafe] rounded-md flex items-center 
                   ${
                     open ? "justify-start gap-x-4 pl-4" : "justify-center"
                   } duration-300`}
