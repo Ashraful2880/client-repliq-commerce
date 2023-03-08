@@ -29,6 +29,7 @@ import OrderList from "./Components/Pages/Dashboard/OrderList/OrderList";
 import ManageOrders from "./Components/Pages/Dashboard/ManageOrders/ManageOrders";
 import CustomerList from "./Components/Pages/Dashboard/CustomerList/CustomerList";
 import Users from "./Components/Pages/Dashboard/Users/Users";
+import PrivateRoute from "./Components/PrivateRoute/PrivateRoute";
 
 function App() {
   return (
@@ -56,18 +57,18 @@ function App() {
           <Route
             path="/checkout"
             element={
-              // <PrivateRoute>
-              <CheckOut />
-              // </PrivateRoute>
+              <PrivateRoute>
+                <CheckOut />
+              </PrivateRoute>
             }
           />
 
           <Route
             path="/dashboard"
             element={
-              // <PrivateRoute>
-              <Dashboard />
-              // </PrivateRoute>
+              <PrivateRoute>
+                <Dashboard />
+              </PrivateRoute>
             }
           >
             <Route path="" element={<DashboardHome />} />

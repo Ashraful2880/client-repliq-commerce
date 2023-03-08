@@ -75,22 +75,20 @@ const MiddleHeader = () => {
                   </Link>
                 </div>
               )}
+              <Link
+                to="/dashboard"
+                className="font-bold text-white hover:text-[#0b1144] bg-[#0b1144] hover:bg-white px-2 py-1 border border-[#0b1144] rounded-md duration-300 mx-3"
+              >
+                DASHBOARD
+              </Link>
               {loggedInUser && (
-                <div className="flex items-center gap-x-3">
-                  <Link
-                    to="/dashboard"
-                    className="font-bold text-white hover:text-[#0b1144] bg-[#0b1144] hover:bg-white px-2 py-1 border border-[#0b1144] rounded-md duration-300"
-                  >
-                    DASHBOARD
-                  </Link>
-                  <button
-                    onClick={handleLogOut}
-                    className="font-bold text-white hover:text-orange-600 bg-orange-600 hover:bg-white px-3 py-1 border border-orange-600 rounded-md duration-300 flex gap-x-2 items-center"
-                  >
-                    <span>Log Out</span>
-                    <MdLogout className="text-lg animate-pulse" />
-                  </button>
-                </div>
+                <button
+                  onClick={handleLogOut}
+                  className="font-bold text-white hover:text-orange-600 bg-orange-600 hover:bg-white px-3 py-1 border border-orange-600 rounded-md duration-300 flex gap-x-2 items-center"
+                >
+                  <span>Log Out</span>
+                  <MdLogout className="text-lg animate-pulse" />
+                </button>
               )}
             </div>
           </div>
