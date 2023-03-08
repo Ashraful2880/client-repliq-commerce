@@ -111,7 +111,7 @@ const AddProduct = () => {
             Fill The Product Details
           </p>
           <h3 className="text-3xl sm:text-4xl leading-normal font-extrabold tracking-tight text-gray-900">
-            To <span className="text-orange-600">Add A Product</span>
+            To <span className="text-[#2563eb]">Add A Product</span>
           </h3>
         </div>
 

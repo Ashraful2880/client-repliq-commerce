@@ -47,7 +47,7 @@ const AddCustomer = () => {
             Fill With Customer Info
           </p>
           <h3 className="text-3xl sm:text-4xl leading-normal font-extrabold tracking-tight text-gray-900">
-            To <span className="text-orange-600">Add a Customer</span>
+            To <span className="text-[#2563eb]">Add a Customer</span>
           </h3>
         </div>
 
