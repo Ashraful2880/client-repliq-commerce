@@ -168,6 +168,15 @@ input[type="number"] {
   -moz-appearance: textfield;
 }
 
+/* Promo Section Style */
+.promo-background {
+  background-image: url("./Assets/Images/Others/hot-deal.png");
+  background-position: center center;
+  /* background-attachment: fixed; */
+  background-repeat: no-repeat;
+  min-height: 60vh;
+}
+
 /* Header Button Style */
 .header-button:before,
 .header-button:after {
