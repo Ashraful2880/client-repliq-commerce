@@ -19,13 +19,11 @@ const MobileNav = () => {
   useEffect(() => {
     const myCartProduct = localStorage.getItem("cart");
     setItems(JSON.parse(myCartProduct));
-    setChanges(changes + 1);
   }, [items, changes]);
 
   useEffect(() => {
     const wishListProduct = localStorage.getItem("wishList");
     setWishListItems(JSON.parse(wishListProduct));
-    setChanges(changes + 1);
   }, [wishListItems, changes]);
 
   return (

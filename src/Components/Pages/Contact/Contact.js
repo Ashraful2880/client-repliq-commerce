@@ -6,79 +6,102 @@ import { TbLocation } from "react-icons/tb";
 
 const Contact = () => {
   return (
-    <div className="contact-bannar">
-      <div className="max-w-5xl mx-auto px-1 lg:px-8 py-20">
-        <div
-          className=" w-full sm:p-12 rounded-xl px-2 py-10"
-          style={{ background: "#0000009e" }}
-        >
-          <p className="lg:text-4xl md:text-3xl sm:text-2xl font-bold leading-7 text-center text-white lg:mb-5 md:mb-3 sm;mb-2">
-            Just Drop a Message For
-          </p>
-          <p className="lg:text-3xl md:text-2xl sm:text-xl font-bold leading-7 text-center text-white mb-4">
-            Contact Us
-          </p>
-          <form>
-            <div className="md:flex items-center lg:mt-12 md:mt-10 sm:mt-4">
-              <div className="w-full md:w-1/2 flex flex-col">
-                <label className="font-semibold leading-none text-white">
-                  Name
-                </label>
-                <input
-                  type="text"
-                  name="name"
-                  className="leading-none p-3 focus:outline-none focus:border-orange-500 mt-4 border-0 bg-white rounded"
-                  placeholder="Enter Your Name"
-                  required
-                />
+    <div className="bg-[#ebf0ff] min-h-screen">
+      <div className="lg:py-16 py-8">
+        <div className="flex flex-col md:flex-row md:space-x-6 space-y-6 md:space-y-0 bg-[#2563eb] w-full max-w-5xl p-12 rounded-xl shadow-lg text-white overflow-hidden mx-auto">
+          <div className="flex flex-col space-y-8 justify-between">
+            <div className="text-left">
+              <h1 className="font-bold text-4xl tracking-wide mb-2">
+                Contact Us
+              </h1>
+              <p className="pt-2 text-indigo-100 text-sm">
+                For all your non-existant company needs Fake Corp are here to
+                help, do not hesitate to contact us!
+              </p>
+            </div>
+
+            <div className="flex flex-col space-y-6">
+              <div className="inline-flex space-x-2 items-center w-60">
+                <VscCallOutgoing className="text-3xl mr-1 text-white" />
+                <span>+111 345 214 213</span>
               </div>
-              <div className="w-full md:w-1/2 flex flex-col md:ml-6 md:mt-0 mt-4">
-                <label className="font-semibold leading-none text-white">
-                  Phone
-                </label>
-                <input
-                  type="number"
-                  name="number"
-                  className="leading-none p-3 focus:outline-none focus:border-orange-500 mt-4 border-0 bg-white rounded"
-                  placeholder="Enter Contact Number"
-                />
+              <div className="inline-flex space-x-2 items-center">
+                <BsEnvelope className="text-3xl mr-1 text-white" />
+                <span>hello@fakecorp.com</span>
+              </div>
+              <div className="inline-flex space-x-2 items-center">
+                <TbLocation className="text-3xl mr-1 text-white" />
+                <span>111 Fake Boulevard, Fakesville, FYC</span>
               </div>
             </div>
-            <div className="md:flex items-center mt-8">
-              <div className="w-full flex flex-col">
-                <label className="font-semibold leading-none text-white">
-                  Email
-                </label>
-                <input
-                  type="email"
-                  className="leading-none p-3 focus:outline-none focus:border-orange-500 mt-4 border-0 bg-white rounded"
-                  placeholder="Enter Your Email"
-                  required
-                />
-              </div>
-            </div>
-            <div>
-              <div className="w-full flex flex-col mt-8">
-                <label className="font-semibold leading-none text-white">
-                  Message
-                </label>
-                <textarea
-                  type="text"
-                  name="message"
-                  className="h-40 text-base leading-none p-3 focus:outline-none focus:border-orange-500 mt-4 bg-whiteborder-0 rounded"
-                  placeholder="Your Message"
-                ></textarea>
-              </div>
-            </div>
-            <div className="w-full">
-              <button
-                type="submit"
-                className="mt-9 font-semibold leading-none py-4 px-10 bg-transparent border border-orange-500 text-orange-500 hover:bg-orange-500 hover:text-white rounded-lg duration-300"
+            <div className="flex space-x-4">
+              <a
+                href="d"
+                className="h-9 w-9 text-white hover:text-[#2563eb] border border-white hover:border-[#2563eb] rounded-full flex justify-center items-center hover:bg-white duration-300"
               >
-                Send message
-              </button>
+                <FiFacebook className="text-xl" />
+              </a>
+              <a
+                href="d"
+                className="h-9 w-9 text-white hover:text-[#2563eb] border border-white hover:border-[#2563eb] rounded-full flex justify-center items-center hover:bg-white duration-300"
+              >
+                <FiInstagram className="text-xl" />
+              </a>
+              <a
+                href="d"
+                className="h-9 w-9 text-white hover:text-[#2563eb] border border-white hover:border-[#2563eb] rounded-full flex justify-center items-center hover:bg-white duration-300"
+              >
+                <FiTwitter className="text-xl" />
+              </a>
+              <a
+                href="."
+                className="h-9 w-9 text-white hover:text-[#2563eb] border border-white hover:border-[#2563eb] rounded-full flex justify-center items-center hover:bg-white duration-300"
+              >
+                <FiLinkedin className="text-xl" />
+              </a>
             </div>
-          </form>
+          </div>
+          <div className="relative">
+            <div className="absolute z-0 w-40 h-40 bg-indigo-400 rounded-full -right-28 -top-28"></div>
+            <div className="absolute z-0 w-40 h-40 bg-indigo-400 rounded-full -left-28 -bottom-16"></div>
+            <div className="relative z-10 bg-white rounded-xl shadow-lg p-8 text-gray-600 md:w-96">
+              <form className="flex flex-col space-y-4">
+                <div>
+                  <label className="text-sm text-left inline-block w-full font-semibold">
+                    Name
+                  </label>
+                  <input
+                    type="text"
+                    placeholder="Name"
+                    className="ring-1 ring-gray-300 mt-2 w-full rounded-md px-4 py-2 outline-none focus:ring-2 focus:ring-[#1678FB]"
+                  />
+                </div>
+                <div>
+                  <label className="text-sm text-left inline-block w-full font-semibold">
+                    Email
+                  </label>
+                  <input
+                    type="email"
+                    placeholder="Email"
+                    className="ring-1 ring-gray-300 mt-2 w-full rounded-md px-4 py-2 outline-none focus:ring-2 focus:ring-[#1678FB]"
+                  />
+                </div>
+                <div>
+                  <label className="text-sm text-left inline-block w-full font-semibold">
+                    Message
+                  </label>
+                  <textarea
+                    placeholder="Message"
+                    rows="4"
+                    className="ring-1 ring-gray-300 mt-2 w-full rounded-md px-4 py-2 outline-none focus:ring-2 focus:ring-[#1678FB]"
+                  ></textarea>
+                </div>
+                <button className="inline-block bg-[#1678fb] border border-[#1678fb] hover:bg-transparent hover:text-[#1678fb] duration-500 font-semibold rounded-lg px-6 py-3 uppercase text-sm text-white">
+                  Send Message
+                </button>
+              </form>
+            </div>
+          </div>
         </div>
       </div>
       <div className="mb-2">

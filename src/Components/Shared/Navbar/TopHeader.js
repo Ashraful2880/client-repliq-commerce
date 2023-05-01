@@ -19,28 +19,28 @@ const TopHeader = () => {
               <a
                 href="https://www.facebook.com/ashraful2880"
                 target="blank"
-                className="text-white text-lg"
+                className="text-white text-lg hover:text-[#2563eb] duration-300 transition-colors ease-in-out hover:bg-white p-1 rounded-full"
               >
                 <FaFacebookF />
               </a>
               <a
                 href="https://www.facebook.com/ashraful2880"
                 target="blank"
-                className="text-white text-lg"
+                className="text-white text-lg hover:text-[#2563eb] duration-300 transition-colors ease-in-out hover:bg-white p-1 rounded-full"
               >
                 <CgTwitter />
               </a>
               <a
                 href="https://www.facebook.com/ashraful2880"
                 target="blank"
-                className="text-white text-lg"
+                className="text-white text-lg hover:text-[#2563eb] duration-300 transition-colors ease-in-out hover:bg-white p-1 rounded-full"
               >
                 <GrInstagram />
               </a>
               <a
                 href="https://www.facebook.com/ashraful2880"
                 target="blank"
-                className="text-white text-lg"
+                className="text-white text-lg hover:text-[#2563eb] duration-300 transition-colors ease-in-out hover:bg-white p-1 rounded-full"
               >
                 <ImGooglePlus />
               </a>

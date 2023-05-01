@@ -167,3 +167,67 @@ input::-webkit-inner-spin-button {
 input[type="number"] {
   -moz-appearance: textfield;
 }
+
+/* Header Button Style */
+.header-button:before,
+.header-button:after {
+  content: "";
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  background: #2563eb;
+  transition: transform 0.6s;
+  will-change: transform;
+}
+.header-button:before {
+  left: -100%;
+}
+.header-button:after {
+  left: 100%;
+}
+.header-button:hover:before {
+  transform: translateX(100%);
+}
+.header-button:hover:after {
+  transform: translateX(-100%);
+}
+
+/* All Button Style */
+.button-style {
+  --tilt: 40px;
+}
+
+.button-style:before,
+.button-style:after {
+  content: "";
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: -100%;
+  background: white !important;
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    calc(100% - var(--tilt)) 50%,
+    100% 100%,
+    0 100%
+  );
+  transition: transform 0.6s;
+}
+.button-style:before {
+  left: -100%;
+}
+.button-style:after {
+  left: 100%;
+  transform: rotate(180deg);
+}
+.button-style:hover:before {
+  transform: translateX(100%);
+}
+.button-style:hover:after {
+  transform: rotate(180deg) translateX(100%);
+}

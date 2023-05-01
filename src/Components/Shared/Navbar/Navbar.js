@@ -9,10 +9,10 @@ import megaMenu5 from "../../../Assets/Images/Mega-menu/mega-menu-5.jpg";
 
 const Navbar = () => {
   return (
-    <div className="w-full flex items-center gap-x-12 relative z-50">
+    <div className="w-full flex items-center gap-x-4 relative z-50 py-3.5">
       <Link
         to="/home"
-        className="text-md font-semibold hover:text-orange-600 focus:text-orange-600 duration-300"
+        className="header-button relative rounded-md overflow-hidden group text-md font-semibold hover:text-white focus:text-[#2563eb] duration-300 px-3 py-1.5"
       >
         Home
       </Link>
@@ -20,7 +20,7 @@ const Navbar = () => {
         <li className="group">
           <Link
             to="/shopCategory/All"
-            className="text-md font-semibold hover:text-orange-600 focus:text-orange-600 duration-300 my-0 flex items-end py-5"
+            className="text-md font-semibold hover:text-white focus:text-[#2563eb] duration-300 my-0 flex items-end header-button relative rounded-md overflow-hidden px-3 py-1.5"
           >
             <span className="font-semibold "> Browse Categories </span>
             <FaAngleDown className="ml-1 text-md text-[#2563eb]" />
@@ -36,35 +36,35 @@ const Navbar = () => {
                 <div className="text-gray-100 text-md flex flex-col">
                   <Link
                     to="/shopCategory/All"
-                    className="mb-4 hover:text-orange-600 duration-300 flex items-center gap-x-1"
+                    className="mb-4 hover:text-white duration-300 flex items-center gap-x-1"
                   >
                     <FaAngleDoubleRight className="mr-2 text-md" />
                     <span> All Products</span>
                   </Link>
                   <Link
                     to="/shopCategory/men"
-                    className="mb-4 hover:text-orange-600 duration-300 flex items-center gap-x-1"
+                    className="mb-4 hover:text-white duration-300 flex items-center gap-x-1"
                   >
                     <FaAngleDoubleRight className="mr-2 text-md" />
                     <span> Mens Products </span>
                   </Link>
                   <Link
                     to="/shopCategory/Women"
-                    className="mb-4 hover:text-orange-600 duration-300 flex items-center gap-x-1"
+                    className="mb-4 hover:text-white duration-300 flex items-center gap-x-1"
                   >
                     <FaAngleDoubleRight className="mr-2 text-md" />
                     <span> Womens Products </span>
                   </Link>
                   <Link
                     to="/shopCategory/Kids"
-                    className="mb-4 hover:text-orange-600 duration-300 flex items-center gap-x-1"
+                    className="mb-4 hover:text-white duration-300 flex items-center gap-x-1"
                   >
                     <FaAngleDoubleRight className="mr-2 text-md" />
                     Kids Products
                   </Link>
                   <Link
                     to="/shopCategory/BagPack"
-                    className="mb-4 hover:text-orange-600 duration-300 flex items-center gap-x-1"
+                    className="mb-4 hover:text-white duration-300 flex items-center gap-x-1"
                   >
                     <FaAngleDoubleRight className="mr-2 text-md" />
                     BagPack Products
@@ -89,35 +89,35 @@ const Navbar = () => {
                 <div className="text-gray-100 text-md flex flex-col">
                   <Link
                     to="/Shoes"
-                    className="mb-4 hover:text-orange-600 duration-300 flex items-center gap-x-1"
+                    className="mb-4 hover:text-white duration-300 flex items-center gap-x-1"
                   >
                     <FaAngleDoubleRight className="mr-2 text-md" />
                     All Shoes
                   </Link>
                   <Link
                     to="/Others"
-                    className="mb-4 hover:text-orange-600 duration-300 flex items-center gap-x-1"
+                    className="mb-4 hover:text-white duration-300 flex items-center gap-x-1"
                   >
                     <FaAngleDoubleRight className="mr-2 text-md" />
                     Others Products
                   </Link>
                   <Link
                     to="/Uncategorize"
-                    className="mb-4 hover:text-orange-600 duration-300 flex items-center gap-x-1"
+                    className="mb-4 hover:text-white duration-300 flex items-center gap-x-1"
                   >
                     <FaAngleDoubleRight className="mr-2 text-md" />
                     Uncategorized Products
                   </Link>
                   <Link
                     to="shopCategory/All"
-                    className="mb-4 hover:text-orange-600 duration-300 flex items-center gap-x-1"
+                    className="mb-4 hover:text-white duration-300 flex items-center gap-x-1"
                   >
                     <FaAngleDoubleRight className="mr-2 text-md" />
                     Hot Sales
                   </Link>
                   <Link
                     to="shopCategory/All"
-                    className="mb-4 hover:text-orange-600 duration-300 flex items-center gap-x-1"
+                    className="mb-4 hover:text-white duration-300 flex items-center gap-x-1"
                   >
                     <FaAngleDoubleRight className="mr-2 text-md" />
                     Top Deals
@@ -194,7 +194,7 @@ const Navbar = () => {
         </li>
       </ul>
       <Link
-        className="text-md font-semibold hover:text-orange-600 focus:text-orange-600 duration-300 flex items-center gap-x-1"
+        className="header-button relative rounded-md overflow-hidden group text-md font-semibold hover:text-white focus:text-[#2563eb] duration-300 px-3 py-1.5"
         to="/shopCategory/All"
       >
         Shop Now
@@ -202,19 +202,19 @@ const Navbar = () => {
 
       <Link
         to="/about"
-        className="text-md font-semibold hover:text-orange-600 focus:text-orange-600 duration-300 flex items-center gap-x-1"
+        className="header-button relative rounded-md overflow-hidden group text-md font-semibold hover:text-white focus:text-[#2563eb] duration-300 px-3 py-1.5"
       >
         About
       </Link>
       <Link
         to="/blogs"
-        className="text-md font-semibold hover:text-orange-600 focus:text-orange-600 duration-300 flex items-center gap-x-1"
+        className="header-button relative rounded-md overflow-hidden group text-md font-semibold hover:text-white focus:text-[#2563eb] duration-300 px-3 py-1.5"
       >
         Blog
       </Link>
       <Link
         to="/contact"
-        className="text-md font-semibold hover:text-orange-600 focus:text-orange-600 duration-300 flex items-center gap-x-1"
+        className="header-button relative rounded-md overflow-hidden group text-md font-semibold hover:text-white focus:text-[#2563eb] duration-300 px-3 py-1.5"
       >
         Contact
       </Link>

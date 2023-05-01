@@ -19,13 +19,11 @@ const MainHeader = () => {
   useEffect(() => {
     const myCartProduct = localStorage.getItem("cart");
     setItems(JSON.parse(myCartProduct));
-    setChanges(changes + 1);
   }, [items, changes]);
 
   useEffect(() => {
     const wishListProduct = localStorage.getItem("wishList");
     setWishListItems(JSON.parse(wishListProduct));
-    setChanges(changes + 1);
   }, [wishListItems, changes]);
 
   return (
@@ -38,33 +36,31 @@ const MainHeader = () => {
                 <div className="lg:block hidden">
                   <Navbar />
                 </div>
-                <div className="lg:hidden block">
-                  <MobileNav />
-                </div>
+                <div className="lg:hidden block">{/* <MobileNav /> */}</div>
               </div>
 
               <div className="lg:block md:block hidden">
                 <div className="flex items-center gap-x-6">
                   <Link
                     to="/wishlist"
-                    className="relative hover:text-orange-600 duration-300"
+                    className="relative hover:text-[#2563eb] duration-300"
                   >
                     <FiHeart className="text-2xl" />
-                    <div className="h-5 w-5 rounded-full bg-orange-500 flex flex-col justify-center items-center p-2 text-white font-bold absolute -top-4 left-3">
+                    <div className="h-5 w-5 rounded-full bg-[#2563eb] flex flex-col justify-center items-center p-2 text-white font-bold absolute -top-4 left-3">
                       {wishListItems?.length || 0}
                     </div>
                   </Link>
                   <Link
                     to="/cart"
-                    className="relative hover:text-orange-600 duration-300"
+                    className="relative hover:text-[#2563eb] duration-300"
                   >
-                    <div className="h-5 w-5 rounded-full bg-orange-500 flex flex-col justify-center items-center p-2 text-white font-bold absolute -top-4 left-3">
+                    <div className="h-5 w-5 rounded-full bg-[#2563eb] flex flex-col justify-center items-center p-2 text-white font-bold absolute -top-4 left-3">
                       {items?.length || 0}
                     </div>
                     <FiShoppingBag className="text-2xl" />
                   </Link>
                   <Link to="/cart">
-                    <p className="font-semibold hover:text-orange-600 duration-300 cursor-pointer">
+                    <p className="font-semibold hover:text-[#2563eb] duration-300 cursor-pointer">
                       ${totalPrice}
                     </p>
                   </Link>
