@@ -58,6 +58,7 @@ const ShopByCategory = () => {
               <button
                 onClick={() => setSearch(singleProduct?._id)}
                 key={singleProduct?._id}
+                className="group"
               >
                 <Link
                   to={`/shopCategory/${singleProduct?.link}`}
@@ -66,7 +67,7 @@ const ShopByCategory = () => {
                   <div className="border h-36 w-36 rounded-md hover:scale-110 duration-300">
                     <img src={singleProduct?.product} alt="Product" />
                   </div>
-                  <h1 className="mt-2 mb-6 text-lg font-semibold">
+                  <h1 className="mt-2 mb-6 text-lg font-semibold group-hover:text-[#2563eb] duration-300 transition-colors ease-in-out">
                     {singleProduct?.title}
                   </h1>
                 </Link>
