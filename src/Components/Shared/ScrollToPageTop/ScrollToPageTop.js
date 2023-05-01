@@ -2,7 +2,8 @@ import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
 export default function ScrollToPageTop({ children }) {
-  const { pathname } = useLocation();
+  const location = useLocation();
+  const pathName = location?.pathname;
 
   useEffect(() => {
     const canControlScrollRestoration = "scrollRestoration" in window.history;
@@ -11,7 +12,7 @@ export default function ScrollToPageTop({ children }) {
     }
 
     window.scrollTo(0, 0);
-  }, [pathname]);
+  }, [pathName]);
 
   return children;
 }

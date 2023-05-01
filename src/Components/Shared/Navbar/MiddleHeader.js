@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import logo from "../../../Assets/Images/logo.png";
 import { FaEnvelope, FaLocationArrow, FaPhoneAlt } from "react-icons/fa";
 import { Link, useLocation, useNavigate } from "react-router-dom";
@@ -10,7 +10,13 @@ const MiddleHeader = () => {
   const navigate = useNavigate();
   const location = useLocation();
   const pathName = location?.pathname;
-  const loggedInUser = JSON.parse(localStorage.getItem("token"))?.token;
+
+  let loggedInUser;
+  try {
+    loggedInUser = JSON.parse(localStorage.getItem("token")).token;
+  } catch (error) {
+    loggedInUser = null;
+  }
 
   const handleLogOut = () => {
     localStorage.removeItem("token");

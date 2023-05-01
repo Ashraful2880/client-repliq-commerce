@@ -1,14 +1,13 @@
 import React from "react";
 import TopHeader from "./TopHeader";
-import MiddleHeader from "./MiddleHeader";
 import MainHeader from "./MainHeader";
-
+import MiddleHeader from "./MiddleHeader";
 
 const Header = () => {
     return (
         <>
             <TopHeader />
-            <MiddleHeader />
+            <MiddleHeader /> 
             <MainHeader />
         </>
     )
