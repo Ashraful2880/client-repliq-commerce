@@ -14,6 +14,7 @@ import NewsLater from "./NewsLater/NewsLater";
 import Application from "./Application/Application";
 import BrandOfWeek from "./BrandOfWeek/BrandOfWeek";
 import Blogs from "../Blogs/Blogs";
+import Team from "../Team/Team";
 
 const Home = () => {
   return (
@@ -30,9 +31,10 @@ const Home = () => {
       <NewArrival />
       <PromoLast />
       <Testimonial />
-      <NewsLater />
+      <Team/>
       <Application />
       <Blogs />
+      <NewsLater />
     </>
   );
 };

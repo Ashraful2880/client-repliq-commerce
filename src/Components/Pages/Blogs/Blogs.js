@@ -21,13 +21,13 @@ const Blogs = () => {
   }, []);
 
   return (
-    <div className="min-h-screen">
+    <div className="">
       {blogs?.length > 0 ? (
         <div className="container mx-auto">
           <div className="lg:text-left text-center pt-6">
             <h1 className="text-4xl font-bold">
               From Our
-              <span className="text-[#2563eb] "> Blogs</span>
+              <span className="text-[#2563eb]"> Blogs</span>
             </h1>
             <p className="text-md text-gray-600">
               View Best Selling products in last month
@@ -59,7 +59,7 @@ const Blogs = () => {
             >
               {blogs?.map((blog, key) => (
                 <SwiperSlide key={key}>
-                  <div className="border rounded-lg mx-auto duration-300 bg-white lg:px-0 px-2">
+                  <div className="border rounded-lg mx-auto duration-300 bg-white lg:px-0 px-2 hover:shadow-xl hover:border-transparent">
                     <div className="overflow-hidden">
                       <img
                         className="w-full h-full min-h-[200px] rounded-t-lg"

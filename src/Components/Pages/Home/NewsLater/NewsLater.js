@@ -3,7 +3,7 @@ import React from "react";
 const NewsLater = () => {
   return (
     <div>
-      <div className="2xl:mx-auto  mx-4 pt-16 pb-5">
+      <div className="2xl:mx-auto  mx-4 pt-16">
         <div className="w-full relative flex items-center justify-center">
           <img
             src="https://i.ibb.co/4sYZ8gC/img-2.png"
@@ -22,7 +22,7 @@ const NewsLater = () => {
           />
           <div className="bg-gray-800 bg-opacity-80 md:my-16 lg:py-16 py-10 w-full md:mx-24 md:px-12 px-4 flex flex-col items-center justify-center relative z-40">
             <h1 className="text-4xl font-semibold leading-9 text-white text-center">
-              Don’t miss out!
+              Don’t Miss Out!
             </h1>
             <p className="text-base leading-normal text-center text-white mt-6">
               Subscribe to your newsletter to stay in the loop. Our newsletter
@@ -34,7 +34,7 @@ const NewsLater = () => {
                 className="border border-white sm:border-transparent text-base w-full font-medium leading-none text-white p-4 focus:outline-none bg-transparent placeholder-white"
                 placeholder="Email Address"
               />
-              <button className="focus:outline-none focus:ring-offset-2 focus:ring border border-white sm:border-transparent w-full sm:w-auto bg-white py-4 px-6 hover:bg-opacity-75">
+              <button className="focus:outline-none focus:ring-offset-2 focus:ring border-l border-l-transparent hover:border-l-white w-full sm:w-auto bg-[#2563eb] py-4 px-6 hover:bg-opacity-75 text-white hover:bg-transparent duration-300 transition-colors ease-in-out">
                 Subscribe
               </button>
             </div>

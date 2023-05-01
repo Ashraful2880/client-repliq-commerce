@@ -240,3 +240,19 @@ input[type="number"] {
 .button-style:hover:after {
   transform: rotate(180deg) translateX(100%);
 }
+
+/* Team Area Design */
+.overlay-details {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.849);
+  overflow: hidden;
+  width: 100%;
+  height: 0%;
+  transition: .5s ease;
+}
+.team-container:hover .overlay-details{
+  height: 20%;
+}
