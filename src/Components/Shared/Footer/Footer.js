@@ -18,7 +18,7 @@ const Footer = () => {
   return (
     <>
       {!pathName.includes("/dashboard") && (
-        <div className="bg-[#0b1144]">
+        <div className="footer-container">
           {/* Top footer Area */}
           <div className="border-b border-b-gray-500">
             <div className="container mx-auto grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 items-center lg:py-14 py-6">

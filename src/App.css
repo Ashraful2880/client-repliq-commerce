@@ -251,8 +251,14 @@ input[type="number"] {
   overflow: hidden;
   width: 100%;
   height: 0%;
-  transition: .5s ease;
+  transition: 0.5s ease;
 }
-.team-container:hover .overlay-details{
+.team-container:hover .overlay-details {
   height: 20%;
+}
+
+/* Footer Area Style */
+.footer-container {
+  background-image: url("./Assets/Images/Others/footer.png"),
+    linear-gradient(#111822, #111822);
 }
