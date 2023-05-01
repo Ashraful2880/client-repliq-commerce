@@ -17,7 +17,7 @@ const PromoBannar = () => {
             className="w-full pb-12"
           />
         </Link>
-        <div className="absolute right-40 top-52 uppercase lg:block hidden">
+        <div className="absolute right-40 top-52 uppercase lg:block hidden text-left">
           <h3 className="text-3xl text-[#2563eb] font-bold">
             Sales Offer & Discount Only
           </h3>
@@ -28,7 +28,7 @@ const PromoBannar = () => {
             New Product Purchase up to 50% Off All Now Fast
           </p>
           <p className="text-lg text-gray-600 font-semibold">Shopping</p>
-          <button className="upparcase bg-[#2563eb] text-white hover:text-[#2563eb] hover:bg-white border border-[#2563eb] px-4 py-1.5 font-semibold rounded-md mt-5 duration-300">
+          <button className="button-style relative overflow-hidden upparcase bg-[#2563eb] text-white hover:text-[#2563eb] hover:bg-white border border-[#2563eb] px-4 py-1.5 font-semibold rounded-md mt-5 duration-300 z-0">
             Shop Now
           </button>
         </div>

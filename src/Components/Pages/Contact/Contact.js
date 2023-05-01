@@ -36,26 +36,30 @@ const Contact = () => {
             </div>
             <div className="flex space-x-4">
               <a
-                href="d"
-                className="h-9 w-9 text-white hover:text-[#2563eb] border border-white hover:border-[#2563eb] rounded-full flex justify-center items-center hover:bg-white duration-300"
+                href="https://www.facebook.com"
+                target="blank"
+                className="h-9 w-9 text-[#2563eb] hover:text-white border border-[#2563eb] hover:border-white rounded-full flex justify-center items-center bg-white hover:bg-[#2563eb] duration-300"
               >
                 <FiFacebook className="text-xl" />
               </a>
               <a
-                href="d"
-                className="h-9 w-9 text-white hover:text-[#2563eb] border border-white hover:border-[#2563eb] rounded-full flex justify-center items-center hover:bg-white duration-300"
+                 href="https://www.instragram.com"
+                 target="blank"
+                className="h-9 w-9 text-[#2563eb] hover:text-white border border-[#2563eb] hover:border-white rounded-full flex justify-center items-center bg-white hover:bg-[#2563eb] duration-300"
               >
                 <FiInstagram className="text-xl" />
               </a>
               <a
-                href="d"
-                className="h-9 w-9 text-white hover:text-[#2563eb] border border-white hover:border-[#2563eb] rounded-full flex justify-center items-center hover:bg-white duration-300"
+                 href="https://www.twiter.com"
+                 target="blank"
+                className="h-9 w-9 text-[#2563eb] hover:text-white border border-[#2563eb] hover:border-white rounded-full flex justify-center items-center bg-white hover:bg-[#2563eb] duration-300"
               >
                 <FiTwitter className="text-xl" />
               </a>
               <a
-                href="."
-                className="h-9 w-9 text-white hover:text-[#2563eb] border border-white hover:border-[#2563eb] rounded-full flex justify-center items-center hover:bg-white duration-300"
+                href="https://linkedin.com"
+                target="blank"
+                className="h-9 w-9 text-[#2563eb] hover:text-white border border-[#2563eb] hover:border-white rounded-full flex justify-center items-center bg-white hover:bg-[#2563eb] duration-300"
               >
                 <FiLinkedin className="text-xl" />
               </a>
@@ -72,7 +76,7 @@ const Contact = () => {
                   </label>
                   <input
                     type="text"
-                    placeholder="Name"
+                    placeholder="Your Name"
                     className="ring-1 ring-gray-300 mt-2 w-full rounded-md px-4 py-2 outline-none focus:ring-2 focus:ring-[#1678FB]"
                   />
                 </div>
@@ -82,7 +86,17 @@ const Contact = () => {
                   </label>
                   <input
                     type="email"
-                    placeholder="Email"
+                    placeholder="Your Email"
+                    className="ring-1 ring-gray-300 mt-2 w-full rounded-md px-4 py-2 outline-none focus:ring-2 focus:ring-[#1678FB]"
+                  />
+                </div>
+                <div>
+                  <label className="text-sm text-left inline-block w-full font-semibold">
+                    Subject
+                  </label>
+                  <input
+                    type="text"
+                    placeholder="Your Subject"
                     className="ring-1 ring-gray-300 mt-2 w-full rounded-md px-4 py-2 outline-none focus:ring-2 focus:ring-[#1678FB]"
                   />
                 </div>
