@@ -23,14 +23,14 @@ const FilteredProducts = ({ products, search }) => {
         <div>
           <div>
             <h3 className="text-left mb-1 mt-2 font-bold lg:text-3xl text-xl relative lg:px-0 px-4">
-              <span className="text-orange-600">{search}</span> Products
+              <span className="text-[#2563eb]">{search}</span> Products
             </h3>
-            <hr className="bg-orange-500 pb-0.5 mb-5" />
+            <hr className="bg-[#2563eb] pb-0.5 mb-5" />
             <label
               htmlFor="my-drawer-2"
               className="drawer-button lg:hidden absolute top-1 left-0.5"
             >
-              <i className="fa-solid fa-angles-right text-lg bg-orange-500 px-2 rounded text-white"></i>
+              <i className="fa-solid fa-angles-right text-lg bg-[#2563eb] px-2 rounded text-white"></i>
             </label>
           </div>
           <div className="border shadow-xl p-5 mb-10 min-h-screen">
@@ -54,7 +54,7 @@ const FilteredProducts = ({ products, search }) => {
                           {product?.name}
                         </h4>
                         <div className="flex items-center gap-x-2 mb-2">
-                          <h4 className="text-[17px] font-semibold text-orange-600">
+                          <h4 className="text-[17px] font-semibold text-[#2563eb]">
                             ${product?.price}.00
                           </h4>
                           {product?.offerPrice && (
@@ -97,7 +97,7 @@ const FilteredProducts = ({ products, search }) => {
                         to={`/addToCart/${product._id}`}
                         className="pb-3 z-50"
                       >
-                        <div className="absolute right-2 top-2 -translate-x-0 -translate-y-0 text-2xl text-orange-600 group-hover:text-white bg-transparent group-hover:bg-orange-500 h-10 w-10 p-1 flex justify-center items-center rounded-full duration-700 z-50">
+                        <div className="absolute right-2 top-2 -translate-x-0 -translate-y-0 text-2xl text-[#2563eb] group-hover:text-white bg-transparent group-hover:bg-[#2563eb] h-10 w-10 p-1 flex justify-center items-center rounded-full duration-700 z-50">
                           <button onClick={() => alert("Added To WishList")}>
                             <FaRegHeart />
                           </button>
@@ -108,7 +108,7 @@ const FilteredProducts = ({ products, search }) => {
                         className="pb-3 z-50"
                         to={`/addToCart/${product._id}`}
                       >
-                        <div className="absolute left-[50%] top-[50%] -translate-x-[50%] -translate-y-[50%] text-2xl text-white bg-orange-500 h-12 w-12 p-1 flex justify-center items-center rounded-full opacity-0 group-hover:opacity-100 duration-700 z-50">
+                        <div className="absolute left-[50%] top-[50%] -translate-x-[50%] -translate-y-[50%] text-2xl text-white bg-[#2563eb] h-12 w-12 p-1 flex justify-center items-center rounded-full opacity-0 group-hover:opacity-100 duration-700 z-50">
                           <button>
                             <BsCart />
                           </button>

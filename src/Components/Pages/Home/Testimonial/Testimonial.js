@@ -51,12 +51,12 @@ const Testimonial = () => {
     <div className="container mx-auto px-2 lg:pt-8 py-5">
       <div className="flex justify-between items-start">
         <h1 className="lg:text-3xl text-2xl text-[#314259] font-bold mb-4 leading-10 text-start">
-          Trusted By Our <span className="text-orange-600">Clients</span>
+          Trusted By Our <span className="text-[#2563eb]">Clients</span>
         </h1>
         <div className="flex items-center gap-x-3">
           <div>
             <button
-              className="bg-white h-12 w-12 rounded-full flex flex-col items-center justify-center text-2xl border text-orange-600 hover:text-white hover:bg-orange-500 duration-300 hover:border-orange-600"
+              className="bg-white h-12 w-12 rounded-full flex flex-col items-center justify-center text-2xl border text-[#2563eb] hover:text-white hover:bg-[#2563eb] duration-300 hover:border-[#2563eb]"
               onClick={() => slider?.current?.slickPrev()}
             >
               <VscArrowLeft />
@@ -64,7 +64,7 @@ const Testimonial = () => {
           </div>
           <div>
             <button
-              className="bg-white h-12 w-12 rounded-full flex flex-col items-center justify-center text-2xl border text-orange-600 hover:text-white hover:bg-orange-500 duration-300 hover:border-orange-600"
+              className="bg-white h-12 w-12 rounded-full flex flex-col items-center justify-center text-2xl border text-[#2563eb] hover:text-white hover:bg-[#2563eb] duration-300 hover:border-[#2563eb]"
               onClick={() => slider?.current?.slickNext()}
             >
               <VscArrowRight />
@@ -75,9 +75,9 @@ const Testimonial = () => {
       {/* Slider Area  */}
       <Slider ref={slider} {...settings}>
         <div className="px-5 lg:py-6 py-5">
-          <div className="border border-t-4 rounded-t-2xl border-t-orange-600 shadow-lg my-4 w-full flex flex-col justify-between items-start mx-5 p-6 rounded-lg">
+          <div className="border border-t-4 rounded-t-2xl border-t-[#2563eb] shadow-lg my-4 w-full flex flex-col justify-between items-start mx-5 p-6 rounded-lg">
             <h2 className="text-3xl font-bold text-[#314259] text-start">
-              More than <span className="text-orange-600"> 60,000 </span> Clients
+              More than <span className="text-[#2563eb]"> 60,000 </span> Clients
             </h2>
             <p className="mb-4 mt-3 text-start text-lg text-gray-500">
               My executives could learn it so quickly and we implemented
@@ -98,9 +98,9 @@ const Testimonial = () => {
           </div>
         </div>
         <div className="px-5 lg:py-6 py-5">
-          <div className="border border-t-4 rounded-t-2xl border-t-orange-600 shadow-lg my-4 w-full flex flex-col justify-between items-start mx-5 p-6 rounded-lg">
+          <div className="border border-t-4 rounded-t-2xl border-t-[#2563eb] shadow-lg my-4 w-full flex flex-col justify-between items-start mx-5 p-6 rounded-lg">
             <h2 className="text-3xl font-bold text-[#314259] text-start">
-              More than <span className="text-orange-600"> 60,000 </span> Clients
+              More than <span className="text-[#2563eb]"> 60,000 </span> Clients
             </h2>
             <p className="mb-4 mt-3 text-start text-lg text-gray-500">
               My executives could learn it so quickly and we implemented
@@ -121,9 +121,9 @@ const Testimonial = () => {
           </div>
         </div>
         <div className="px-5 lg:py-6 py-5">
-          <div className="border border-t-4 rounded-t-2xl border-t-orange-600 shadow-lg my-4 w-full flex flex-col justify-between items-start mx-5 p-6 rounded-lg">
+          <div className="border border-t-4 rounded-t-2xl border-t-[#2563eb] shadow-lg my-4 w-full flex flex-col justify-between items-start mx-5 p-6 rounded-lg">
             <h2 className="text-3xl font-bold text-[#314259] text-start">
-              More than <span className="text-orange-600"> 60,000 </span> Clients
+              More than <span className="text-[#2563eb]"> 60,000 </span> Clients
             </h2>
             <p className="mb-4 mt-3 text-start text-lg text-gray-500">
               My executives could learn it so quickly and we implemented
@@ -144,9 +144,9 @@ const Testimonial = () => {
           </div>
         </div>
         <div className="px-5 lg:py-6 py-5">
-          <div className="border border-t-4 rounded-t-2xl border-t-orange-600 shadow-lg my-4 w-full flex flex-col justify-between items-start mx-5 p-6 rounded-lg">
+          <div className="border border-t-4 rounded-t-2xl border-t-[#2563eb] shadow-lg my-4 w-full flex flex-col justify-between items-start mx-5 p-6 rounded-lg">
             <h2 className="text-3xl font-bold text-[#314259] text-start">
-              More than <span className="text-orange-600"> 60,000 </span> Clients
+              More than <span className="text-[#2563eb]"> 60,000 </span> Clients
             </h2>
             <p className="mb-4 mt-3 text-start text-lg text-gray-500">
               My executives could learn it so quickly and we implemented
@@ -167,9 +167,9 @@ const Testimonial = () => {
           </div>
         </div>
         <div className="px-5 lg:py-6 py-5">
-          <div className="border border-t-4 rounded-t-2xl border-t-orange-600 shadow-lg my-4 w-full flex flex-col justify-between items-start mx-5 p-6 rounded-lg">
+          <div className="border border-t-4 rounded-t-2xl border-t-[#2563eb] shadow-lg my-4 w-full flex flex-col justify-between items-start mx-5 p-6 rounded-lg">
             <h2 className="text-3xl font-bold text-[#314259] text-start">
-              More than <span className="text-orange-600"> 60,000 </span> Clients
+              More than <span className="text-[#2563eb]"> 60,000 </span> Clients
             </h2>
             <p className="mb-4 mt-3 text-start text-lg text-gray-500">
               My executives could learn it so quickly and we implemented

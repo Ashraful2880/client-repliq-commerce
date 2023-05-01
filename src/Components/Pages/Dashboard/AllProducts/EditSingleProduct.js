@@ -128,7 +128,7 @@ const EditSingleProduct = ({ setEdit, productID, updated, setUpdated }) => {
         <div className="inline-block align-center bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-7xl sm:w-full">
           <div className="px-4 pt-5 pb-4 sm:p-6 sm:pb-4 footer-bg">
             <div className="pb-2 flex justify-between items-center border-b mb-6">
-              <h2 className="text-2xl text-orange-600 font-semibold">
+              <h2 className="text-2xl text-[#2563eb] font-semibold">
                 Edit Product Details
               </h2>
               <button
@@ -282,7 +282,7 @@ const EditSingleProduct = ({ setEdit, productID, updated, setUpdated }) => {
 
                 <div className="flex justify-start w-full px-3 pb-4">
                   <button
-                    className="shadow bg-orange-500 hover:bg-white text-white hover:text-orange-600 border border-orange-600 font-bold py-2 px-6 rounded duration-300"
+                    className="shadow bg-[#2563eb] hover:bg-white text-white hover:text-[#2563eb] border border-[#2563eb] font-bold py-2 px-6 rounded duration-300"
                     type="submit"
                   >
                     Update Changes

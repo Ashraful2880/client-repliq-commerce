@@ -105,7 +105,7 @@ const ProductDetails = () => {
               </h3>
               <h3 className="font-bold text-2xl mb-1">
                 Price:
-                <span className="text-orange-500">${price || cart?.price}</span>
+                <span className="text-[#2563eb]">${price || cart?.price}</span>
               </h3>
               <h3 className="font-bold lg:text-base text-xs text-gray-500 flex items-center gap-x-2">
                 <Rating
@@ -118,7 +118,7 @@ const ProductDetails = () => {
                 (125 Customeer Review)
               </h3>
               <p className="mt-5 text-gray-600 tracking-wider lg:block hidden">
-                <span className="font-bold text-orange-600">{cart?.name} </span>
+                <span className="font-bold text-[#2563eb]">{cart?.name} </span>
                 allows you to fully express your vibrant personality with three
                 grayscale options. Feeling adventurous? Put on a heather gray
                 tee. Want to be a trendsetter? Try our exclusive colorway.
@@ -126,7 +126,7 @@ const ProductDetails = () => {
                 white tee has you covered.
               </p>
               <p className="text-md font-bold lg:mb-10 mb-2 lg:mt-4 mt-1">
-                SKU: <span className="text-orange-600">{cart?.SKU}</span>
+                SKU: <span className="text-[#2563eb]">{cart?.SKU}</span>
               </p>
               <h3 className="font-bold text-xl mb-8">
                 Quantity:
@@ -137,18 +137,18 @@ const ProductDetails = () => {
                       ? setCartCount(cartCount - 1)
                       : setCartCount(1)
                   }
-                  className="text-white text-sm ml-1 px-5 py-2 bg-orange-500 border border-orange-600"
+                  className="text-white text-sm ml-1 px-5 py-2 bg-[#2563eb] border border-[#2563eb]"
                 >
                   <FaMinus />
                 </button>
                 {/* Cart State */}
-                <span className="text-md px-5  border border-orange-600 pt-[1.5px] pb-[1px]">
+                <span className="text-md px-5  border border-[#2563eb] pt-[1.5px] pb-[1px]">
                   {cartCount}
                 </span>
                 {/* Quantity Plus Button */}
                 <button
                   onClick={() => setCartCount(cartCount + 1)}
-                  className="text-white text-sm px-5 py-2 bg-orange-500 border border-orange-600"
+                  className="text-white text-sm px-5 py-2 bg-[#2563eb] border border-[#2563eb]"
                 >
                   <FaPlus />
                 </button>
@@ -169,7 +169,7 @@ const ProductDetails = () => {
                   Add To Wishlist
                   <BsHeart />
                 </button>
-                <button className="bg-orange-500 border border-orange-600 text-white px-3 lg:py-2 py-1 lg:text-base text-xs rounded-md hover:bg-transparent hover:text-orange-600 duration-300 flex items-center gap-x-2">
+                <button className="bg-[#2563eb] border border-[#2563eb] text-white px-3 lg:py-2 py-1 lg:text-base text-xs rounded-md hover:bg-transparent hover:text-[#2563eb] duration-300 flex items-center gap-x-2">
                   <Link to="/cart">Place Order</Link>
                   <MdPayment />
                 </button>

@@ -29,7 +29,7 @@ const DashboardHome = () => {
         !pathName.includes("dashboard/summary") && (
           <div className="lg:pt-3 md:pt-3 pt-2 lg:px-3 md:px-3 px-0 mx-2">
             <div className="text-xl bg-white lg:w-60 w-full flex items-center gap-x-2 px-5">
-              <FaHome className="text-orange-600" />
+              <FaHome className="text-[#2563eb]" />
               <h3 className="font-semibold text-[#0b1144] py-1.5">
                 Dashboard Home
               </h3>
@@ -40,8 +40,8 @@ const DashboardHome = () => {
         <main className="px-6 pb-5 space-y-6 mt-10 lg:block hidden">
           <section className="grid md:grid-cols-2 xl:grid-cols-4 gap-6">
             <div className="flex items-center p-8 bg-white shadow rounded-lg cursor-pointer hover:shadow-md duration-300 relative group overflow-hidden">
-              <div className="h-full w-full bg-orange-500 absolute top-0 right-0 translate-x-[88%] group-hover:translate-x-0 translate-y-[60%] group-hover:translate-y-0 rounded-l-full group-hover:rounded-l-none duration-300"></div>
-              <div className="inline-flex flex-shrink-0 items-center justify-center h-16 w-16 text-orange-600 bg-blue-100 group-hover:bg-white rounded-full mr-6 z-50">
+              <div className="h-full w-full bg-[#2563eb] absolute top-0 right-0 translate-x-[88%] group-hover:translate-x-0 translate-y-[60%] group-hover:translate-y-0 rounded-l-full group-hover:rounded-l-none duration-300"></div>
+              <div className="inline-flex flex-shrink-0 items-center justify-center h-16 w-16 text-[#2563eb] bg-blue-100 group-hover:bg-white rounded-full mr-6 z-50">
                 <svg
                   aria-hidden="true"
                   fill="none"
@@ -58,7 +58,7 @@ const DashboardHome = () => {
                 </svg>
               </div>
               <div className="z-50">
-                <span className="block text-3xl font-bold text-orange-600 group-hover:text-white">
+                <span className="block text-3xl font-bold text-[#2563eb] group-hover:text-white">
                   {customers?.length || 0}
                 </span>
                 <span className="block text-gray-500 group-hover:text-white z-50">
@@ -121,8 +121,8 @@ const DashboardHome = () => {
               </div>
             </div>
             <div className="flex items-center p-8 bg-white shadow rounded-lg cursor-pointer hover:shadow-md duration-300 relative group overflow-hidden">
-              <div className="h-full w-full bg-orange-500 absolute top-0 right-0 translate-x-[88%] group-hover:translate-x-0 translate-y-[60%] group-hover:translate-y-0 rounded-l-full group-hover:rounded-l-none duration-300"></div>
-              <div className="inline-flex flex-shrink-0 items-center justify-center h-16 w-16 text-orange-600 bg-blue-100 group-hover:bg-white rounded-full mr-6 z-50">
+              <div className="h-full w-full bg-[#2563eb] absolute top-0 right-0 translate-x-[88%] group-hover:translate-x-0 translate-y-[60%] group-hover:translate-y-0 rounded-l-full group-hover:rounded-l-none duration-300"></div>
+              <div className="inline-flex flex-shrink-0 items-center justify-center h-16 w-16 text-[#2563eb] bg-blue-100 group-hover:bg-white rounded-full mr-6 z-50">
                 <svg
                   aria-hidden="true"
                   fill="none"

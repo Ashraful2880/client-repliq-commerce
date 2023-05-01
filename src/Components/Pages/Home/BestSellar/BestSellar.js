@@ -69,12 +69,12 @@ const BestSellar = () => {
     <div className="container mx-auto lg:mb-10 mb-5">
       {/* Heading Title */}
 
-      <div className="flex lg:justify-between md:justify-between justify-center items-center mt-12 border-b-2 border-b-orange-600 pb-3 mb-5">
+      <div className="flex lg:justify-between md:justify-between justify-center items-center mt-12 border-b-2 border-b-[#2563eb] pb-3 mb-5">
         {/* Heading Title */}
         <div className="text-left">
           <h1 className="text-4xl font-bold">
             Best
-            <span className="text-orange-600 "> Selling</span>
+            <span className="text-[#2563eb] "> Selling</span>
           </h1>
           <p className="text-md text-gray-600">
             View Best Selling products in last month
@@ -85,7 +85,7 @@ const BestSellar = () => {
           <div className="lg:flex md:flex hidden items-center gap-x-2">
             <div>
               <button
-                className="bg-white h-9 w-9 rounded-full flex flex-col items-center justify-center text-2xl border text-orange-600 hover:text-white hover:bg-orange-500 duration-300 hover:border-orange-600"
+                className="bg-white h-9 w-9 rounded-full flex flex-col items-center justify-center text-2xl border text-[#2563eb] hover:text-white hover:bg-[#2563eb] duration-300 hover:border-[#2563eb]"
                 onClick={() => slider?.current?.slickPrev()}
               >
                 <VscArrowLeft />
@@ -93,7 +93,7 @@ const BestSellar = () => {
             </div>
             <div>
               <button
-                className="bg-white h-9 w-9 rounded-full flex flex-col items-center justify-center text-2xl border text-orange-600 hover:text-white hover:bg-orange-500 duration-300 hover:border-orange-600"
+                className="bg-white h-9 w-9 rounded-full flex flex-col items-center justify-center text-2xl border text-[#2563eb] hover:text-white hover:bg-[#2563eb] duration-300 hover:border-[#2563eb]"
                 onClick={() => slider?.current?.slickNext()}
               >
                 <VscArrowRight />
@@ -122,7 +122,7 @@ const BestSellar = () => {
                 <div className="pl-5 text-left">
                   <h4 className="text-[17px] font-bold">{sellar?.name}</h4>
                   <div className="flex items-center gap-x-2 mb-2">
-                    <h4 className="text-[17px] font-semibold text-orange-600">
+                    <h4 className="text-[17px] font-semibold text-[#2563eb]">
                       ${sellar?.price}.00
                     </h4>
                     {sellar?.offerPrice && (
@@ -160,7 +160,7 @@ const BestSellar = () => {
 
                 {/* Add To Wishlist Button*/}
                 <div className="pb-3 z-50">
-                  <div className="absolute right-2 top-2 -translate-x-0 -translate-y-0 text-2xl text-orange-600 group-hover:text-white bg-transparent group-hover:bg-orange-500 h-10 w-10 p-1 flex justify-center items-center rounded-full duration-700 z-50">
+                  <div className="absolute right-2 top-2 -translate-x-0 -translate-y-0 text-2xl text-[#2563eb] group-hover:text-white bg-transparent group-hover:bg-[#2563eb] h-10 w-10 p-1 flex justify-center items-center rounded-full duration-700 z-50">
                     <button onClick={() => alert("Added To WishList")}>
                       <FaRegHeart />
                     </button>
@@ -168,7 +168,7 @@ const BestSellar = () => {
                 </div>
                 {/* Add To Cart Button*/}
                 <Link className="pb-3 z-50" to={`/addToCart/${sellar._id}`}>
-                  <div className="absolute left-[50%] top-[50%] -translate-x-[50%] -translate-y-[50%] text-2xl text-white bg-orange-500 h-12 w-12 p-1 flex justify-center items-center rounded-full opacity-0 group-hover:opacity-100 duration-700 z-50">
+                  <div className="absolute left-[50%] top-[50%] -translate-x-[50%] -translate-y-[50%] text-2xl text-white bg-[#2563eb] h-12 w-12 p-1 flex justify-center items-center rounded-full opacity-0 group-hover:opacity-100 duration-700 z-50">
                     <button>
                       <BsCart />
                     </button>

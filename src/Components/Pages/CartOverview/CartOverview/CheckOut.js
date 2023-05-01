@@ -86,7 +86,7 @@ const CheckOut = () => {
                         <input
                           type="text"
                           name="name"
-                          className="mt-1 focus:ring-[#2563eb] focus:border-orange-600 block w-full shadow-sm sm:text-sm rounded-md border border-gray-400 p-2"
+                          className="mt-1 focus:ring-[#2563eb] focus:border-[#2563eb] block w-full shadow-sm sm:text-sm rounded-md border border-gray-400 p-2"
                           placeholder="Customer Name Here"
                           onChange={(e) => setCusName(e.target.value)}
                           required
@@ -103,7 +103,7 @@ const CheckOut = () => {
                         <input
                           type="email"
                           name="email"
-                          className="mt-1 focus:ring-[#2563eb] focus:border-orange-600 block w-full shadow-sm sm:text-sm rounded-md border border-gray-400 p-2"
+                          className="mt-1 focus:ring-[#2563eb] focus:border-[#2563eb] block w-full shadow-sm sm:text-sm rounded-md border border-gray-400 p-2"
                           placeholder="Customer Email Here"
                           onChange={(e) => setEmail(e.target.value)}
                           required
@@ -119,7 +119,7 @@ const CheckOut = () => {
                         <input
                           type="text"
                           name="street address"
-                          className="mt-1 focus:ring-[#2563eb] focus:border-orange-600 block w-full shadow-sm sm:text-sm rounded-md border border-gray-400 p-2"
+                          className="mt-1 focus:ring-[#2563eb] focus:border-[#2563eb] block w-full shadow-sm sm:text-sm rounded-md border border-gray-400 p-2"
                           placeholder="Street Where You Live"
                           onChange={(e) => setStreet(e.target.value)}
                           required
@@ -135,7 +135,7 @@ const CheckOut = () => {
                         <input
                           type="text"
                           name="address2"
-                          className="mt-1 focus:ring-[#2563eb] focus:border-orange-600 block w-full shadow-sm sm:text-sm rounded-md border border-gray-400 p-2"
+                          className="mt-1 focus:ring-[#2563eb] focus:border-[#2563eb] block w-full shadow-sm sm:text-sm rounded-md border border-gray-400 p-2"
                           placeholder="Your Address Line"
                           required
                           onChange={(e) => setAddress2(e.target.value)}
@@ -152,7 +152,7 @@ const CheckOut = () => {
                         <input
                           type="text"
                           name="city"
-                          className="mt-1 focus:ring-[#2563eb] focus:border-orange-600 block w-full shadow-sm sm:text-sm rounded-md border border-gray-400 p-2"
+                          className="mt-1 focus:ring-[#2563eb] focus:border-[#2563eb] block w-full shadow-sm sm:text-sm rounded-md border border-gray-400 p-2"
                           placeholder="Your City Name Here"
                           onChange={(e) => setCityName(e.target.value)}
                           required
@@ -168,7 +168,7 @@ const CheckOut = () => {
                         <input
                           type="text"
                           name="state name"
-                          className="mt-1 focus:ring-[#2563eb] focus:border-orange-600 block w-full shadow-sm sm:text-sm rounded-md border border-gray-400 p-2"
+                          className="mt-1 focus:ring-[#2563eb] focus:border-[#2563eb] block w-full shadow-sm sm:text-sm rounded-md border border-gray-400 p-2"
                           placeholder="Your State"
                           onChange={(e) => setState(e.target.value)}
                           required
@@ -184,7 +184,7 @@ const CheckOut = () => {
                         <input
                           type="number"
                           name="postal"
-                          className="mt-1 focus:ring-[#2563eb] focus:border-orange-600 block w-full shadow-sm sm:text-sm rounded-md border border-gray-400 p-2"
+                          className="mt-1 focus:ring-[#2563eb] focus:border-[#2563eb] block w-full shadow-sm sm:text-sm rounded-md border border-gray-400 p-2"
                           placeholder="Zip / Postal Code Here"
                           onChange={(e) => setPostal(e.target.value)}
                           required
@@ -200,7 +200,7 @@ const CheckOut = () => {
                         <input
                           type="number"
                           name="phone"
-                          className="mt-1 focus:ring-[#2563eb] focus:border-orange-600 block w-full shadow-sm sm:text-sm rounded-md border border-gray-400 p-2"
+                          className="mt-1 focus:ring-[#2563eb] focus:border-[#2563eb] block w-full shadow-sm sm:text-sm rounded-md border border-gray-400 p-2"
                           placeholder="Enter a Active Number"
                           onChange={(e) => setPhone(e.target.value)}
                           required
@@ -215,7 +215,7 @@ const CheckOut = () => {
                         </label>
                         <select
                           name="country"
-                          className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-[#2563eb] focus:border-orange-600 sm:text-sm"
+                          className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-[#2563eb] focus:border-[#2563eb] sm:text-sm"
                           required
                           onChange={(e) => setCountry(e.target.value)}
                         >
@@ -254,42 +254,42 @@ const CheckOut = () => {
                 <div className="px-4 pb-6 bg-gray-50 text-right sm:px-6 font-bold">
                   <div className="flex justify-between py-4">
                     <h4 className="text-md font-bold">Your Orderd Items</h4>
-                    <h4 className="text-orange-600 text-lg font-bold">
+                    <h4 className="text-[#2563eb] text-lg font-bold">
                       {checkoutProduct?.totalProduct}
                     </h4>
                   </div>
                   <div>
                     <div className="flex justify-between border py-3 px-4">
                       <p>Product Price</p>
-                      <p className="text-orange-600">
+                      <p className="text-[#2563eb]">
                         {checkoutProduct?.totalProductPrice}$
                       </p>
                     </div>
                     <div className="flex justify-between border py-3 px-4">
                       <p>Delivery</p>
-                      <p className="text-orange-600">
+                      <p className="text-[#2563eb]">
                         {checkoutProduct?.deliveryCost}$
                       </p>
                     </div>
                     <div className="flex justify-between border py-3 px-4">
                       <p>Shipping</p>
-                      <p className="text-orange-600">
+                      <p className="text-[#2563eb]">
                         {checkoutProduct?.shippingCost}$
                       </p>
                     </div>
                     <div className="flex justify-between border py-3 px-4">
                       <p>Total Price</p>
-                      <p className="text-orange-600">
+                      <p className="text-[#2563eb]">
                         {checkoutProduct?.totalPrice}$
                       </p>
                     </div>
                     <div className="flex justify-between border py-3 px-4">
                       <p>Discount</p>
-                      <p className="text-orange-600">
+                      <p className="text-[#2563eb]">
                         {checkoutProduct?.coupon}$
                       </p>
                     </div>
-                    <div className="flex justify-between border border-orange-600 py-2 mt-4 rounded-lg px-4 bg-orange-500 text-white">
+                    <div className="flex justify-between border border-[#2563eb] py-2 mt-4 rounded-lg px-4 bg-[#2563eb] text-white">
                       <p className="font-bold text-xl">Grand Total</p>
                       <p className="font-bold text-xl">
                         {checkoutProduct?.netTotal ||

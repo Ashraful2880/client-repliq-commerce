@@ -40,10 +40,10 @@ const ShopByCategory = () => {
       />
       <div className="container mx-auto mb-10">
         {/* Heading Title */}
-        <div className="text-left border-b-2 border-b-orange-600 pb-3 mb-5">
+        <div className="text-left border-b-2 border-b-[#2563eb] pb-3 mb-5">
           <h1 className="text-4xl font-bold">
             Shop By
-            <span className="text-orange-600 "> Category</span>
+            <span className="text-[#2563eb] "> Category</span>
           </h1>
           <p className="text-md text-gray-600">
             All Products Category on there

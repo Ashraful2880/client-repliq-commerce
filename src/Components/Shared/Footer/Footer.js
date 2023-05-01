@@ -28,41 +28,41 @@ const Footer = () => {
               >
                 <img className="w-1/12" src={logo} alt="Main Logo" />
                 <h4 className="mx-2 font-bold text-white text-xl mt-1">
-                  <span className="text-orange-600">R</span>epliq
-                  <span className="text-orange-600"> Comm </span>
+                  <span className="text-[#2563eb]">R</span>epliq
+                  <span className="text-[#2563eb]"> Comm </span>
                 </h4>
               </Link>
               <div className="lg:flex justify-center items-center hidden group">
                 <p>
-                  <FaLocationArrow className="bg-white group-hover:bg-orange-500 duration-300 p-2 text-orange-600 group-hover:text-white border border-white group-hover:border-orange-600 rounded-full mr-5 h-10 w-10 flex flex-vol justify-center items-center" />
+                  <FaLocationArrow className="bg-white group-hover:bg-[#2563eb] duration-300 p-2 text-[#2563eb] group-hover:text-white border border-white group-hover:border-[#2563eb] rounded-full mr-5 h-10 w-10 flex flex-vol justify-center items-center" />
                 </p>
                 <div>
-                  <p className="text-white group-hover:text-orange-600 duration-300 cursor-pointer text-left">
+                  <p className="text-white group-hover:text-[#2563eb] duration-300 cursor-pointer text-left">
                     No: 58 A, East Madison Street,
                   </p>
-                  <p className="text-white group-hover:text-orange-600 duration-300 cursor-pointer text-left">
+                  <p className="text-white group-hover:text-[#2563eb] duration-300 cursor-pointer text-left">
                     Baltimore, MD, USA 4508.
                   </p>
                 </div>
               </div>
               <div className="lg:flex justify-center items-center hidden group">
-                <FaPhoneAlt className="bg-white group-hover:bg-orange-500 duration-300 p-2 text-orange-600 group-hover:text-white border border-white group-hover:border-orange-600 rounded-full mr-5 h-10 w-10 flex flex-vol justify-center items-center" />
-                <h2 className="text-white group-hover:text-orange-600 duration-300 cursor-pointer text-left">
+                <FaPhoneAlt className="bg-white group-hover:bg-[#2563eb] duration-300 p-2 text-[#2563eb] group-hover:text-white border border-white group-hover:border-[#2563eb] rounded-full mr-5 h-10 w-10 flex flex-vol justify-center items-center" />
+                <h2 className="text-white group-hover:text-[#2563eb] duration-300 cursor-pointer text-left">
                   +123-456-7890
                 </h2>
               </div>
               <div className="flex justify-center items-center">
                 <Link to="/home">
-                  <FaFacebookF className="p-2 mx-2 bg-white hover:bg-orange-500 text-orange-600 hover:text-white border border-white hover:border-orange-600 duration-300 rounded-full h-10 w-10 text-xl flex flex-col justify-center items-center" />
+                  <FaFacebookF className="p-2 mx-2 bg-white hover:bg-[#2563eb] text-[#2563eb] hover:text-white border border-white hover:border-[#2563eb] duration-300 rounded-full h-10 w-10 text-xl flex flex-col justify-center items-center" />
                 </Link>
                 <Link to="/home">
-                  <FaTwitter className="p-2 mx-2 bg-white hover:bg-orange-500 text-orange-600 hover:text-white border border-white hover:border-orange-600 duration-300 rounded-full h-10 w-10 text-xl flex flex-col justify-center items-center" />
+                  <FaTwitter className="p-2 mx-2 bg-white hover:bg-[#2563eb] text-[#2563eb] hover:text-white border border-white hover:border-[#2563eb] duration-300 rounded-full h-10 w-10 text-xl flex flex-col justify-center items-center" />
                 </Link>
                 <Link to="/home">
-                  <FaInstagram className="p-2 mx-2 bg-white hover:bg-orange-500 text-orange-600 hover:text-white border border-white hover:border-orange-600 duration-300 rounded-full h-10 w-10 text-xl flex flex-col justify-center items-center" />
+                  <FaInstagram className="p-2 mx-2 bg-white hover:bg-[#2563eb] text-[#2563eb] hover:text-white border border-white hover:border-[#2563eb] duration-300 rounded-full h-10 w-10 text-xl flex flex-col justify-center items-center" />
                 </Link>
                 <Link to="/home">
-                  <FaWhatsapp className="p-2 mx-2 bg-white hover:bg-orange-500 text-orange-600 hover:text-white border border-white hover:border-orange-600 duration-300 rounded-full h-10 w-10 text-xl flex flex-col justify-center items-center" />
+                  <FaWhatsapp className="p-2 mx-2 bg-white hover:bg-[#2563eb] text-[#2563eb] hover:text-white border border-white hover:border-[#2563eb] duration-300 rounded-full h-10 w-10 text-xl flex flex-col justify-center items-center" />
                 </Link>
               </div>
             </div>
@@ -76,28 +76,28 @@ const Footer = () => {
                 </h4>
                 <Link
                   to="/home"
-                  className="text-lg text-gray-300 hover:text-orange-600 duration-300 flex items-center gap-3"
+                  className="text-lg text-gray-300 hover:text-[#2563eb] duration-300 flex items-center gap-3"
                 >
                   <FaAngleDoubleRight className="mt-0.5" />
                   <p>Terms Of Service</p>
                 </Link>
                 <Link
                   to="/home"
-                  className="text-lg text-gray-300 hover:text-orange-600 duration-300 flex items-center gap-3"
+                  className="text-lg text-gray-300 hover:text-[#2563eb] duration-300 flex items-center gap-3"
                 >
                   <FaAngleDoubleRight className="mt-0.5" />
                   <p>Privacy Policy</p>
                 </Link>
                 <Link
                   to="/home"
-                  className="text-lg text-gray-300 hover:text-orange-600 duration-300 flex items-center gap-3"
+                  className="text-lg text-gray-300 hover:text-[#2563eb] duration-300 flex items-center gap-3"
                 >
                   <FaAngleDoubleRight className="mt-0.5" />
                   <p>Cookies</p>
                 </Link>
                 <Link
                   to="/home"
-                  className="text-lg text-gray-300 hover:text-orange-600 duration-300 flex items-center gap-3"
+                  className="text-lg text-gray-300 hover:text-[#2563eb] duration-300 flex items-center gap-3"
                 >
                   <FaAngleDoubleRight className="mt-0.5" />
                   <p>Ad Cookies</p>
@@ -112,28 +112,28 @@ const Footer = () => {
                 </h4>
                 <Link
                   to="/home"
-                  className="text-lg text-gray-300 hover:text-orange-600 duration-300 flex items-center gap-3"
+                  className="text-lg text-gray-300 hover:text-[#2563eb] duration-300 flex items-center gap-3"
                 >
                   <FaAngleDoubleRight className="mt-0.5" />
                   <p>Retailers</p>
                 </Link>
                 <Link
                   to="/home"
-                  className="text-lg text-gray-300 hover:text-orange-600 duration-300 flex items-center gap-3"
+                  className="text-lg text-gray-300 hover:text-[#2563eb] duration-300 flex items-center gap-3"
                 >
                   <FaAngleDoubleRight className="mt-0.5" />
                   <p>Affiliate</p>
                 </Link>
                 <Link
                   to="/home"
-                  className="text-lg text-gray-300 hover:text-orange-600 duration-300 flex items-center gap-3"
+                  className="text-lg text-gray-300 hover:text-[#2563eb] duration-300 flex items-center gap-3"
                 >
                   <FaAngleDoubleRight className="mt-0.5" />
                   <p>Developers</p>
                 </Link>
                 <Link
                   to="/home"
-                  className="text-lg text-gray-300 hover:text-orange-600 duration-300 flex items-center gap-3"
+                  className="text-lg text-gray-300 hover:text-[#2563eb] duration-300 flex items-center gap-3"
                 >
                   <FaAngleDoubleRight className="mt-0.5" />
                   <p>Press Release</p>
@@ -147,28 +147,28 @@ const Footer = () => {
                 </h4>
                 <Link
                   to="/about"
-                  className="text-lg text-gray-300 hover:text-orange-600 duration-300 flex items-center gap-3"
+                  className="text-lg text-gray-300 hover:text-[#2563eb] duration-300 flex items-center gap-3"
                 >
                   <FaAngleDoubleRight className="mt-0.5" />
                   <p>About Us</p>
                 </Link>
                 <Link
                   to="/home"
-                  className="text-lg text-gray-300 hover:text-orange-600 duration-300 flex items-center gap-3"
+                  className="text-lg text-gray-300 hover:text-[#2563eb] duration-300 flex items-center gap-3"
                 >
                   <FaAngleDoubleRight className="mt-0.5" />
                   <p>Careers</p>
                 </Link>
                 <Link
                   to="/home"
-                  className="text-lg text-gray-300 hover:text-orange-600 duration-300 flex items-center gap-3"
+                  className="text-lg text-gray-300 hover:text-[#2563eb] duration-300 flex items-center gap-3"
                 >
                   <FaAngleDoubleRight className="mt-0.5" />
                   <p>Buzz</p>
                 </Link>
                 <Link
                   to="/home"
-                  className="text-lg text-gray-300 hover:text-orange-600 duration-300 flex items-center gap-3"
+                  className="text-lg text-gray-300 hover:text-[#2563eb] duration-300 flex items-center gap-3"
                 >
                   <FaAngleDoubleRight className="mt-0.5" />
                   <p>Activity Index</p>
@@ -182,28 +182,28 @@ const Footer = () => {
                 </h4>
                 <Link
                   to="/about"
-                  className="text-lg text-gray-300 hover:text-orange-600 duration-300 flex items-center gap-3"
+                  className="text-lg text-gray-300 hover:text-[#2563eb] duration-300 flex items-center gap-3"
                 >
                   <FaAngleDoubleRight className="mt-0.5" />
                   <p>Company</p>
                 </Link>
                 <Link
                   to="/home"
-                  className="text-lg text-gray-300 hover:text-orange-600 duration-300 flex items-center gap-3"
+                  className="text-lg text-gray-300 hover:text-[#2563eb] duration-300 flex items-center gap-3"
                 >
                   <FaAngleDoubleRight className="mt-0.5" />
                   <p>Partners</p>
                 </Link>
                 <Link
                   to="/home"
-                  className="text-lg text-gray-300 hover:text-orange-600 duration-300 flex items-center gap-3"
+                  className="text-lg text-gray-300 hover:text-[#2563eb] duration-300 flex items-center gap-3"
                 >
                   <FaAngleDoubleRight className="mt-0.5" />
                   <p>Programmes</p>
                 </Link>
                 <Link
                   to="/home"
-                  className="text-lg text-gray-300 hover:text-orange-600 duration-300 flex items-center gap-3"
+                  className="text-lg text-gray-300 hover:text-[#2563eb] duration-300 flex items-center gap-3"
                 >
                   <FaAngleDoubleRight className="mt-0.5" />
                   <p>Members</p>

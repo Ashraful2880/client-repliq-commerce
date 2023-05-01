@@ -68,7 +68,7 @@ const AllProducts = () => {
       {/* Heading Title */}
       <div className="lg:pt-3 md:pt-3 pt-2 lg:px-3 md:px-3 px-0 mx-2">
         <div className="text-xl bg-white lg:w-60 w-full flex items-center gap-x-2 px-5">
-          <AiOutlineAppstoreAdd className="text-orange-600" />
+          <AiOutlineAppstoreAdd className="text-[#2563eb]" />
           <h3 className="font-semibold text-[#0b1144] py-1.5">
             All Product List
           </h3>
@@ -95,7 +95,7 @@ const AllProducts = () => {
                   <div className="bg-white">
                     <div className="px-4 pt-2 pb-4">
                       <div className="text-left">
-                        <h2 className="text-lg font-bold text-orange-600">
+                        <h2 className="text-lg font-bold text-[#2563eb]">
                           {product?.name}
                         </h2>
                         <p className="text-gray-500 text-md">
@@ -107,7 +107,7 @@ const AllProducts = () => {
                         range of other social and political issues including
                       </p>
                       <div className="flex items-center justify-between pt-3 pb-2">
-                        <p className="text-orange-500 font-semibold">
+                        <p className="text-[#2563eb] font-semibold">
                           Price: ${product?.price}
                         </p>
                         {product.offerPrice && (

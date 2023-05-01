@@ -16,7 +16,7 @@ const Overview = () => {
       {/* Heading Title */}
       <div className="lg:pt-3 md:pt-3 pt-2 lg:px-3 md:px-3 px-0 mx-2">
         <div className="text-xl bg-white lg:w-60 w-full flex items-center gap-x-2 px-5">
-          <FaHeartbeat className="text-orange-600" />
+          <FaHeartbeat className="text-[#2563eb]" />
           <h3 className="font-semibold text-[#0b1144] py-1.5">Overview</h3>
         </div>
       </div>
@@ -32,7 +32,7 @@ const Overview = () => {
               </div>
               <div className="flex-grow">
                 <h2 className="text-gray-600">Name</h2>
-                <p className="text-orange-600 text-lg font-semibold">
+                <p className="text-[#2563eb] text-lg font-semibold">
                   Md.Ashraful Islam
                 </p>
               </div>
@@ -47,7 +47,7 @@ const Overview = () => {
 
               <div className="flex-grow">
                 <h2 className="text-gray-600">User Name</h2>
-                <p className="text-orange-600 text-lg font-semibold">
+                <p className="text-[#2563eb] text-lg font-semibold">
                   ashraful2880
                 </p>
               </div>
@@ -61,7 +61,7 @@ const Overview = () => {
               </div>
               <div className="flex-grow">
                 <h2 className="text-gray-600">Email</h2>
-                <p className="text-orange-600 text-lg font-semibold">
+                <p className="text-[#2563eb] text-lg font-semibold">
                   contact.ashraful1@gmail.com
                 </p>
               </div>
@@ -75,7 +75,7 @@ const Overview = () => {
               </div>
               <div className="flex-grow">
                 <h2 className="text-gray-600">Phone</h2>
-                <p className="text-orange-600 text-lg font-semibold">
+                <p className="text-[#2563eb] text-lg font-semibold">
                   01974238487
                 </p>
               </div>
@@ -89,7 +89,7 @@ const Overview = () => {
               </div>
               <div className="flex-grow">
                 <h2 className="text-gray-600">Address</h2>
-                <p className="text-orange-600 text-lg font-semibold">
+                <p className="text-[#2563eb] text-lg font-semibold">
                   Khulna, Dhaka, Bangladesh
                 </p>
               </div>
@@ -103,7 +103,7 @@ const Overview = () => {
               </div>
               <div className="flex-grow">
                 <h2 className="text-gray-600">Last Visited</h2>
-                <p className="text-orange-600 text-lg font-semibold">
+                <p className="text-[#2563eb] text-lg font-semibold">
                   12-APR-2022
                 </p>
               </div>
@@ -112,7 +112,7 @@ const Overview = () => {
         </div>
       </div>
       <h1 className="text-left text-2xl font-bold pl-10 -mb-4 pt-1">
-        Overall Account <span className="text-orange-600">Activity</span>
+        Overall Account <span className="text-[#2563eb]">Activity</span>
       </h1>
       <DashboardHome />
     </div>

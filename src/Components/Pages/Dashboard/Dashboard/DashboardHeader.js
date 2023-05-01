@@ -32,7 +32,7 @@ const DashboardHeader = ({ open, setOpen, mobileOpen, setMobileOpen }) => {
               <VscClose className="text-2xl" />
             </div>
           ) : (
-            <div className="bg-[#DBEAFE] text-orange-600 h-8 w-8 p-1 rounded-full duration-300 flex flex-col justify-center items-center">
+            <div className="bg-[#DBEAFE] text-[#2563eb] h-8 w-8 p-1 rounded-full duration-300 flex flex-col justify-center items-center">
               <RiBarChartHorizontalLine className="text-lg" />
             </div>
           )}

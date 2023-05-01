@@ -27,7 +27,7 @@ const ViewSingleProduct = ({ setView, productID }) => {
         <div className="inline-block align-center bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-7xl sm:w-full">
           <div className="px-4 pt-5 pb-4 sm:p-6 sm:pb-4 footer-bg">
             <div className="pb-2 flex justify-between items-center border-b mb-6">
-              <h2 className="text-2xl text-orange-600 font-semibold">
+              <h2 className="text-2xl text-[#2563eb] font-semibold">
                 View Product Details
               </h2>
               <button
@@ -62,7 +62,7 @@ const ViewSingleProduct = ({ setView, productID }) => {
                 )}
 
                 <div className="flex items-center gap-x-2 mt-2 lg:mb-4 mb-1">
-                  <p className="text-lg font-semibold text-orange-600">
+                  <p className="text-lg font-semibold text-[#2563eb]">
                     Price ${singleProduct?.price}
                   </p>
                   {singleProduct?.offerPrice && (
@@ -74,7 +74,7 @@ const ViewSingleProduct = ({ setView, productID }) => {
                 <div className="flex items-center gap-x-2">
                   <Rating
                     readonly
-                    className="text-orange-500"
+                    className="text-[#2563eb]"
                     emptySymbol={<BsStar className="text-gray-400" />}
                     fullSymbol={<BsStarFill className="text-[#FFB627]" />}
                     initialRating={singleProduct?.rating}
@@ -85,7 +85,7 @@ const ViewSingleProduct = ({ setView, productID }) => {
                 </div>
                 <p className="font-semibold">SKU: {singleProduct?.SKU}</p>
                 <p className="mt-5 text-gray-600 tracking-wider lg:block hidden">
-                  <span className="font-bold text-orange-500">
+                  <span className="font-bold text-[#2563eb]">
                     {singleProduct?.name}
                   </span>
                   allows you to fully express your vibrant personality with

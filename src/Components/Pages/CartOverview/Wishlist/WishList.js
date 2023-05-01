@@ -89,7 +89,7 @@ const WishList = () => {
                     <td className="px-6 py-4 whitespace-nowrap text-black">
                       {item?.price || 0}$
                     </td>
-                    <td className="px-6 py-4 whitespace-nowrap text-orange-600">
+                    <td className="px-6 py-4 whitespace-nowrap text-[#2563eb]">
                       <button onClick={() => removeItem(item?.productId)}>
                         <FaTrash />
                       </button>

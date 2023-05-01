@@ -128,7 +128,7 @@ const Login = () => {
               <p className="flex flex-col items-center justify-center mt-10 text-center">
                 <span>Don't have an account?</span>
                 <Link to="/signup">
-                  <p className="underline text-orange-600">Get Started!</p>
+                  <p className="underline text-[#2563eb]">Get Started!</p>
                 </Link>
               </p>
             </form>

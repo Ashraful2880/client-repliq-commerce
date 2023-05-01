@@ -27,7 +27,7 @@ const Blogs = () => {
           <div className="lg:text-left text-center pt-6">
             <h1 className="text-4xl font-bold">
               From Our
-              <span className="text-orange-600 "> Blogs</span>
+              <span className="text-[#2563eb] "> Blogs</span>
             </h1>
             <p className="text-md text-gray-600">
               View Best Selling products in last month

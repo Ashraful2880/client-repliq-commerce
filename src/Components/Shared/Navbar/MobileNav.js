@@ -45,26 +45,26 @@ const MobileNav = () => {
           <div className="flex items-center gap-x-6">
             <Link
               to="/wishlist"
-              className="relative hover:text-orange-600 duration-300"
+              className="relative hover:text-[#2563eb] duration-300"
               onClick={() => setHide(false)}
             >
               <FiHeart className="text-2xl" />
-              <div className="h-5 w-5 rounded-full bg-orange-500 flex flex-col justify-center items-center p-2 text-white font-bold absolute -top-4 left-3">
+              <div className="h-5 w-5 rounded-full bg-[#2563eb] flex flex-col justify-center items-center p-2 text-white font-bold absolute -top-4 left-3">
                 {wishListItems?.length || 0}
               </div>
             </Link>
             <Link
               to="/cart"
-              className="relative hover:text-orange-600 duration-300"
+              className="relative hover:text-[#2563eb] duration-300"
               onClick={() => setHide(false)}
             >
-              <div className="h-5 w-5 rounded-full bg-orange-500 flex flex-col justify-center items-center p-2 text-white font-bold absolute -top-4 left-3">
+              <div className="h-5 w-5 rounded-full bg-[#2563eb] flex flex-col justify-center items-center p-2 text-white font-bold absolute -top-4 left-3">
                 {items?.length || 0}
               </div>
               <FiShoppingBag className="text-2xl" />
             </Link>
             <Link to="/cart" onClick={() => setHide(false)}>
-              <p className="font-semibold hover:text-orange-600 duration-300 cursor-pointer">
+              <p className="font-semibold hover:text-[#2563eb] duration-300 cursor-pointer">
                 ${totalPrice}
               </p>
             </Link>
@@ -80,7 +80,7 @@ const MobileNav = () => {
           </button>
         ) : (
           <button
-            className="text-2xl text-orange-600"
+            className="text-2xl text-[#2563eb]"
             onClick={() => setHide(true)}
           >
             <FaBars />
@@ -98,7 +98,7 @@ const MobileNav = () => {
           >
             <Link
               to="/home"
-              className="text-md font-semibold hover:text-orange-600 focus:text-orange-600 duration-300"
+              className="text-md font-semibold hover:text-[#2563eb] focus:text-[#2563eb] duration-300"
             >
               Home
             </Link>
@@ -109,7 +109,7 @@ const MobileNav = () => {
             className="py-2 my-2 border w-[90%] rounded-full"
           >
             <Link
-              className="text-md font-semibold hover:text-orange-600 focus:text-orange-600 duration-300"
+              className="text-md font-semibold hover:text-[#2563eb] focus:text-[#2563eb] duration-300"
               to="/shopCategory/All"
               onClick={() => setHide(false)}
             >
@@ -123,7 +123,7 @@ const MobileNav = () => {
           >
             <Link
               to="/about"
-              className="text-md font-semibold hover:text-orange-600 focus:text-orange-600 duration-300"
+              className="text-md font-semibold hover:text-[#2563eb] focus:text-[#2563eb] duration-300"
               onClick={() => setHide(false)}
             >
               About
@@ -135,7 +135,7 @@ const MobileNav = () => {
           >
             <Link
               to="/blogs"
-              className="text-md font-semibold hover:text-orange-600 focus:text-orange-600 duration-300"
+              className="text-md font-semibold hover:text-[#2563eb] focus:text-[#2563eb] duration-300"
               onClick={() => setHide(false)}
             >
               Blog
@@ -147,7 +147,7 @@ const MobileNav = () => {
           >
             <Link
               to="/contact"
-              className="text-md font-semibold hover:text-orange-600 focus:text-orange-600 duration-300"
+              className="text-md font-semibold hover:text-[#2563eb] focus:text-[#2563eb] duration-300"
               onClick={() => setHide(false)}
             >
               Contact

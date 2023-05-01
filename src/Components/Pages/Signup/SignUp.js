@@ -76,7 +76,7 @@ const SignUp = () => {
         <div className="flex lg:w-1/2 md:w-1/2 w-full justify-center py-10 items-center bg-white">
           <form className="bg-white lg:w-2/3 w-full" onSubmit={handleSignup}>
             <h1 className="text-gray-800 font-bold text-3xl mb-1">
-              Please <span className="text-orange-600">Register</span>
+              Please <span className="text-[#2563eb]">Register</span>
             </h1>
             <p className="text-sm font-normal text-gray-600 mb-7">
               to Purchase Product
@@ -151,12 +151,12 @@ const SignUp = () => {
               Register
             </button>
 
-            <span className="text-md ml-2 hover:text-orange-600 cursor-pointer duration-300">
+            <span className="text-md ml-2 hover:text-[#2563eb] cursor-pointer duration-300">
               Allready Registered?
             </span>
             <div className="mt-2">
               <Link to="/login">
-                <span className="text-md ml-2 font-semibold text-orange-600 cursor-pointer underline duration-300">
+                <span className="text-md ml-2 font-semibold text-[#2563eb] cursor-pointer underline duration-300">
                   Please Login
                 </span>
               </Link>

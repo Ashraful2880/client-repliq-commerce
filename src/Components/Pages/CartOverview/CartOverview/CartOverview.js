@@ -137,7 +137,7 @@ const CartOverview = () => {
                         <td className="px-6 py-4 whitespace-nowrap text-black">
                           {item?.price || 0}$
                         </td>
-                        <td className="px-6 py-4 whitespace-nowrap text-orange-600">
+                        <td className="px-6 py-4 whitespace-nowrap text-[#2563eb]">
                           <button onClick={() => removeItem(item?.productId)}>
                             <FaTrash />
                           </button>
@@ -160,29 +160,29 @@ const CartOverview = () => {
             <div className="px-8 pt-8">
               <h2 className="text-lg font-bold border-b my-4 flex justify-between">
                 <span>Products Total: </span>
-                <span className="text-orange-600">{TotalCartPrice || 0}$</span>
+                <span className="text-[#2563eb]">{TotalCartPrice || 0}$</span>
               </h2>
               <h2 className="text-lg font-bold border-b my-4 flex justify-between">
                 <span>Shipping: </span>
-                <span className="text-orange-600">
+                <span className="text-[#2563eb]">
                   {shippingCost?.toFixed(2) || 0}$
                 </span>
               </h2>
               <h2 className="text-lg font-bold border-b my-4 flex justify-between">
                 <span>Delivery: </span>
-                <span className="text-orange-600">
+                <span className="text-[#2563eb]">
                   {deliveryCost?.toFixed(2) || 0}$
                 </span>
               </h2>
               <h2 className="text-lg font-bold border-b my-4 flex justify-between">
                 <span>Sub Total: </span>
-                <span className="text-orange-600">
+                <span className="text-[#2563eb]">
                   {subTotal?.toFixed(2) || 0}$
                 </span>
               </h2>
             </div>
             <div className="px-8 pt-4 pb-4 flex justify-start">
-              <div className="flex items-center border border-text-orange-600 rounded-lg">
+              <div className="flex items-center border border-text-[#2563eb] rounded-lg">
                 <input
                   className="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none"
                   type="text"
@@ -190,7 +190,7 @@ const CartOverview = () => {
                   onChange={(e) => setCoupon(e.target.value)}
                 />
                 <button
-                  className="text-md font-bold text-white border bg-orange-500 hover:bg-transparent border-orange-600 hover:border-orange-600 hover:text-orange-600 py-1 px-3 rounded-lg hover:border-l-2 duration-300"
+                  className="text-md font-bold text-white border bg-[#2563eb] hover:bg-transparent border-[#2563eb] hover:border-[#2563eb] hover:text-[#2563eb] py-1 px-3 rounded-lg hover:border-l-2 duration-300"
                   type="button"
                   onClick={handleCoupon}
                 >
@@ -208,7 +208,7 @@ const CartOverview = () => {
               {cartItems?.length > 0 ? (
                 <button
                   onClick={orderSaveToLocalStorage}
-                  className="lg:text-lg text-base text-white font-bold bg-orange-500 border border-orange-600 hover:bg-transparent hover:text-orange-600 duration-300 lg:py-3 py-2 mb-6 lg:px-6 px-3 rounded-md lg:absolute static bottom-4 left-10 lg:ml-1 ml-16"
+                  className="lg:text-lg text-base text-white font-bold bg-[#2563eb] border border-[#2563eb] hover:bg-transparent hover:text-[#2563eb] duration-300 lg:py-3 py-2 mb-6 lg:px-6 px-3 rounded-md lg:absolute static bottom-4 left-10 lg:ml-1 ml-16"
                 >
                   Proceed to Checkout
                 </button>

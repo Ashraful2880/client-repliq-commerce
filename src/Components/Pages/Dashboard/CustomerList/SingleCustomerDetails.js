@@ -35,7 +35,7 @@ const SingleCustomerDetails = ({ setView, productID }) => {
             <div className="pb-2 flex justify-between items-center border-b mb-6">
               <h2 className="text-2xl font-semibold">
                 Details Of
-                <span className="text-orange-600"> {singleCustomer?.name}</span>
+                <span className="text-[#2563eb]"> {singleCustomer?.name}</span>
               </h2>
               <button
                 onClick={() => setView(false)}
@@ -51,11 +51,11 @@ const SingleCustomerDetails = ({ setView, productID }) => {
               <div className="p-2 w-full">
                 <div className="h-full flex items-center border-gray-200 border p-4 rounded-lg shadow-md hover:shadow-none cursor-pointer duration-300">
                   <div className="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4 flex justify-center items-center">
-                    <FaIdCard className="text-3xl text-orange-600" />
+                    <FaIdCard className="text-3xl text-[#2563eb]" />
                   </div>
                   <div className="flex-grow">
                     <h2 className="text-gray-600">Name</h2>
-                    <p className="text-orange-600 text-lg font-semibold">
+                    <p className="text-[#2563eb] text-lg font-semibold">
                       {singleCustomer?.name}
                     </p>
                   </div>
@@ -65,12 +65,12 @@ const SingleCustomerDetails = ({ setView, productID }) => {
               <div className="p-2 w-full">
                 <div className="h-full flex items-center border-gray-200 border p-4 rounded-lg shadow-md hover:shadow-none cursor-pointer duration-300">
                   <div className="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4 flex justify-center items-center">
-                    <FaUser className="text-3xl text-orange-600" />
+                    <FaUser className="text-3xl text-[#2563eb]" />
                   </div>
 
                   <div className="flex-grow">
                     <h2 className="text-gray-600">User Name</h2>
-                    <p className="text-orange-600 text-lg font-semibold">
+                    <p className="text-[#2563eb] text-lg font-semibold">
                       {singleCustomer?.userName}
                     </p>
                   </div>
@@ -80,11 +80,11 @@ const SingleCustomerDetails = ({ setView, productID }) => {
               <div className="p-2 w-full">
                 <div className="h-full flex items-center border-gray-200 border p-4 rounded-lg shadow-md hover:shadow-none cursor-pointer duration-300">
                   <div className="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4 flex justify-center items-center">
-                    <FaEnvelope className="text-3xl text-orange-600" />
+                    <FaEnvelope className="text-3xl text-[#2563eb]" />
                   </div>
                   <div className="flex-grow">
                     <h2 className="text-gray-600">Email</h2>
-                    <p className="text-orange-600 text-lg font-semibold">
+                    <p className="text-[#2563eb] text-lg font-semibold">
                       {singleCustomer?.email}
                     </p>
                   </div>
@@ -94,11 +94,11 @@ const SingleCustomerDetails = ({ setView, productID }) => {
               <div className="p-2 w-full">
                 <div className="h-full flex items-center border-gray-200 border p-4 rounded-lg shadow-md hover:shadow-none cursor-pointer duration-300">
                   <div className="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4 flex justify-center items-center">
-                    <FaPhoneAlt className="text-3xl text-orange-600" />
+                    <FaPhoneAlt className="text-3xl text-[#2563eb]" />
                   </div>
                   <div className="flex-grow">
                     <h2 className="text-gray-600">Phone</h2>
-                    <p className="text-orange-600 text-lg font-semibold">
+                    <p className="text-[#2563eb] text-lg font-semibold">
                       {singleCustomer?.phone}
                     </p>
                   </div>
@@ -108,11 +108,11 @@ const SingleCustomerDetails = ({ setView, productID }) => {
               <div className="p-2 w-full">
                 <div className="h-full flex items-center border-gray-200 border p-4 rounded-lg shadow-md hover:shadow-none cursor-pointer duration-300">
                   <div className="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4 flex justify-center items-center">
-                    <FaLocationArrow className="text-3xl text-orange-600" />
+                    <FaLocationArrow className="text-3xl text-[#2563eb]" />
                   </div>
                   <div className="flex-grow">
                     <h2 className="text-gray-600">Address</h2>
-                    <p className="text-orange-600 text-lg font-semibold">
+                    <p className="text-[#2563eb] text-lg font-semibold">
                       {singleCustomer?.address}
                     </p>
                   </div>
@@ -122,11 +122,11 @@ const SingleCustomerDetails = ({ setView, productID }) => {
               <div className="p-2 w-full">
                 <div className="h-full flex items-center border-gray-200 border p-4 rounded-lg shadow-md hover:shadow-none cursor-pointer duration-300">
                   <div className="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4 flex justify-center items-center">
-                    <TbWorldDownload className="text-4xl text-orange-600" />
+                    <TbWorldDownload className="text-4xl text-[#2563eb]" />
                   </div>
                   <div className="flex-grow">
                     <h2 className="text-gray-600">Last Visited</h2>
-                    <p className="text-orange-600 text-lg font-semibold">
+                    <p className="text-[#2563eb] text-lg font-semibold">
                       {singleCustomer?.LastVisited}
                     </p>
                   </div>
