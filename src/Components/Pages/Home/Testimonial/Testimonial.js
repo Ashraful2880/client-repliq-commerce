@@ -56,7 +56,7 @@ const Testimonial = () => {
         <div className="flex items-center gap-x-3">
           <div>
             <button
-              className="bg-white h-12 w-12 rounded-full flex flex-col items-center justify-center text-2xl border text-[#2563eb] hover:text-white hover:bg-[#2563eb] duration-300 hover:border-[#2563eb]"
+              className="text-white bg-[#2563eb] h-12 w-12 rounded-full flex flex-col items-center justify-center text-2xl border border-[#2563eb] hover:text-[#2563eb] hover:bg-white duration-300"
               onClick={() => slider?.current?.slickPrev()}
             >
               <VscArrowLeft />
@@ -64,7 +64,7 @@ const Testimonial = () => {
           </div>
           <div>
             <button
-              className="bg-white h-12 w-12 rounded-full flex flex-col items-center justify-center text-2xl border text-[#2563eb] hover:text-white hover:bg-[#2563eb] duration-300 hover:border-[#2563eb]"
+              className="text-white bg-[#2563eb] h-12 w-12 rounded-full flex flex-col items-center justify-center text-2xl border border-[#2563eb] hover:text-[#2563eb] hover:bg-white duration-300"
               onClick={() => slider?.current?.slickNext()}
             >
               <VscArrowRight />

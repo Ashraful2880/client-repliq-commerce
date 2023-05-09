@@ -29,12 +29,12 @@ const NewsLater = () => {
               is sent once in <br />a week on every friday so subscribe to get
               latest news and updates.
             </p>
-            <div className="sm:border border-white flex-col sm:flex-row flex items-center lg:w-5/12 w-full mt-12 space-y-4 sm:space-y-0">
+            <div className="sm:border border-white flex-col sm:flex-row flex items-center lg:w-5/12 w-full mt-12 space-y-4 sm:space-y-0 rounded-full">
               <input
                 className="border border-white sm:border-transparent text-base w-full font-medium leading-none text-white p-4 focus:outline-none bg-transparent placeholder-white"
                 placeholder="Email Address"
               />
-              <button className="focus:outline-none focus:ring-offset-2 focus:ring border-l border-l-transparent hover:border-l-white w-full sm:w-auto bg-[#2563eb] py-4 px-6 hover:bg-opacity-75 text-white hover:bg-transparent duration-300 transition-colors ease-in-out">
+              <button className="rounded-full focus:outline-none focus:ring-offset-2 focus:ring border-l border-l-transparent hover:border-l-white w-full sm:w-auto bg-[#2563eb] py-4 px-6 hover:bg-opacity-75 text-white hover:bg-transparent duration-300 transition-colors ease-in-out">
                 Subscribe
               </button>
             </div>

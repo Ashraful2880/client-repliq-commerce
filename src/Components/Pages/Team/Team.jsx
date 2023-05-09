@@ -7,16 +7,19 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import LoadingScreen from "../../Shared/LoadingScreen/LoadingScreen";
 import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
+import axios from "axios";
 
 SwiperCore.use([Autoplay, Pagination]);
 
 const Team = () => {
   const [teams, setTeams] = useState([]);
+  
   useEffect(() => {
-    fetch("https://server-firat-deal-shop.onrender.com/about")
-      .then((res) => res.json())
-      .then((data) => setTeams(data));
+    axios.get(`${process.env.REACT_APP_API_PATH}/teams`).then((resp) => {
+      setTeams(resp?.data);
+    });
   }, []);
+
   return (
     <>
       {teams?.length > 0 ? (
@@ -24,7 +27,7 @@ const Team = () => {
           <h5 className="text-orange-500 text-2xl font-bold uppercase">
             Our Members
           </h5>
-          <h2 className="text-3xl uppercase font-bold mb-10">Meet Our Teams</h2>
+          <h2 className="text-3xl uppercase font-bold mb-10">Meet Our <span className="text-[#2563eb]">Teams</span> </h2>
           <div className=" container mx-auto">
             <div className="w-full overflow-hidden px-5">
               <Swiper
@@ -40,10 +43,10 @@ const Team = () => {
                     slidesPerView: 2,
                   },
                   900: {
-                    slidesPerView: 3,
+                    slidesPerView: 4,
                   },
                   1020: {
-                    slidesPerView: 4,
+                    slidesPerView: 5,
                   },
                 }}
                 className="mySwiper"
@@ -61,14 +64,14 @@ const Team = () => {
                       <div className="px-4 text-left overlay-details">
                         <div className="flex justify-between items-center pt-1">
                           <div>
-                            <h4 className="text-lg font-bold text-orange-500">
+                            <h4 className="text-lg font-bold text-orange-600">
                               {team?.name}
                             </h4>
                             <h5 className="text-sm font-bold text-gray-300">
                               {team?.designation}
                             </h5>
                           </div>
-                          <h1>
+                          <div className="flex">
                             <a href="https://ashrafulislambd.com">
                               <FaFacebook className="mx-1 text-gray-200 text-xl hover:text-orange-500  duration-300" />
                             </a>
@@ -78,7 +81,7 @@ const Team = () => {
                             <a href="https://ashrafulislambd.com">
                               <FaInstagram className="mx-1 text-gray-200 text-xl hover:text-orange-500 duration-300" />
                             </a>
-                          </h1>
+                          </div>
                         </div>
                       </div>
                     </div>
