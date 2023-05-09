@@ -31,8 +31,8 @@ const Sidebar = ({ open }) => {
                 <>
                   <img src={logo} alt="Logo" className="w-8" />
                   <h2 className="font-bold text-2xl text-[#0E2558] logo-font ml-1.5">
-                    <span className="text-[#15A9E3]">R</span>epliq
-                    <span className="text-[#15A9E3]"> C</span>om
+                    <span className="text-[#2563eb]">R</span>epliq
+                    <span className="text-[#2563eb]"> C</span>om
                   </h2>
                 </>
               ) : (

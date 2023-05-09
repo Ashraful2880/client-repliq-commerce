@@ -19,28 +19,28 @@ const TopHeader = () => {
               <a
                 href="https://www.facebook.com/ashraful2880"
                 target="blank"
-                className="text-white text-lg hover:text-[#2563eb] duration-300 transition-colors ease-in-out hover:bg-white p-1 rounded-full"
+                className="text-[#2563eb] text-lg hover:text-white duration-300 transition-colors ease-in-out bg-white hover:bg-transparent p-1 rounded-full border border-white"
               >
                 <FaFacebookF />
               </a>
               <a
                 href="https://www.facebook.com/ashraful2880"
                 target="blank"
-                className="text-white text-lg hover:text-[#2563eb] duration-300 transition-colors ease-in-out hover:bg-white p-1 rounded-full"
+                className="text-[#2563eb] text-lg hover:text-white duration-300 transition-colors ease-in-out bg-white hover:bg-transparent p-1 rounded-full border border-white"
               >
                 <CgTwitter />
               </a>
               <a
                 href="https://www.facebook.com/ashraful2880"
                 target="blank"
-                className="text-white text-lg hover:text-[#2563eb] duration-300 transition-colors ease-in-out hover:bg-white p-1 rounded-full"
+                className="text-[#2563eb] text-lg hover:text-white duration-300 transition-colors ease-in-out bg-white hover:bg-transparent p-1 rounded-full border border-white"
               >
                 <GrInstagram />
               </a>
               <a
                 href="https://www.facebook.com/ashraful2880"
                 target="blank"
-                className="text-white text-lg hover:text-[#2563eb] duration-300 transition-colors ease-in-out hover:bg-white p-1 rounded-full"
+                className="text-[#2563eb] text-lg hover:text-white duration-300 transition-colors ease-in-out bg-white hover:bg-transparent p-1 rounded-full border border-white"
               >
                 <ImGooglePlus />
               </a>

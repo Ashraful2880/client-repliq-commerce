@@ -7,7 +7,6 @@ import Navbar from "./Navbar";
 const MainHeader = () => {
   const [items, setItems] = React.useState();
   const [wishListItems, setWishListItems] = React.useState();
-  const [changes, setChanges] = React.useState(0);
   const location = useLocation();
   const pathName = location?.pathname;
 
@@ -19,12 +18,12 @@ const MainHeader = () => {
   useEffect(() => {
     const myCartProduct = localStorage.getItem("cart");
     setItems(JSON.parse(myCartProduct));
-  }, [items, changes]);
+  }, []);
 
   useEffect(() => {
     const wishListProduct = localStorage.getItem("wishList");
     setWishListItems(JSON.parse(wishListProduct));
-  }, [wishListItems, changes]);
+  }, []);
 
   return (
     <>
