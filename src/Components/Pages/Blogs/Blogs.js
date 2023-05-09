@@ -38,7 +38,6 @@ const Blogs = () => {
             <Swiper
               loop={true}
               autoplay={{ delay: 3000 }}
-              grabCursor={true}
               slidesPerView={4}
               spaceBetween={30}
               breakpoints={{
@@ -59,16 +58,16 @@ const Blogs = () => {
             >
               {blogs?.map((blog, key) => (
                 <SwiperSlide key={key}>
-                  <div className="border rounded-lg mx-auto duration-300 bg-white lg:px-0 px-2 hover:shadow-xl hover:border-transparent">
+                  <div className="border rounded-lg mx-auto duration-300 bg-white lg:px-0 px-2 hover:shadow-xl cursor-pointer group">
                     <div className="overflow-hidden">
                       <img
-                        className="w-full h-full min-h-[200px] rounded-t-lg"
+                        className="w-full h-full min-h-[200px] rounded-t-lg group-hover:scale-110 duration-300 transition-all ease-in-out"
                         src={blog?.blogImage}
                         alt="BlogImage"
                       />
                     </div>
                     <div className="px-4 pb-4 text-left">
-                      <h1 className="text-lg font-bold my-5 text-gray-700 cursor-pointer">
+                      <h1 className="text-lg font-bold my-5 text-gray-700 ">
                         {blog?.title}
                       </h1>
                       <hr className="border" />

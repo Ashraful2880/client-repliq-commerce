@@ -21,15 +21,21 @@ const Footer = () => {
         <div className="footer-container">
           {/* Top footer Area */}
           <div className="border-b border-b-gray-500">
-            <div className="container mx-auto grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 items-center lg:py-14 py-6">
+            <div className="container mx-auto grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 items-center lg:py-10 py-6">
               <Link
                 to="/home"
                 className="lg:mb-2 mb-5 flex justify-center items-center"
               >
                 <img className="w-1/12" src={logo} alt="Main Logo" />
                 <h4 className="mx-2 font-bold text-white text-xl mt-1">
-                  <span className="text-[#2563eb]">R</span>epliq
-                  <span className="text-[#2563eb]"> Comm </span>
+                  <span>
+                    {" "}
+                    <span className="text-[#2563eb]">R</span>epliq{" "}
+                    <span className="text-[#2563eb]">C</span>ommerce
+                  </span>
+                  <p className="text-sm font-normal text-left text-gray-300">
+                    Your Better Shopping
+                  </p>
                 </h4>
               </Link>
               <div className="lg:flex justify-center items-center hidden group">
@@ -68,7 +74,7 @@ const Footer = () => {
             </div>
           </div>
           {/* Bottom footer Area */}
-          <div className="container mx-auto grid grid-cols-2 lg:grid-cols-4 place-content-center place-items-center lg:py-14 py-6 text-white w-full">
+          <div className="container mx-auto grid grid-cols-2 lg:grid-cols-4 place-content-center place-items-center lg:py-10 py-6 text-white w-full">
             <div>
               <div className="text-start w-full flex flex-col justify-start items-start gap-3">
                 <h4 className="lg:mb-6 mb-0 lg:mt-0 mt-6 text-xl font-bold">
@@ -211,6 +217,12 @@ const Footer = () => {
               </div>
             </div>
           </div>
+            <p className="text-center pb-4 w-full text-gray-300">
+              Copyright &copy;
+              <a href="https://ashrafulislam.netlify.app" target="blank" className="text-[#2563eb]">
+                Ashraful Islam
+              </a>
+            </p>
         </div>
       )}
     </>

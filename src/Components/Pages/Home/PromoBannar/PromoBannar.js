@@ -49,7 +49,7 @@ const PromoBannar = () => {
           <div className="w-full flex justify-between items-center gap-x-4 container mx-auto">
             <div></div>
             <div className="uppercase lg:block hidden text-left w-1/2">
-              <h3 className="text-3xl text-[#2563eb] font-bold">
+              <h3 className="text-3xl text-[#2563eb] font-bold font-[cursive]">
                 Sales Offer & Discount Only
               </h3>
               <h1 className="text-6xl upparcase font-bold mt-3 mb-4">
