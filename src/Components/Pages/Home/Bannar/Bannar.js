@@ -23,13 +23,13 @@ const Bannar = () => {
 
         <SwiperSlide className="slider-bg">
           <div className="slider-bg"></div>
-          <div className="absolute lg:left-[300px] md:left-[180px] left-[50px] lg:top-[100px] md:top-[100px] top-[50px] text-left">
+          <div className="absolute lg:left-[300px] md:left-[180px] left-[50px] lg:top-[100px] md:top-[100px] top-[50px] text-left font-[cursive]">
             <div className="lg:text-6xl md:text-5xl text-4xl font-bold text-[#0b1144]">
-              <h1>Digital</h1>
-              <h1 className="my-3">Blood Pressure</h1>
-              <h1 className="text-[#2563eb]">Monitor</h1>
+              <h3 className="text-5xl">Womens</h3>
+              <h1 className="my-3 text-[#2563eb]">All Latest Quality</h1>
+              <h3 className="text-5xl">Sunglases</h3>
             </div>
-            <p className="text-[22px] text-gray-500 mt-8 font-semibold">
+            <p className="text-[22px] text-gray-500 mt-8">
               We support you to business health smoothly and reduce
               <br /> your stress with good Health Product
             </p>
@@ -45,13 +45,13 @@ const Bannar = () => {
 
         <SwiperSlide className="slider-bg2">
           <div className="slider-bg2"></div>
-          <div className="absolute lg:left-[300px] md:left-[180px] left-[50px] lg:top-[100px] md:top-[100px] top-[50px] text-left">
+          <div className="absolute lg:left-[300px] md:left-[180px] left-[50px] lg:top-[100px] md:top-[100px] top-[50px] text-left font-[cursive]">
             <div className="lg:text-6xl md:text-5xl text-4xl font-bold text-[#0b1144]">
-              <h1>Medical</h1>
-              <h1 className="my-3 text-[#2563eb]">First Aid New</h1>
-              <h1> Kit</h1>
+              <h3 className="text-5xl">Stylish</h3>
+              <h1 className="my-3 text-[#2563eb]">Dress Item For</h1>
+              <h3 className="text-5xl"> Womens</h3>
             </div>
-            <p className="text-[22px] text-gray-500 mt-8 font-semibold">
+            <p className="text-[22px] text-gray-500 mt-8">
               We support you to business health smoothly and reduce
               <br /> your stress with good Health Product
             </p>
@@ -67,13 +67,13 @@ const Bannar = () => {
 
         <SwiperSlide className="slider-bg3">
           <div className="slider-bg3"></div>
-          <div className="absolute lg:left-[300px] md:left-[180px] left-[50px] lg:top-[100px] md:top-[100px] top-[50px] text-left">
+          <div className="absolute lg:left-[300px] md:left-[180px] left-[50px] lg:top-[100px] md:top-[100px] top-[50px] text-left font-[cursive]">
             <div className="lg:text-6xl md:text-5xl text-4xl font-bold text-[#0b1144]">
-              <h1>Digital</h1>
-              <h1 className="my-3 text-[#2563eb]">New Glucometer</h1>
-              <h1>Service</h1>
+              <h3 className="text-5xl">9% Discount</h3>
+              <h1 className="my-3 text-[#2563eb]">For All Women</h1>
+              <h3 className="text-5xl">Products</h3>
             </div>
-            <p className="text-[22px] text-gray-500 mt-8 font-semibold">
+            <p className="text-[22px] text-gray-500 mt-8">
               We support you to business health smoothly and reduce
               <br /> your stress with good Health Product
             </p>
