@@ -2,9 +2,11 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { useAlert } from "react-alert";
 import { FaTrash } from "react-icons/fa";
+import { useAPI } from "../../../Context/ContextProvider";
 
 const CartOverview = () => {
   const alert = useAlert();
+  const {changes,setChanges}=useAPI();
   const [cartItems, setCartItems] = useState([]);
   const [coupon, setCoupon] = useState();
   const [grandTotal, setGrandTotal] = useState();
@@ -23,6 +25,7 @@ const CartOverview = () => {
     setCartItems(setCart);
     localStorage.setItem("cart", JSON.stringify(setCart));
     alert.success("Remove Item From Cart");
+    setChanges(!changes)
   };
 
   //<------ Function For Calculation Price And Discount Area -------->

@@ -1,30 +1,29 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { FiHeart, FiShoppingBag } from "react-icons/fi";
 import { Link, useLocation } from "react-router-dom";
 import MobileNav from "./MobileNav";
 import Navbar from "./Navbar";
+import { useAPI } from "../../Context/ContextProvider";
 
 const MainHeader = () => {
-  const [items, setItems] = React.useState();
-  const [wishListItems, setWishListItems] = React.useState();
+  const {items,wishListItems}=useAPI();
   const location = useLocation();
   const pathName = location?.pathname;
 
-  const totalPrice = items?.reduce(
+/*   const totalPrice = items?.reduce(
     (accumulator, currentValue) => accumulator + currentValue?.price,
     0
-  );
+  ); */
 
-  useEffect(() => {
-    const myCartProduct = localStorage.getItem("cart");
-    setItems(JSON.parse(myCartProduct));
-  }, []);
+   let TotalCartPrice = items?.reduce(function (accumulator, item) {
+    return accumulator + item.price;
+  }, 0);
 
-  useEffect(() => {
-    const wishListProduct = localStorage.getItem("wishList");
-    setWishListItems(JSON.parse(wishListProduct));
-  }, []);
-
+  const shippingCost = parseFloat((TotalCartPrice / 100) * 10) || 0;
+  const deliveryCostCalculate = parseFloat((TotalCartPrice / 100) * 15) || 0;
+  const deliveryCost = deliveryCostCalculate ||0;
+  const subTotal = parseFloat(TotalCartPrice + shippingCost + deliveryCost )||0;
+  
   return (
     <>
       {!pathName.includes("/dashboard") && (
@@ -35,7 +34,9 @@ const MainHeader = () => {
                 <div className="lg:block hidden">
                   <Navbar />
                 </div>
-                <div className="lg:hidden block">{/* <MobileNav /> */}</div>
+                <div className="lg:hidden block">
+                  <MobileNav items={items} wishListItems={wishListItems} totalPrice={subTotal | "00"}/>
+                </div>
               </div>
 
               <div className="lg:block md:block hidden">
@@ -60,7 +61,7 @@ const MainHeader = () => {
                   </Link>
                   <Link to="/cart">
                     <p className="font-semibold hover:text-[#2563eb] duration-300 cursor-pointer">
-                      ${totalPrice}
+                      ${subTotal | "00"}
                     </p>
                   </Link>
                 </div>

@@ -6,15 +6,15 @@ import { MdPayment } from "react-icons/md";
 import Rating from "react-rating";
 import { Link, useParams } from "react-router-dom";
 import LoadingScreen from "../../../Shared/LoadingScreen/LoadingScreen";
+import { useAPI } from "../../../Context/ContextProvider";
 
 const ProductDetails = () => {
   const alert = useAlert();
+  const { items,wishListItems,changes,setChanges } = useAPI();
   const { productId } = useParams();
   const [cart, setCart] = React.useState();
   const [cartCount, setCartCount] = React.useState(1);
   const [price, setPrice] = React.useState();
-  const [wishList, setWishList] = React.useState();
-  const [cartData, setCartData] = React.useState([]);
 
   useEffect(() => {
     setPrice(cart?.price * cartCount);
@@ -26,15 +26,12 @@ const ProductDetails = () => {
       .then((data) => setCart(data));
   }, [productId]);
 
-  useEffect(() => {
-    setCartData(JSON.parse(localStorage.getItem("cart")) || []);
-  }, []);
 
   const addLocalStorage = (id) => {
-    const findProduct = cartData?.find((item) => item?.id === id);
-    console.log(findProduct);
+    setChanges(!changes);
+    const findProduct = items?.find((item) => item?.id === id);
     if (findProduct) {
-      const filteredProduct = cartData?.filter(
+      const filteredProduct = items?.filter(
         (item) => item?.id !== findProduct?.id
       );
       localStorage?.setItem(
@@ -55,7 +52,7 @@ const ProductDetails = () => {
       localStorage.setItem(
         "cart",
         JSON.stringify([
-          ...cartData,
+          ...items,
           {
             productId: productId,
             id: id,
@@ -70,21 +67,46 @@ const ProductDetails = () => {
     alert.success("Product Added to Cart");
   };
 
-  const addWishList = () => {
-    let AddWishList = [];
-    if (localStorage.getItem("wishList")) {
-      AddWishList = JSON.parse(localStorage.getItem("wisshList"));
+  const addWishList = (id) => {
+    setChanges(!changes);
+    const findProduct = wishListItems?.find((item) => item?.id === id);
+    if (findProduct) {
+      const filteredProduct = wishListItems?.filter(
+        (item) => item?.id !== findProduct?.id
+      );
+      localStorage?.setItem(
+        "wishList",
+        JSON.stringify([
+          ...filteredProduct,
+          {
+            productId: productId,
+            id: id,
+            productImage: `${cart.productImage}`,
+            name: `${cart.name}`,
+            price: price,
+            quantity: findProduct?.quantity + cartCount,
+          },
+        ])
+      );
+    } else {
+      localStorage.setItem(
+        "wishList",
+        JSON.stringify([
+          ...wishListItems,
+          {
+            productId: productId,
+            id: id,
+            productImage: `${cart.productImage}`,
+            name: `${cart.name}`,
+            price: price,
+            quantity: cartCount,
+          },
+        ])
+      );
     }
-    AddWishList.push({
-      productId: productId + 1,
-      productImage: `${wishList.productImage}`,
-      name: `${wishList.name}`,
-      price: price,
-      quantity: cartCount,
-    });
-    localStorage.setItem("wishList", JSON.stringify(addWishList));
     alert.success("Product Added to Wish List");
   };
+
 
   return (
     <div className="min-h-screen">
@@ -163,7 +185,7 @@ const ProductDetails = () => {
                   <BsCart />
                 </button>
                 <button
-                  onClick={addWishList}
+                  onClick={() => addWishList(cart?._id)}
                   className="bg-gray-500 border border-gray-500 text-white hover:text-gray-600 px-3 lg:py-2 py-1 lg:text-base text-xs rounded-md hover:bg-transparent hover:[#2563eb] duration-300 flex items-center gap-x-2"
                 >
                   Add To Wishlist

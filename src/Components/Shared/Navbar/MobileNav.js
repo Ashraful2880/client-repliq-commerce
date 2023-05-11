@@ -1,30 +1,13 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { FaBars } from "react-icons/fa";
 import { FiHeart, FiShoppingBag } from "react-icons/fi";
 import { GrClose } from "react-icons/gr";
 import { Link } from "react-router-dom";
 import logo from "../../../Assets/Images/logo.png";
 
-const MobileNav = () => {
+const MobileNav = ({items,wishListItems,totalPrice}) => {
   const [hide, setHide] = React.useState(false);
-  const [items, setItems] = React.useState();
-  const [wishListItems, setWishListItems] = React.useState();
-  const [changes, setChanges] = React.useState(0);
 
-  const totalPrice = items?.reduce(
-    (accumulator, currentValue) => accumulator + currentValue?.price,
-    0
-  );
-
-  useEffect(() => {
-    const myCartProduct = localStorage.getItem("cart");
-    setItems(JSON.parse(myCartProduct));
-  }, [items, changes]);
-
-  useEffect(() => {
-    const wishListProduct = localStorage.getItem("wishList");
-    setWishListItems(JSON.parse(wishListProduct));
-  }, [wishListItems, changes]);
 
   return (
     <div className="w-full flex flex-col items-center gap-x-12 border shadow-md">

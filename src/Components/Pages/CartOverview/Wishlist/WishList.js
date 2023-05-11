@@ -1,13 +1,15 @@
 import React, { useEffect } from "react";
 import { useAlert } from "react-alert";
 import { FaTrash } from "react-icons/fa";
+import { useAPI } from "../../../Context/ContextProvider";
 
 const WishList = () => {
   const alert = useAlert();
+  const {changes,setChanges}=useAPI();
   const [wishList, setWishList] = React.useState();
 
   useEffect(() => {
-    const wishListProduct = localStorage.getItem("cart");
+    const wishListProduct = localStorage.getItem("wishList");
     setWishList(JSON.parse(wishListProduct));
   }, []);
 
@@ -15,7 +17,8 @@ const WishList = () => {
     const setWishListItems = wishList.filter((items) => items.productId !== id);
     setWishList(setWishListItems);
     localStorage.setItem("wishList", JSON.stringify(setWishListItems));
-    alert.success("Remove Item From Cart");
+    alert.success("Remove Item From WishList");
+    setChanges(!changes)
   };
 
   return (
@@ -23,7 +26,7 @@ const WishList = () => {
       <h1 className="lg:text-3xl md:text-2xl text-xl font-bold pt-7 pb-3 lg:text-left text-center">
         Products You Have Added
       </h1>
-      <div className="lg:overflow-hidden overflow-x-scroll lg:w-3/4 w-full mb-4 lg:px-0 px-4">
+      <div className="lg:overflow-hidden overflow-x-scroll w-full mb-4 lg:px-0 px-4">
         <table className="w-full mr-2 border">
           <thead className=" divide-y border-b-2 border-t border-gray-300">
             <tr>

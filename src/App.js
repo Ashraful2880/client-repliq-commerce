@@ -30,6 +30,7 @@ import ManageOrders from "./Components/Pages/Dashboard/ManageOrders/ManageOrders
 import CustomerList from "./Components/Pages/Dashboard/CustomerList/CustomerList";
 import Users from "./Components/Pages/Dashboard/Users/Users";
 import PrivateRoute from "./Components/PrivateRoute/PrivateRoute";
+import { ContextProvider } from "./Components/Context/ContextProvider";
 
 function App() {
   return (
@@ -37,55 +38,57 @@ function App() {
       <div className="lg:block md:block hidden">
         <ScrollToTop smooth className="scroll-button" color="white" />
       </div>
-      <BrowserRouter>
-        <ScrollToPageTop />
-        <Header />
-        <Routes>
-          <Route path="/*" element={<ErrorPage />} />
-          <Route path="/" element={<Home />} />
-          <Route path="/home" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/blogs" element={<Blogs />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/signup" element={<SignUp />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="shopCategory/:category" element={<Shop />} />
-          <Route path="addToCart/:productId" element={<ProductDetails />} />
-          <Route path="/success" element={<SuccessPage />} />
-          <Route path="/cart" element={<CartOverview />} />
-          <Route path="/wishList" element={<WishList />} />
-          <Route
-            path="/checkout"
-            element={
-              <PrivateRoute>
-                <CheckOut />
-              </PrivateRoute>
-            }
-          />
+      <ContextProvider>
+        <BrowserRouter>
+          <ScrollToPageTop />
+          <Header />
+          <Routes>
+            <Route path="/*" element={<ErrorPage />} />
+            <Route path="/" element={<Home />} />
+            <Route path="/home" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/blogs" element={<Blogs />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/signup" element={<SignUp />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="shopCategory/:category" element={<Shop />} />
+            <Route path="addToCart/:productId" element={<ProductDetails />} />
+            <Route path="/success" element={<SuccessPage />} />
+            <Route path="/cart" element={<CartOverview />} />
+            <Route path="/wishList" element={<WishList />} />
+            <Route
+              path="/checkout"
+              element={
+                <PrivateRoute>
+                  <CheckOut />
+                </PrivateRoute>
+              }
+            />
 
-          <Route
-            path="/dashboard"
-            element={
-              <PrivateRoute>
-                <Dashboard />
-              </PrivateRoute>
-            }
-          >
-            <Route path="" element={<DashboardHome />} />
-            <Route path="allProducts" element={<AllProducts />} />
-            <Route path="addProduct" element={<AddProduct />} />
-            <Route path="orderList" element={<OrderList />} />
-            <Route path="manageOrders" element={<ManageOrders />} />
-            <Route path="customerList" element={<CustomerList />} />
-            <Route path="addCustomer" element={<AddCustomer />} />
-            <Route path="users" element={<Users />} />
-            <Route path="overview" element={<Overview />} />
-            <Route path="summary" element={<Summary />} />
-            <Route path="makeAdmin" element={<MakeAdmin />} />
-          </Route>
-        </Routes>
-        <Footer />
-      </BrowserRouter>
+            <Route
+              path="/dashboard"
+              element={
+                <PrivateRoute>
+                  <Dashboard />
+                </PrivateRoute>
+              }
+            >
+              <Route path="" element={<DashboardHome />} />
+              <Route path="allProducts" element={<AllProducts />} />
+              <Route path="addProduct" element={<AddProduct />} />
+              <Route path="orderList" element={<OrderList />} />
+              <Route path="manageOrders" element={<ManageOrders />} />
+              <Route path="customerList" element={<CustomerList />} />
+              <Route path="addCustomer" element={<AddCustomer />} />
+              <Route path="users" element={<Users />} />
+              <Route path="overview" element={<Overview />} />
+              <Route path="summary" element={<Summary />} />
+              <Route path="makeAdmin" element={<MakeAdmin />} />
+            </Route>
+          </Routes>
+          <Footer />
+        </BrowserRouter>
+      </ContextProvider>
     </div>
   );
 }
