@@ -2,8 +2,8 @@ import React, { useContext, createContext, useEffect, useState } from "react";
 const APIContext = createContext();
 
 export function ContextProvider({ children }) {
-  const [items, setItems] = useState();
-  const [wishListItems, setWishListItems] = React.useState();
+  const [items, setItems] = useState([]);
+  const [wishListItems, setWishListItems] = React.useState([]);
   const [changes,setChanges]=useState(false)
 
   useEffect(() => {

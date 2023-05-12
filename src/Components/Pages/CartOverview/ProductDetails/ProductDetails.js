@@ -48,7 +48,7 @@ const ProductDetails = () => {
           },
         ])
       );
-    } else {
+    } else  {
       localStorage.setItem(
         "cart",
         JSON.stringify([
