@@ -10,11 +10,13 @@ import { useAPI } from "../../../Context/ContextProvider";
 
 const ProductDetails = () => {
   const alert = useAlert();
-  const { items,wishListItems,changes,setChanges } = useAPI();
+  const { changes,setChanges } = useAPI();
   const { productId } = useParams();
   const [cart, setCart] = React.useState();
   const [cartCount, setCartCount] = React.useState(1);
   const [price, setPrice] = React.useState();
+  const [wishList, setWishList] = React.useState();
+  const [cartData, setCartData] = React.useState([]);
 
   useEffect(() => {
     setPrice(cart?.price * cartCount);
@@ -26,12 +28,20 @@ const ProductDetails = () => {
       .then((data) => setCart(data));
   }, [productId]);
 
+  useEffect(() => {
+    setCartData(JSON.parse(localStorage.getItem("cart")) || []);
+  }, []);
+
+  useEffect(() => {
+    setWishList(JSON.parse(localStorage.getItem("wishList")) || []);
+  }, []);
 
   const addLocalStorage = (id) => {
     setChanges(!changes);
-    const findProduct = items?.find((item) => item?.id === id);
+    const findProduct = cartData?.find((item) => item?.id === id);
+    console.log(findProduct);
     if (findProduct) {
-      const filteredProduct = items?.filter(
+      const filteredProduct = cartData?.filter(
         (item) => item?.id !== findProduct?.id
       );
       localStorage?.setItem(
@@ -48,11 +58,11 @@ const ProductDetails = () => {
           },
         ])
       );
-    } else  {
+    } else {
       localStorage.setItem(
         "cart",
         JSON.stringify([
-          ...items,
+          ...cartData,
           {
             productId: productId,
             id: id,
@@ -69,9 +79,9 @@ const ProductDetails = () => {
 
   const addWishList = (id) => {
     setChanges(!changes);
-    const findProduct = wishListItems?.find((item) => item?.id === id);
+    const findProduct = wishList?.find((item) => item?.id === id);
     if (findProduct) {
-      const filteredProduct = wishListItems?.filter(
+      const filteredProduct = wishList?.filter(
         (item) => item?.id !== findProduct?.id
       );
       localStorage?.setItem(
@@ -92,7 +102,7 @@ const ProductDetails = () => {
       localStorage.setItem(
         "wishList",
         JSON.stringify([
-          ...wishListItems,
+          ...wishList,
           {
             productId: productId,
             id: id,
@@ -106,7 +116,6 @@ const ProductDetails = () => {
     }
     alert.success("Product Added to Wish List");
   };
-
 
   return (
     <div className="min-h-screen">
