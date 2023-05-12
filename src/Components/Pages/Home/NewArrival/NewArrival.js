@@ -24,7 +24,7 @@ const NewArrival = () => {
   const settings = {
     dots: false,
     infinite: true,
-    slidesToShow: 5.5,
+    slidesToShow: 5,
     slidesToScroll: 1,
     autoplay: true,
     speed: 700,
@@ -37,7 +37,7 @@ const NewArrival = () => {
       {
         breakpoint: 992,
         settings: {
-          slidesToShow: 5,
+          slidesToShow: 4,
           slidesToScroll: 1,
           infinite: true,
           dots: true,
@@ -46,7 +46,7 @@ const NewArrival = () => {
       {
         breakpoint: 768,
         settings: {
-          slidesToShow: 4,
+          slidesToShow: 3,
           slidesToScroll: 1,
           initialSlide: 2,
           adaptiveHeight: true,

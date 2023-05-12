@@ -26,7 +26,7 @@ const FeaturedProducts = () => {
   const settings = {
     dots: false,
     infinite: true,
-    slidesToShow: 5.5,
+    slidesToShow: 5,
     slidesToScroll: 1,
     autoplay: true,
     speed: 700,
@@ -39,7 +39,7 @@ const FeaturedProducts = () => {
       {
         breakpoint: 992,
         settings: {
-          slidesToShow: 5,
+          slidesToShow: 4,
           slidesToScroll: 1,
           infinite: true,
           dots: true,
@@ -48,7 +48,7 @@ const FeaturedProducts = () => {
       {
         breakpoint: 768,
         settings: {
-          slidesToShow: 4,
+          slidesToShow: 3,
           slidesToScroll: 1,
           initialSlide: 2,
           adaptiveHeight: true,
@@ -82,7 +82,7 @@ const FeaturedProducts = () => {
         </div>
         {/* Slider Arrow Item */}
         {featuredProduct && (
-        <div className="lg:flex md:flex hidden items-center gap-x-2">
+          <div className="lg:flex md:flex hidden items-center gap-x-2">
             <div>
               <button
                 className="h-9 w-9 rounded-full flex flex-col items-center justify-center text-2xl border border-[#2563eb] text-white hover:text-[#2563eb] bg-[#2563eb] hover:bg-white duration-300 hover:border-[#2563eb]"

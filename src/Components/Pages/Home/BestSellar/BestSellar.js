@@ -26,7 +26,7 @@ const BestSellar = () => {
   const settings = {
     dots: false,
     infinite: true,
-    slidesToShow: 5.5,
+    slidesToShow: 5,
     slidesToScroll: 1,
     autoplay: true,
     speed: 700,
@@ -38,7 +38,7 @@ const BestSellar = () => {
       {
         breakpoint: 992,
         settings: {
-          slidesToShow: 5,
+          slidesToShow: 4,
           slidesToScroll: 1,
           infinite: true,
           dots: true,
@@ -47,7 +47,7 @@ const BestSellar = () => {
       {
         breakpoint: 768,
         settings: {
-          slidesToShow: 4,
+          slidesToShow: 3,
           slidesToScroll: 1,
           initialSlide: 2,
           adaptiveHeight: true,
