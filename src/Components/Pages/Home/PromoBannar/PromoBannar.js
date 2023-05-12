@@ -44,7 +44,7 @@ const PromoBannar = () => {
 
   return (
     <div>
-      <div className="pb-12 lg:px-0 px-4 relative promo-background">
+      <div className="pb-12 lg:px-0 px-4 relative promo-background min-h-[70vh]">
         <div className="absolute w-full top-[50%] -translate-y-[50%]">
           <div className="w-full flex justify-between items-center gap-x-4 container mx-auto">
             <div></div>
@@ -140,7 +140,7 @@ const PromoBannar = () => {
                   Mens Home dress Up
                 </p>
                 <p className="my-1 hover:text-[#2563eb] duration-300 cursor-pointer">
-                 Essential Items
+                  Essential Items
                 </p>
                 <button className="text-md font-semibold text-[#2563eb] hover:underline duration-300 flex items-center gap-x-2 mt-5">
                   View All Fashions
@@ -156,7 +156,7 @@ const PromoBannar = () => {
               <div className="text-left pl-3">
                 <h4 className="text-xl font-bold mb-2">Kids Fashions</h4>
                 <p className="my-1 hover:text-[#2563eb] duration-300 cursor-pointer">
-                 Kids Style Items
+                  Kids Style Items
                 </p>
                 <p className="my-1 hover:text-[#2563eb] duration-300 cursor-pointer">
                   Disinfectants

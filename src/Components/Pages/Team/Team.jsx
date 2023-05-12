@@ -8,12 +8,11 @@ import "swiper/css/pagination";
 import LoadingScreen from "../../Shared/LoadingScreen/LoadingScreen";
 import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
 import axios from "axios";
-
 SwiperCore.use([Autoplay, Pagination]);
 
 const Team = () => {
   const [teams, setTeams] = useState([]);
-  
+
   useEffect(() => {
     axios.get(`${process.env.REACT_APP_API_PATH}/teams`).then((resp) => {
       setTeams(resp?.data);
@@ -27,8 +26,10 @@ const Team = () => {
           <h5 className="text-orange-500 text-2xl font-bold uppercase">
             Our Members
           </h5>
-          <h2 className="text-3xl uppercase font-bold mb-10">Meet Our <span className="text-[#2563eb]">Teams</span> </h2>
-          <div className=" container mx-auto">
+          <h2 className="text-3xl uppercase font-bold mb-10">
+            Meet Our <span className="text-[#2563eb]">Teams</span>{" "}
+          </h2>
+          <div className="container mx-auto">
             <div className="w-full overflow-hidden px-5">
               <Swiper
                 loop={true}
@@ -46,7 +47,7 @@ const Team = () => {
                     slidesPerView: 4,
                   },
                   1020: {
-                    slidesPerView: 5,
+                    slidesPerView: 4,
                   },
                 }}
                 className="mySwiper"
@@ -62,7 +63,7 @@ const Team = () => {
                         />
                       </div>
                       <div className="px-4 text-left overlay-details">
-                        <div className="flex justify-between items-center pt-1">
+                        <div className="lg:flex block justify-between items-center pt-1">
                           <div>
                             <h4 className="text-lg font-bold text-orange-600">
                               {team?.name}
