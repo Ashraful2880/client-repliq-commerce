@@ -178,7 +178,6 @@ const ProductDetails = () => {
               <div className="flex items-center gap-x-4 w-full">
                 <button
                   onClick={() => addLocalStorage(cart?._id)}
-                  // onClick={() => cartSetToLocalstorage(cart)}
                   className="bg-[#2563eb] border border-[#2563eb] text-white hover:text-[#2563eb] px-3 lg:py-2 py-1 lg:text-base text-xs rounded-md hover:bg-transparent hover:[#2563eb] duration-300 flex items-center gap-x-2"
                 >
                   Add To Cart
