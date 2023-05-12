@@ -1,7 +1,6 @@
 import axios from "axios";
 import React, { useState } from "react";
 import { useAlert } from "react-alert";
-import logo from "../../../Assets/Images/logo.png";
 import { ImPhone } from "react-icons/im";
 import { FaLock, FaUser } from "react-icons/fa";
 import { HiFingerPrint } from "react-icons/hi";
@@ -45,7 +44,7 @@ const SignUp = () => {
 
     try {
       // Make a POST request to the /signup endpoint
-      const response = await axios.post(
+      await axios.post(
         `${process.env.REACT_APP_API_PATH}/signup`,
         {
           name,

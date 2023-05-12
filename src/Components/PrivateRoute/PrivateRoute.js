@@ -19,7 +19,7 @@ const PrivateRoute = ({ children }) => {
       setLoading(true);
       navigate("/login");
     }
-  }, [token, location]);
+  }, [token, location, navigate]);
 
   if (loading) {
     return (
