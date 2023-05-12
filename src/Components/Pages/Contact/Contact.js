@@ -8,7 +8,7 @@ const Contact = () => {
   return (
     <div className="bg-[#ebf0ff] min-h-screen">
       <div className="lg:py-16 py-8">
-        <div className="flex flex-col md:flex-row md:space-x-6 space-y-6 md:space-y-0 bg-[#2563eb] w-full max-w-5xl p-12 rounded-xl shadow-lg text-white overflow-hidden mx-auto">
+        <div className="flex flex-col md:flex-row md:space-x-6 space-y-6 md:space-y-0 bg-[#2563eb] w-full lg:max-w-5xl md:max-w-5xl max-w-full lg:p-12 md:p-12 p-3 rounded-xl shadow-lg text-white overflow-hidden mx-auto">
           <div className="flex flex-col space-y-8 justify-between">
             <div className="text-left">
               <h1 className="font-bold text-4xl tracking-wide mb-2">

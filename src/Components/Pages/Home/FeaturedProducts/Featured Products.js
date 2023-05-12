@@ -109,7 +109,7 @@ const FeaturedProducts = () => {
             <div key={feature?._id} className="mt-7">
               <div className="mx-3 border rounded-md relative group cursor-pointer overflow-hidden lg:h-[350px] h-auto">
                 {/* Featured Product Image */}
-                <div className="bg-[#F8F8F8] lg:h-[250px] overflow-hidden">
+                <div className="bg-[#F8F8F8] lg:h-[200px] overflow-hidden">
                   <img
                     src={feature?.productImage}
                     alt="product_Image"
@@ -117,7 +117,7 @@ const FeaturedProducts = () => {
                   />
                 </div>
                 {/* Featured Content */}
-                <div className="pl-5 text-left">
+                <div className="pl-5 text-left lg:pt-6 md:pt-4 pt-0">
                   <h4 className="text-[17px] font-bold">{feature?.name}</h4>
                   <div className="flex items-center gap-x-2 mb-2">
                     <h4 className="text-[17px] font-semibold text-[#2563eb]">

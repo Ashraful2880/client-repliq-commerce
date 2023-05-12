@@ -10,15 +10,15 @@ const MobileNav = ({items,wishListItems,totalPrice}) => {
 
 
   return (
-    <div className="w-full flex flex-col items-center gap-x-12 border shadow-md">
+    <div className="w-full flex flex-col items-center gap-x-12 border shadow-md mb-12">
       {/* Logo & Humbergar Menu Area */}
 
-      <div className="w-full flex justify-between items-center bg-white z-50 px-8 pt-3 pb-1">
+      <div className="w-full flex justify-between items-center bg-white z-50 px-8 pt-3 pb-1 fixed -mt-1">
         <div>
           <Link to="/" onClick={() => setHide(false)}>
             <div className="flex items-center gap-x-2">
               <img src={logo} alt="Main Logo" className="w-8 py-2" />
-              <h4 className="font-semibold text-lg text-[#15A9E3]">
+              <h4 className="font-semibold text-lg text-[#2563eb]">
                 Repliq Commerce
               </h4>
             </div>
@@ -74,7 +74,7 @@ const MobileNav = ({items,wishListItems,totalPrice}) => {
       {/* Menu Item Here */}
 
       {hide && (
-        <div className="bg-[#0b1144] w-full text-white rounded-lg pt-5 pb-3 megaMenuAnimation min-h-screen flex flex-col justify-start items-center">
+        <div className="bg-[#0b1144] w-full text-white rounded-b-lg pt-5 pb-3 megaMenuAnimation flex flex-col justify-start items-center mt-[60px] min-h-screen h-full fixed z-40 overflow-x-hidden">
           <button
             onClick={() => setHide(false)}
             className="py-2 my-2 border w-[90%] rounded-full"

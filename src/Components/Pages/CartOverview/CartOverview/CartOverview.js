@@ -123,7 +123,7 @@ const CartOverview = () => {
                       <tr key={key} className="font-bold">
                         <td className="px-6 py-4 whitespace-nowrap mx-auto">
                           <img
-                            className="mx-auto lg:w-28 w-full"
+                            className="mx-auto lg:w-28 w-[300px]"
                             src={item?.productImage}
                             alt="CartImage"
                           />

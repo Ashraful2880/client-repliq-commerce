@@ -66,9 +66,9 @@ const Blogs = () => {
                         alt="BlogImage"
                       />
                     </div>
-                    <div className="px-4 pb-4 text-left">
-                      <h1 className="text-lg font-bold my-5 text-gray-700 ">
-                        {blog?.title}
+                    <div className="px-4 pb-4 text-left overflow-hidden">
+                      <h1 className="text-lg font-bold my-5 text-gray-700">
+                        {blog?.title?.slice(0,25)}...
                       </h1>
                       <hr className="border" />
                       <div className="flex justify-evenly pt-2 pb-2">

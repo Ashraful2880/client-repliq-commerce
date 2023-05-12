@@ -120,7 +120,7 @@ const ProductDetails = () => {
   return (
     <div className="min-h-screen">
       {productId ? (
-        <div className="container mx-auto border shadow-lg my-10 lg:py-20 py-2">
+        <div className="container mx-auto border shadow-lg lg:my-10 md:my-10 lg:py-20 py-2">
           <div className="grid lg:grid-cols-2 grid-cols-1">
             <div className="lg:w-1/2 w-full">
               <img
@@ -138,7 +138,7 @@ const ProductDetails = () => {
                 Price:
                 <span className="text-[#2563eb]">${price || cart?.price}</span>
               </h3>
-              <h3 className="font-bold lg:text-base text-xs text-gray-500 flex items-center gap-x-2">
+              <h3 className="font-bold lg:text-base text-xs text-gray-500 flex items-center gap-x-2 lg:justify-start md:justify-start justify-center">
                 <Rating
                   readonly
                   className="text-[16px]"
@@ -173,7 +173,7 @@ const ProductDetails = () => {
                   <FaMinus />
                 </button>
                 {/* Cart State */}
-                <span className="text-md px-5  border border-[#2563eb] pt-[1.5px] pb-[1px]">
+                <span className="text-md px-5 border border-[#2563eb] pb-[2px]">
                   {cartCount}
                 </span>
                 {/* Quantity Plus Button */}
@@ -184,22 +184,22 @@ const ProductDetails = () => {
                   <FaPlus />
                 </button>
               </h3>
-              <div className="flex items-center gap-x-4 w-full">
+              <div className="lg:flex md:flex block items-center gap-x-4 w-full mx-auto">
                 <button
                   onClick={() => addLocalStorage(cart?._id)}
-                  className="bg-[#2563eb] border border-[#2563eb] text-white hover:text-[#2563eb] px-3 lg:py-2 py-1 lg:text-base text-xs rounded-md hover:bg-transparent hover:[#2563eb] duration-300 flex items-center gap-x-2"
+                  className="bg-[#2563eb] border border-[#2563eb] text-white hover:text-[#2563eb] px-3 py-2 text-md rounded-md hover:bg-transparent hover:[#2563eb] duration-300 flex items-center gap-x-2 lg:mx-0 md:mx-0 mx-auto my-2"
                 >
                   Add To Cart
                   <BsCart />
                 </button>
                 <button
                   onClick={() => addWishList(cart?._id)}
-                  className="bg-gray-500 border border-gray-500 text-white hover:text-gray-600 px-3 lg:py-2 py-1 lg:text-base text-xs rounded-md hover:bg-transparent hover:[#2563eb] duration-300 flex items-center gap-x-2"
+                  className="bg-gray-500 border border-gray-500 text-white hover:text-gray-600 px-3 py-2 text-md rounded-md hover:bg-transparent hover:[#2563eb] duration-300 flex items-center gap-x-2 lg:mx-0 md:mx-0 mx-auto  my-2"
                 >
                   Add To Wishlist
                   <BsHeart />
                 </button>
-                <button className="bg-[#2563eb] border border-[#2563eb] text-white px-3 lg:py-2 py-1 lg:text-base text-xs rounded-md hover:bg-transparent hover:text-[#2563eb] duration-300 flex items-center gap-x-2">
+                <button className="bg-[#2563eb] border border-[#2563eb] text-white px-3 py-2 text-md rounded-md hover:bg-transparent hover:text-[#2563eb] duration-300 flex items-center gap-x-2 lg:mx-0 md:mx-0 mx-auto my-2">
                   <Link to="/cart">Place Order</Link>
                   <MdPayment />
                 </button>

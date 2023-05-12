@@ -44,23 +44,23 @@ const PromoBannar = () => {
 
   return (
     <div>
-      <div className="pb-12 lg:px-0 px-4 relative promo-background min-h-[70vh]">
-        <div className="absolute w-full top-[50%] -translate-y-[50%]">
-          <div className="w-full flex justify-between items-center gap-x-4 container mx-auto">
+      <div className="pb-12 lg:px-0 px-4 relative promo-background lg:min-h-[70vh] md:min-h-[70vh]">
+        <div className="lg:absolute w-full lg:top-[50%] md:top-[50%] lg:-translate-y-[50%] md:-translate-y-[50%]">
+          <div className="w-full flex justify-between items-center lg:gap-x-4 md:gap-x-4 container mx-auto">
             <div></div>
-            <div className="uppercase lg:block hidden text-left w-1/2">
-              <h3 className="text-3xl text-[#2563eb] font-bold font-[cursive]">
+            <div className="uppercase block text-left lg:w-1/2 md:w-1/2 w-full">
+              <h3 className="lg:text-3xl md:text-3xl text-xl text-[#2563eb] font-bold font-[cursive] lg:pt-0 md:pt-0 pt-6">
                 Sales Offer & Discount Only
               </h3>
-              <h1 className="text-6xl upparcase font-bold mt-3 mb-4">
+              <h1 className="lg:text-6xl md:text-5xl text-4xl upparcase font-bold mt-3 mb-4">
                 For Summer Sales
               </h1>
-              <p className="text-lg text-gray-600 font-semibold">
+              <p className="lg:text-lg md:text-lg text-sm text-gray-600 font-semibold">
                 New Product Purchase up to 50% Off All Now Fast
               </p>
               <p className="text-lg text-gray-600 font-semibold">Shopping</p>
 
-              <div className="my-5 lg:px-0 md:px-0 px-4 w-1/2">
+              <div className="my-5 lg:w-1/2 md:w-1/2 w-full">
                 <div className="flex gap-x-2 items-center">
                   <div className="w-full px-5 py-3 border rounded-md text-center shadow-md border-b-[6px] border-b-[#2563eb]">
                     <p className="text-4xl font-bold text-orange-600">
@@ -98,7 +98,7 @@ const PromoBannar = () => {
           </div>
         </div>
       </div>
-      <div className="container mx-auto mt-5">
+      <div className="container mx-auto mt-5 lg:px-0 md:px-0 px-2">
         <div className="lg:flex block justify-between gap-x-6 items-center">
           <Link to="/shopCategory/gloves" className="block w-full">
             <div className="lg:py-6 md:py-5 py-3 lg:px-6 md:px-5 px-1 flex justify-between items-center border rounded-md hover:shadow-md duration-300 w-full lg:my-0 my-2">

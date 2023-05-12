@@ -112,11 +112,11 @@ const NewArrival = () => {
                   <img
                     src={arrivalItem?.productImage}
                     alt="product_Image"
-                    className="w-full lg:h-[250px] h-auto mx-auto pb-4"
+                    className="w-full lg:h-[200px] h-auto mx-auto pb-4"
                   />
                 </div>
                 {/* New Arrival Content */}
-                <div className="pl-5 text-left">
+                <div className="pl-5 text-left lg:pt-6 md:pt-4 pt-0">
                   <h4 className="text-[17px] font-bold">{arrivalItem?.name}</h4>
                   <div className="flex items-center gap-x-2 mb-2">
                     <h4 className="text-[17px] font-semibold text-[#2563eb]">

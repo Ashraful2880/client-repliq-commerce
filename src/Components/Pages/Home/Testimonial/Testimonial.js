@@ -74,7 +74,7 @@ const Testimonial = () => {
       </div>
       {/* Slider Area  */}
       <Slider ref={slider} {...settings}>
-        <div className="px-5 lg:py-6 py-5">
+        <div className="px-2 lg:py-6 py-5">
           <div className="border border-t-4 rounded-t-2xl border-t-[#2563eb] shadow-lg my-4 w-full flex flex-col justify-between items-start mx-5 p-6 rounded-lg">
             <h2 className="text-3xl font-bold text-[#314259] text-start">
               More than <span className="text-[#2563eb]"> 60,000 </span> Clients
@@ -97,7 +97,7 @@ const Testimonial = () => {
             </div>
           </div>
         </div>
-        <div className="px-5 lg:py-6 py-5">
+        <div className="px-2 lg:py-6 py-5">
           <div className="border border-t-4 rounded-t-2xl border-t-[#2563eb] shadow-lg my-4 w-full flex flex-col justify-between items-start mx-5 p-6 rounded-lg">
             <h2 className="text-3xl font-bold text-[#314259] text-start">
               More than <span className="text-[#2563eb]"> 60,000 </span> Clients
@@ -120,7 +120,7 @@ const Testimonial = () => {
             </div>
           </div>
         </div>
-        <div className="px-5 lg:py-6 py-5">
+        <div className="px-2 lg:py-6 py-5">
           <div className="border border-t-4 rounded-t-2xl border-t-[#2563eb] shadow-lg my-4 w-full flex flex-col justify-between items-start mx-5 p-6 rounded-lg">
             <h2 className="text-3xl font-bold text-[#314259] text-start">
               More than <span className="text-[#2563eb]"> 60,000 </span> Clients
@@ -143,7 +143,7 @@ const Testimonial = () => {
             </div>
           </div>
         </div>
-        <div className="px-5 lg:py-6 py-5">
+        <div className="px-2 lg:py-6 py-5">
           <div className="border border-t-4 rounded-t-2xl border-t-[#2563eb] shadow-lg my-4 w-full flex flex-col justify-between items-start mx-5 p-6 rounded-lg">
             <h2 className="text-3xl font-bold text-[#314259] text-start">
               More than <span className="text-[#2563eb]"> 60,000 </span> Clients
@@ -166,7 +166,7 @@ const Testimonial = () => {
             </div>
           </div>
         </div>
-        <div className="px-5 lg:py-6 py-5">
+        <div className="px-2 lg:py-6 py-5">
           <div className="border border-t-4 rounded-t-2xl border-t-[#2563eb] shadow-lg my-4 w-full flex flex-col justify-between items-start mx-5 p-6 rounded-lg">
             <h2 className="text-3xl font-bold text-[#314259] text-start">
               More than <span className="text-[#2563eb]"> 60,000 </span> Clients

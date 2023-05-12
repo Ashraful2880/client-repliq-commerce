@@ -74,7 +74,7 @@ const BestSellar = () => {
         <div className="text-left">
           <h1 className="text-4xl font-bold">
             Best
-            <span className="text-[#2563eb] "> Selling</span>
+            <span className="text-[#2563eb]"> Selling</span>
           </h1>
           <p className="text-md text-gray-600">
             View Best Selling products in last month
@@ -115,11 +115,11 @@ const BestSellar = () => {
                   <img
                     src={sellar?.productImage}
                     alt="product_Image"
-                    className="w-full lg:h-[250px] h-auto mx-auto pb-4"
+                    className="w-full lg:h-[200px] h-auto mx-auto pb-4"
                   />
                 </div>
                 {/*Best Selling Content */}
-                <div className="pl-5 text-left">
+                <div className="pl-5 text-left lg:pt-6 md:pt-4 pt-0">
                   <h4 className="text-[17px] font-bold">{sellar?.name}</h4>
                   <div className="flex items-center gap-x-2 mb-2">
                     <h4 className="text-[17px] font-semibold text-[#2563eb]">
