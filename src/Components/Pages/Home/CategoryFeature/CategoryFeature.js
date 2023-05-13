@@ -6,7 +6,7 @@ import feature03 from "../../../../Assets/Images/CategoryFeature/category-featur
 
 const CategoryFeature = () => {
   return (
-    <div className="container mx-auto lg:flex block justify-center gap-x-6 items-center lg:px-0 px-4">
+    <div className="container mx-auto lg:flex block justify-center gap-x-6 items-center lg:px-0 md:px-0 px-2">
       <div className="overflow-hidden rounded-md lg:my-0 my-2">
         <Link to="/shopCategory/mask">
           <img

@@ -5,18 +5,18 @@ const Application = () => {
   return (
     <div className="container mx-auto ">
       <div className="grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1">
-        <div className="py-12 bg-style">
+        <div className="lg:py-12 md:py-12 py-2 bg-style">
           <img
             src="https://i.ibb.co/HPq0V4Z/App-Tracker-Image.png"
             alt="app Tracker Phone Logo"
           />
         </div>
         <div className="lg:text-left sm:text-center lg:pt-14 sm:pt-0 px-1">
-          <h1 className="lg:text-4xl text-xl font-bold py-5">
+          <h1 className="lg:text-4xl md:text-4xl text-2xl font-bold lg:py-5 md:py-5 py-2">
             Get More With
-            <span className="text-[#2563eb]"> Our Application</span>
+            <span className="text-[#2563eb]"> Our Application </span>
           </h1>
-          <p className="mb-12 lg:w-3/4 sm:w-full lg:text-base text-sm">
+          <p className="lg:mb-12 md:mb-12 mb-0 lg:w-3/4 sm:w-full lg:text-base text-sm">
             Nunc pellentesque orci sed tempor pharetra. Morbi molestie purus in
             interdum facilisis. Mauris commodo mi a egestas sollicitudin. Mauris
             pharetra placerat sem vel fringilla.
@@ -45,7 +45,7 @@ const Application = () => {
               Follow Delivery Status
             </h4>
           </div>
-          <div className="flex mt-12 mb-6">
+          <div className="flex lg:mt-12 md:mt-12 lg:mb-6 md:mb-6 mb-0">
             <Link to="/home" className="mx-3">
               <img
                 className=" border-4 border-transparent rounded-xl hover:border-[#2563eb] duration-300"

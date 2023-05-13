@@ -30,7 +30,7 @@ const Team = () => {
             Meet Our <span className="text-[#2563eb]">Teams</span>{" "}
           </h2>
           <div className="container mx-auto">
-            <div className="w-full overflow-hidden px-5">
+            <div className="w-full overflow-hidden lg:px-5 md:px-5 px-2">
               <Swiper
                 loop={true}
                 autoplay={{ delay: 3000 }}

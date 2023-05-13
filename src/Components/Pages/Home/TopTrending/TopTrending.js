@@ -67,7 +67,7 @@ const TopTrending = () => {
     <div className="container mx-auto lg:mb-10 mb-5" id="topTrending">
       {/* Heading Title */}
 
-      <div className="flex lg:justify-between md:justify-between justify-center items-center mt-12 border-b-2 border-b-[#2563eb] pb-3 mb-5">
+      <div className="flex justify-between items-center lg:mt-12 md:mt-12 mt-5 lg:border-b-2 md:border-b-2 border-b-[#2563eb] lg:pb-3 md:pb-3 lg:mb-5 md:mb-5 lg:pl-0 md:pl-0 pl-4">
         {/* Heading Title */}
         <div className="text-left">
           <h1 className="text-4xl font-bold">

@@ -8,7 +8,6 @@ import "swiper/css/pagination";
 import axios from "axios";
 import { FaShareAlt } from "react-icons/fa";
 import LoadingScreen from "../../Shared/LoadingScreen/LoadingScreen";
-
 SwiperCore.use([Autoplay, Pagination]);
 
 const Blogs = () => {
@@ -24,7 +23,7 @@ const Blogs = () => {
     <div className="">
       {blogs?.length > 0 ? (
         <div className="container mx-auto">
-          <div className="lg:text-left text-center pt-6">
+          <div className="lg:text-left text-center lg:pt-6 md:pt-6 pt-2">
             <h1 className="text-4xl font-bold">
               From Our
               <span className="text-[#2563eb]"> Blogs</span>
@@ -34,7 +33,7 @@ const Blogs = () => {
             </p>
           </div>
 
-          <div className="w-full pt-7 lg:pb-20 md:pb-20 overflow-hidden">
+          <div className="w-full lg:pt-7 md:pt-7 pt-3 lg:pb-20 md:pb-20 overflow-hidden">
             <Swiper
               loop={true}
               autoplay={{ delay: 3000 }}

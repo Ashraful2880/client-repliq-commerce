@@ -44,7 +44,7 @@ const PromoBannar = () => {
 
   return (
     <div>
-      <div className="pb-12 lg:px-0 px-4 relative promo-background lg:min-h-[70vh] md:min-h-[70vh]">
+      <div className="lg:pb-12 md:pb-12 pb-4 lg:px-0 md:px-0 px-2 relative promo-background lg:min-h-[70vh] md:min-h-[70vh]">
         <div className="lg:absolute w-full lg:top-[50%] md:top-[50%] lg:-translate-y-[50%] md:-translate-y-[50%]">
           <div className="w-full flex justify-between items-center lg:gap-x-4 md:gap-x-4 container mx-auto">
             <div></div>

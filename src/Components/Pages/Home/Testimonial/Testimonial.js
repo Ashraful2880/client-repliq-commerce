@@ -48,9 +48,9 @@ const Testimonial = () => {
   const slider = React.useRef(null);
 
   return (
-    <div className="container mx-auto px-2 lg:pt-8 py-5">
+    <div className="container mx-auto px-2 lg:pt-8 md:py-5 lg:mt-0 md:mt-0 mt-5">
       <div className="flex justify-between items-start">
-        <h1 className="lg:text-3xl text-2xl text-[#314259] font-bold mb-4 leading-10 text-start">
+        <h1 className="lg:text-3xl text-2xl text-[#314259] font-bold lg:mb-4 md:mb-4 leading-10 text-start">
           Trusted By Our <span className="text-[#2563eb]">Clients</span>
         </h1>
         <div className="flex items-center gap-x-3">

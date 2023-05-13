@@ -38,9 +38,9 @@ const ShopByCategory = () => {
         alt="Shape"
         className="absolute -top-10 right-0 trans-animation"
       />
-      <div className="container mx-auto mb-10">
+      <div className="container mx-auto lg:mb-10 md:mb-10">
         {/* Heading Title */}
-        <div className="text-left border-b-2 border-b-[#2563eb] pb-3 mb-5 lg:mt-0 md:mt-0 mt-5 lg:px-0 md:px-0 px-2">
+        <div className="text-left lg:border-b-2 md:border-b-2 border-b-[#2563eb] pb-3 lg:mb-5 md:mb-5 lg:mt-0 md:mt-0 mt-5 lg:px-0 md:px-0 px-2">
           <h1 className="text-4xl font-bold">
             Shop By
             <span className="text-[#2563eb] "> Category</span>
