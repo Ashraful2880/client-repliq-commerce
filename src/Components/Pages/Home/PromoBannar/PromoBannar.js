@@ -90,7 +90,7 @@ const PromoBannar = () => {
               </div>
               <a
                 href="/shopCategory/All"
-                className="button-style relative overflow-hidden upparcase bg-[#2563eb] text-white hover:text-[#2563eb] hover:bg-white border border-[#2563eb] px-4 py-1.5 font-semibold rounded-md mt-5 duration-300 z-0 inline-block"
+                className="button-style relative overflow-hidden upparcase bg-[#2563eb] text-white hover:text-[#2563eb] hover:bg-white border border-[#2563eb] px-4 lg:py-1.5 md:py-1.5 py-2 font-semibold rounded-md lg:mt-5 md:mt-5 mt-2 duration-300 z-0 inline-block"
               >
                 Shop Now
               </a>

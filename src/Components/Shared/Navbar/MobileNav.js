@@ -2,12 +2,26 @@ import React from "react";
 import { FaBars } from "react-icons/fa";
 import { FiHeart, FiShoppingBag } from "react-icons/fi";
 import { GrClose } from "react-icons/gr";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import logo from "../../../Assets/Images/logo.png";
 
-const MobileNav = ({items,wishListItems,totalPrice}) => {
+const MobileNav = ({ items, wishListItems, totalPrice }) => {
   const [hide, setHide] = React.useState(false);
+  const navigate = useNavigate();
 
+  let loggedInUser;
+  try {
+    loggedInUser = JSON.parse(localStorage.getItem("token")).token;
+  } catch (error) {
+    loggedInUser = null;
+  }
+
+  const handleLogOut = () => {
+    localStorage.removeItem("token");
+    alert.success("Logout Successful");
+    navigate("/home");
+    setHide(true);
+  };
 
   return (
     <div className="w-full flex flex-col items-center gap-x-12 border shadow-md mb-12">
@@ -18,7 +32,7 @@ const MobileNav = ({items,wishListItems,totalPrice}) => {
           <Link to="/" onClick={() => setHide(false)}>
             <div className="flex items-center gap-x-2">
               <img src={logo} alt="Main Logo" className="w-8 py-2" />
-              <h4 className="font-semibold text-lg text-[#2563eb]">
+              <h4 className="font-semibold text-lg text-[#2563eb] lg:block md:block hidden">
                 Repliq Commerce
               </h4>
             </div>
@@ -77,7 +91,7 @@ const MobileNav = ({items,wishListItems,totalPrice}) => {
         <div className="bg-[#0b1144] w-full text-white rounded-b-lg pt-5 pb-3 megaMenuAnimation flex flex-col justify-start items-center mt-[60px] min-h-screen h-full fixed z-40 overflow-x-hidden">
           <button
             onClick={() => setHide(false)}
-            className="py-2 my-2 border w-[90%] rounded-full"
+            className="py-2 my-2 border w-[60%] rounded-full"
           >
             <Link
               to="/home"
@@ -89,7 +103,7 @@ const MobileNav = ({items,wishListItems,totalPrice}) => {
 
           <button
             onClick={() => setHide(false)}
-            className="py-2 my-2 border w-[90%] rounded-full"
+            className="py-2 my-2 border w-[60%] rounded-full"
           >
             <Link
               className="text-md font-semibold hover:text-[#2563eb] focus:text-[#2563eb] duration-300"
@@ -102,7 +116,7 @@ const MobileNav = ({items,wishListItems,totalPrice}) => {
 
           <button
             onClick={() => setHide(false)}
-            className="py-2 my-2 border w-[90%] rounded-full"
+            className="py-2 my-2 border w-[60%] rounded-full"
           >
             <Link
               to="/about"
@@ -114,7 +128,7 @@ const MobileNav = ({items,wishListItems,totalPrice}) => {
           </button>
           <button
             onClick={() => setHide(false)}
-            className="py-2 my-2 border w-[90%] rounded-full"
+            className="py-2 my-2 border w-[60%] rounded-full"
           >
             <Link
               to="/blogs"
@@ -126,7 +140,7 @@ const MobileNav = ({items,wishListItems,totalPrice}) => {
           </button>
           <button
             onClick={() => setHide(false)}
-            className="py-2 my-2 border w-[90%] rounded-full"
+            className="py-2 my-2 border w-[60%] rounded-full"
           >
             <Link
               to="/contact"
@@ -136,6 +150,61 @@ const MobileNav = ({items,wishListItems,totalPrice}) => {
               Contact
             </Link>
           </button>
+          {loggedInUser ? (
+            <button
+              onClick={() => setHide(false)}
+              className="py-2 my-2 border w-[60%] rounded-full bg-orange-600 border-orange-600"
+            >
+              <Link
+                to="/dashboard"
+                className="text-md font-semibold hover:text-[#2563eb] focus:text-[#2563eb] duration-300"
+                onClick={() => setHide(false)}
+              >
+                Dashboard
+              </Link>
+            </button>
+          ) : (
+            <div className="flex justify-between items-center gap-x-2 w-[60%]">
+              <button
+                onClick={() => setHide(false)}
+                className="py-2 my-2 border border-[#2563eb] w-[60%] rounded-full bg-[#2563eb]"
+              >
+                <Link
+                  to="/signup"
+                  className="text-md font-semibold hover:text-[#2563eb] focus:text-[#2563eb] duration-300"
+                  onClick={() => setHide(false)}
+                >
+                  Register
+                </Link>
+              </button>
+              <button
+                onClick={() => setHide(false)}
+                className="py-2 my-2 border w-[60%] rounded-full"
+              >
+                <Link
+                  to="/login"
+                  className="text-md font-semibold hover:text-[#2563eb] focus:text-[#2563eb] duration-300"
+                  onClick={() => setHide(false)}
+                >
+                  Login
+                </Link>
+              </button>
+            </div>
+          )}
+          {loggedInUser && (
+            <button
+              onClick={() => handleLogOut}
+              className="py-2 my-2 border w-[60%] rounded-full bg-red-600 border-red-600"
+            >
+              <Link
+                to="/home"
+                className="text-md font-semibold hover:text-[#2563eb] focus:text-[#2563eb] duration-300"
+                onClick={() => setHide(false)}
+              >
+                Logout
+              </Link>
+            </button>
+          )}
         </div>
       )}
     </div>

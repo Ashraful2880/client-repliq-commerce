@@ -64,12 +64,12 @@ const CheckOut = () => {
   };
 
   return (
-    <div className="min-h-screen container mx-auto">
+    <div className="min-h-screen container mx-auto lg:pt-0 md:pt-0 pt-5">
       <div className="lg:flex block justify-around lg:mb-52 mb-2 border border-gray-300 rounded-lg lg:mt-10 mt-1 lg:pb-20">
         <div className="lg:w-3/5 w-full">
-          <div className="grid lg:grid-cols-2 grid-cols-1 gap-6 pb-10 mx-10">
+          <div className="grid lg:grid-cols-2 grid-cols-1 gap-6 lg:pb-10 md:pb-8 pb-4 lg:mx-10 md:mx-6 mx-2">
             <div className="md:col-span-2">
-              <h2 className="text-2xl text-left lg:mt-4 mt-1 mb-6 font-bold ml-1">
+              <h2 className="text-2xl text-left lg:mt-4 mt-2 lg:mb-6 md:mb-6 mb-3 font-bold ml-1">
                 Billing Address
               </h2>
               <div className=" shadow-xl overflow-hidden rounded-md border border-gray-200">
@@ -245,12 +245,12 @@ const CheckOut = () => {
           </div>
         </div>
         <div className="lg:mt-4 mt-0 lg:w-2/5 w-full">
-          <div className="grid grid-cols-1 gap-6 lg:pb-10 pb-5 mx-10">
+          <div className="grid grid-cols-1 gap-6 lg:pb-10 pb-5 lg:mx-10 md:mx-8 mx-2">
             <div className="md:col-span-2">
               <h2 className="text-2xl text-left mb-6 font-bold ml-1">
                 Order Summary
               </h2>
-              <div className="shadow-xl overflow-hidden rounded-md border border-gray-200 pb-28">
+              <div className="shadow-xl overflow-hidden rounded-md border border-gray-200 lg:pb-28 md:pb-24 pb-5">
                 <div className="px-4 pb-6 bg-gray-50 text-right sm:px-6 font-bold">
                   <div className="flex justify-between py-4">
                     <h4 className="text-md font-bold">Your Orderd Items</h4>

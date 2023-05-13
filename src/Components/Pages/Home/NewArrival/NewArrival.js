@@ -55,7 +55,7 @@ const NewArrival = () => {
       {
         breakpoint: 576,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 1.5,
           slidesToScroll: 1,
           adaptiveHeight: true,
         },

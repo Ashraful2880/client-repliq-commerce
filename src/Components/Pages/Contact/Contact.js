@@ -20,7 +20,7 @@ const Contact = () => {
               </p>
             </div>
 
-            <div className="flex flex-col space-y-6">
+            <div className="flex flex-col lg:space-y-6 md:space-y-6 space-y-3">
               <div className="inline-flex space-x-2 items-center w-60">
                 <VscCallOutgoing className="text-3xl mr-1 text-white" />
                 <span>+111 345 214 213</span>
@@ -68,7 +68,7 @@ const Contact = () => {
           <div className="relative">
             <div className="absolute z-0 w-40 h-40 bg-indigo-400 rounded-full -right-28 -top-28"></div>
             <div className="absolute z-0 w-40 h-40 bg-indigo-400 rounded-full -left-28 -bottom-16"></div>
-            <div className="relative z-10 bg-white rounded-xl shadow-lg p-8 text-gray-600 md:w-96">
+            <div className="relative z-10 bg-white rounded-xl shadow-lg lg:p-8 md:p-8 p-4 text-gray-600 md:w-96">
               <form className="flex flex-col space-y-4">
                 <div>
                   <label className="text-sm text-left inline-block w-full font-semibold">

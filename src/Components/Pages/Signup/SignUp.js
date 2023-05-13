@@ -44,16 +44,13 @@ const SignUp = () => {
 
     try {
       // Make a POST request to the /signup endpoint
-      await axios.post(
-        `${process.env.REACT_APP_API_PATH}/signup`,
-        {
-          name,
-          username,
-          email,
-          phone,
-          password,
-        }
-      );
+      await axios.post(`${process.env.REACT_APP_API_PATH}/signup`, {
+        name,
+        username,
+        email,
+        phone,
+        password,
+      });
       // Clear the form and display a success message
       setName("");
       setUserName("");
@@ -73,7 +70,10 @@ const SignUp = () => {
       <div className="container mx-auto w-full lg:flex md:flex block rounded-md mt-6 justify-center items-center shadow-md">
         {/* Form Area */}
         <div className="flex lg:w-1/2 md:w-1/2 w-full justify-center py-10 items-center bg-white">
-          <form className="bg-white lg:w-2/3 w-full" onSubmit={handleSignup}>
+          <form
+            className="bg-white lg:w-2/3 w-full lg:mx-0 md:mx-0 mx-2"
+            onSubmit={handleSignup}
+          >
             <h1 className="text-gray-800 font-bold text-3xl mb-1">
               Please <span className="text-[#2563eb]">Register</span>
             </h1>

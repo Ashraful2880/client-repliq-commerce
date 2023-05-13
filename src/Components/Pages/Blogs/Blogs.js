@@ -34,7 +34,7 @@ const Blogs = () => {
             </p>
           </div>
 
-          <div className="w-full pt-7 pb-20 overflow-hidden">
+          <div className="w-full pt-7 lg:pb-20 md:pb-20 overflow-hidden">
             <Swiper
               loop={true}
               autoplay={{ delay: 3000 }}

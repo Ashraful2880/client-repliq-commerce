@@ -3,7 +3,7 @@ import React from "react";
 const NewsLater = () => {
   return (
     <div>
-      <div className="2xl:mx-auto  mx-4 pt-16">
+      <div className="2xl:mx-auto lg:mx-4 md:mx-4 lg:pt-16 md:pt-16 pt-5">
         <div className="w-full relative flex items-center justify-center">
           <img
             src="https://i.ibb.co/4sYZ8gC/img-2.png"
@@ -20,7 +20,7 @@ const NewsLater = () => {
             alt="dining"
             className="w-full h-full absolute z-0 sm:hidden"
           />
-          <div className="bg-gray-800 bg-opacity-80 md:my-16 lg:py-16 py-10 w-full md:mx-24 md:px-12 px-4 flex flex-col items-center justify-center relative z-40">
+          <div className="bg-gray-800 bg-opacity-80 md:my-16 lg:py-16 py-10 w-full md:mx-24 md:px-12 px-4 flex flex-col items-center justify-center relative z-30">
             <h1 className="text-4xl font-semibold leading-9 text-white text-center">
               Don’t Miss Out!
             </h1>

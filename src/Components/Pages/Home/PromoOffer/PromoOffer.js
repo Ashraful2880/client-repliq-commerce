@@ -5,7 +5,7 @@ import promoImage2 from "../../../../Assets/Images/Others/PromoOffer-2.png";
 
 const PromoOffer = () => {
   return (
-    <div className="container mx-auto lg:px-0 px-4">
+    <div className="container mx-auto lg:px-0 md:px-0 px-2">
       <div className="lg:flex block justify-center gap-x-8 items-center">
         <div className="overflow-hidden rounded-md mg:my-0 my-2">
           <Link to="/Shipping">

@@ -23,7 +23,7 @@ const Bannar = () => {
           <div className="slider-bg"></div>
           <div className="absolute lg:left-[300px] md:left-[180px] left-[50px] lg:top-[90px] md:top-[100px] top-[50px] text-left font-[cursive]">
             <div className="lg:text-6xl md:text-5xl text-4xl font-bold text-[#0b1144]">
-              <h3 className="text-5xl">Womens</h3>
+              <h3 className="lg:text-5xl md:text-4xl text-2xl">Womens</h3>
               <h1 className="my-3 text-[#2563eb]">All Latest Quality</h1>
               <h3 className="text-5xl">Sunglases</h3>
             </div>
@@ -45,7 +45,7 @@ const Bannar = () => {
           <div className="slider-bg2"></div>
           <div className="absolute lg:left-[300px] md:left-[180px] left-[50px] lg:top-[90px] md:top-[100px] top-[50px] text-left font-[cursive]">
             <div className="lg:text-6xl md:text-5xl text-4xl font-bold text-[#0b1144]">
-              <h3 className="text-5xl">Stylish</h3>
+              <h3 className="lg:text-5xl md:text-4xl text-2xl">Stylish</h3>
               <h1 className="my-3 text-[#2563eb]">Dress Item For</h1>
               <h3 className="text-5xl"> Womens</h3>
             </div>
@@ -67,7 +67,7 @@ const Bannar = () => {
           <div className="slider-bg3"></div>
           <div className="absolute lg:left-[300px] md:left-[180px] left-[50px] lg:top-[90px] md:top-[100px] top-[50px] text-left font-[cursive]">
             <div className="lg:text-6xl md:text-5xl text-4xl font-bold text-[#0b1144]">
-              <h3 className="text-5xl">9% Discount</h3>
+              <h3 className="lg:text-5xl md:text-4xl text-2xl">9% Discount</h3>
               <h1 className="my-3 text-[#2563eb]">For All Women</h1>
               <h3 className="text-5xl">Products</h3>
             </div>
